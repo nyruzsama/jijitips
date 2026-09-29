@@ -1,0 +1,3262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Effective Communication Reviewer | Grade 11 Term 2 First Long Quiz</title>
+  
+  <!-- Modern Clean Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      /* Clean, Minimalist Scandinavian Theme */
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-muted: #f1f5f9;
+      --bg-hover: #f8fafc;
+      --border: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      --border-focus: #2563eb;
+
+      /* High-Contrast Crisp Typography */
+      --t1: #0f172a;
+      --t2: #334155;
+      --t3: #64748b;
+      --t-light: #94a3b8;
+
+      /* Elegant Restrained Accents */
+      --primary: #1e40af;
+      --primary-light: #eff6ff;
+      --primary-border: #bfdbfe;
+      
+      --accent-teal: #0f766e;
+      --accent-teal-light: #f0fdfa;
+      --accent-teal-border: #99f6e4;
+
+      --accent-emerald: #059669;
+      --accent-emerald-light: #ecfdf5;
+      --accent-emerald-border: #a7f3d0;
+
+      --accent-amber: #d97706;
+      --accent-amber-light: #fffbeb;
+      --accent-amber-border: #fde68a;
+
+      --accent-rose: #dc2626;
+      --accent-rose-light: #fef2f2;
+      --accent-rose-border: #fecaca;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    [data-theme="dark"] {
+      --bg: #090d16;
+      --bg-card: #111827;
+      --bg-card-muted: #1f2937;
+      --bg-hover: #1e293b;
+      --border: #374151;
+      --border-subtle: #4b5563;
+      --border-focus: #60a5fa;
+
+      --t1: #f8fafc;
+      --t2: #e2e8f0;
+      --t3: #94a3b8;
+      --t-light: #64748b;
+
+      --primary: #3b82f6;
+      --primary-light: rgba(59, 130, 246, 0.12);
+      --primary-border: rgba(59, 130, 246, 0.3);
+
+      --accent-teal: #14b8a6;
+      --accent-teal-light: rgba(20, 184, 166, 0.12);
+      --accent-teal-border: rgba(20, 184, 166, 0.3);
+
+      --accent-emerald: #10b981;
+      --accent-emerald-light: rgba(16, 185, 129, 0.12);
+      --accent-emerald-border: rgba(16, 185, 129, 0.3);
+
+      --accent-amber: #f59e0b;
+      --accent-amber-light: rgba(245, 158, 11, 0.12);
+      --accent-amber-border: rgba(245, 158, 11, 0.3);
+
+      --accent-rose: #ef4444;
+      --accent-rose-light: rgba(239, 68, 68, 0.12);
+      --accent-rose-border: rgba(239, 68, 68, 0.3);
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 15px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg);
+      color: var(--t1);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+    }
+
+    /* Header */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      background: var(--primary);
+      color: #ffffff;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .brand-info h1 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--t1);
+    }
+
+    .brand-info p {
+      font-size: 12px;
+      color: var(--t3);
+      font-weight: 500;
+    }
+
+    /* Top Nav Pills */
+    .nav-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 4px 0;
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--t2);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-card-muted);
+      color: var(--t1);
+    }
+
+    .nav-btn.active {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+      font-weight: 700;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      background: var(--bg-card-muted);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-size: 15px;
+    }
+
+    .icon-btn:hover {
+      color: var(--t1);
+      border-color: var(--border-subtle);
+    }
+
+    /* Subheader & Search bar */
+    .sub-bar {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+    }
+
+    .sub-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      max-width: 480px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      padding: 8px 16px 8px 36px;
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--t1);
+      outline: none;
+      transition: all 0.15s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--t3);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    .view-toggles {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 3px;
+      border-radius: var(--radius-full);
+    }
+
+    .toggle-pill {
+      border: none;
+      background: transparent;
+      color: var(--t3);
+      font-family: var(--font-body);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .toggle-pill.active {
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 32px 0 60px 0;
+    }
+
+    .tab-section {
+      display: none;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typography */
+    h2.section-heading {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--t1);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    p.section-sub {
+      color: var(--t3);
+      font-size: 14.5px;
+      margin-bottom: 24px;
+      max-width: 800px;
+    }
+
+    h3.subheading {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--t1);
+      margin: 28px 0 16px 0;
+    }
+
+    /* Hero Banner */
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 28px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 860px) {
+      .hero-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-card h2 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .hero-card p {
+      color: var(--t2);
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .hero-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-card-muted);
+      cursor: zoom-in;
+    }
+
+    .hero-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.25s ease;
+    }
+
+    .hero-img-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    /* Lesson Navigation Quick Bar */
+    .module-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .module-nav-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .module-nav-card:hover {
+      border-color: var(--primary-border);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .module-nav-num {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 800;
+      font-family: var(--font-display);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .module-nav-content h4 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--t1);
+      margin-bottom: 4px;
+    }
+
+    .module-nav-content p {
+      font-size: 12.5px;
+      color: var(--t3);
+      line-height: 1.4;
+    }
+
+    /* Comparison Grid */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0 32px 0;
+    }
+
+    @media (max-width: 768px) {
+      .compare-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .compare-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .compare-card.academic {
+      border-top: 4px solid var(--primary);
+    }
+
+    .compare-card.technical {
+      border-top: 4px solid var(--accent-teal);
+    }
+
+    .compare-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .compare-header h4 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .badge-primary {
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+    }
+
+    .badge-teal {
+      background: var(--accent-teal-light);
+      color: var(--accent-teal);
+      border: 1px solid var(--accent-teal-border);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+    }
+
+    .compare-def {
+      font-size: 14px;
+      color: var(--t2);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .compare-meta {
+      background: var(--bg-card-muted);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      font-size: 13px;
+    }
+
+    .compare-meta strong {
+      color: var(--t1);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .compare-meta ul {
+      list-style-position: inside;
+      color: var(--t2);
+      margin-bottom: 10px;
+    }
+
+    .compare-meta ul:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Characteristics Detailed Cards */
+    .char-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease;
+    }
+
+    .char-card:hover {
+      border-color: var(--border-subtle);
+    }
+
+    .char-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .char-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .char-number {
+      width: 30px;
+      height: 30px;
+      border-radius: var(--radius-full);
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-family: var(--font-display);
+      font-size: 14px;
+    }
+
+    .char-title-group h4 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--t1);
+    }
+
+    .char-desc {
+      font-size: 14.5px;
+      color: var(--t2);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .char-indicators {
+      background: var(--primary-light);
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-bottom: 16px;
+    }
+
+    .char-indicators h5 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .char-indicators ul {
+      list-style-type: none;
+    }
+
+    .char-indicators li {
+      font-size: 13.5px;
+      color: var(--t2);
+      margin-bottom: 4px;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .char-indicators li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* Before / After Toggle Box */
+    .interactive-example-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: 14px;
+    }
+
+    .example-header {
+      background: var(--bg-card-muted);
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .example-header span {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--t3);
+    }
+
+    .example-tabs {
+      display: flex;
+      gap: 4px;
+    }
+
+    .ex-tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--t3);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .ex-tab-btn.bad.active {
+      background: var(--accent-rose-light);
+      color: var(--accent-rose);
+      border-color: var(--accent-rose-border);
+      font-weight: 700;
+    }
+
+    .ex-tab-btn.good.active {
+      background: var(--accent-emerald-light);
+      color: var(--accent-emerald);
+      border-color: var(--accent-emerald-border);
+      font-weight: 700;
+    }
+
+    .example-content {
+      padding: 14px 16px;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+
+    .example-pane {
+      display: none;
+    }
+
+    .example-pane.active {
+      display: block;
+    }
+
+    .example-pane.bad-text {
+      color: var(--accent-rose);
+      background: var(--accent-rose-light);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-style: italic;
+    }
+
+    .example-pane.good-text {
+      color: var(--accent-emerald);
+      background: var(--accent-emerald-light);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-weight: 500;
+    }
+
+    .example-rationale {
+      font-size: 12.5px;
+      color: var(--t3);
+      margin-top: 8px;
+    }
+
+    /* Diagram Section Cards */
+    .diagram-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      margin: 24px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .diagram-card h4 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .diagram-card p {
+      font-size: 13.5px;
+      color: var(--t3);
+      margin-bottom: 16px;
+    }
+
+    .diagram-img-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg);
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .diagram-img-box img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Interactive Audience Selector */
+    .aud-selector-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .aud-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      color: var(--t2);
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .aud-btn:hover {
+      border-color: var(--border-subtle);
+      background: var(--bg-card-muted);
+    }
+
+    .aud-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .aud-display-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      border-left: 4px solid var(--primary);
+    }
+
+    /* Interactive Cornell Canvas */
+    .cornell-canvas-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      margin-top: 24px;
+    }
+
+    .cornell-mock-page {
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin-top: 14px;
+    }
+
+    .cornell-mock-header {
+      background: var(--bg-card-muted);
+      padding: 10px 16px;
+      border-bottom: 2px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .cornell-mock-body {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      min-height: 240px;
+    }
+
+    @media (max-width: 640px) {
+      .cornell-mock-body {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cornell-cue-col {
+      border-right: 2px solid var(--border-subtle);
+      padding: 14px;
+      background: var(--accent-teal-light);
+    }
+
+    .cornell-cue-col h5 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--accent-teal);
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .cornell-notes-col {
+      padding: 14px;
+      background: var(--bg-card);
+    }
+
+    .cornell-notes-col h5 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .cornell-summary-row {
+      border-top: 2px solid var(--border-subtle);
+      padding: 14px;
+      background: var(--accent-amber-light);
+    }
+
+    .cornell-summary-row h5 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--accent-amber);
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+
+    /* Flashcards */
+    .flashcard-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .flashcard-controls-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .flashcard-progress-bar {
+      width: 100%;
+      height: 6px;
+      background: var(--bg-card-muted);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .flashcard-progress-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+
+    .flashcard {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      min-height: 280px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      user-select: none;
+    }
+
+    .flashcard:hover {
+      border-color: var(--primary-border);
+      transform: translateY(-2px);
+    }
+
+    .card-category-badge {
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--t3);
+      letter-spacing: 0.5px;
+    }
+
+    .card-flip-prompt {
+      position: absolute;
+      bottom: 16px;
+      font-size: 12px;
+      color: var(--t-light);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .flashcard-front h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--t1);
+      margin-bottom: 12px;
+    }
+
+    .flashcard-front p {
+      color: var(--t3);
+      font-size: 14px;
+    }
+
+    .flashcard-back {
+      display: none;
+    }
+
+    .flashcard.flipped .flashcard-front {
+      display: none;
+    }
+
+    .flashcard.flipped .flashcard-back {
+      display: block;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .flashcard-back p {
+      font-size: 16px;
+      color: var(--t1);
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .flashcard-back .card-ex {
+      margin-top: 14px;
+      font-size: 13.5px;
+      color: var(--t2);
+      background: var(--bg-card-muted);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      text-align: left;
+    }
+
+    .flashcard-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .fc-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .fc-btn:hover {
+      background: var(--bg-card-muted);
+      border-color: var(--border-subtle);
+      color: var(--t1);
+    }
+
+    .fc-btn.primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .fc-btn.primary:hover {
+      opacity: 0.92;
+    }
+
+    /* Quiz Section */
+    .quiz-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .quiz-progress-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .quiz-score-pill {
+      font-weight: 700;
+      font-size: 13.5px;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+    }
+
+    .quiz-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .quiz-q-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--t3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .quiz-question-text {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--t1);
+      line-height: 1.45;
+      margin-bottom: 20px;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quiz-option {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 13px 18px;
+      font-size: 14px;
+      color: var(--t2);
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: all 0.15s ease;
+      text-align: left;
+    }
+
+    .quiz-option:hover:not(.locked) {
+      border-color: var(--primary-border);
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .opt-letter {
+      width: 24px;
+      height: 24px;
+      border-radius: var(--radius-full);
+      background: var(--bg-card-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .quiz-option.correct {
+      background: var(--accent-emerald-light);
+      border-color: var(--accent-emerald);
+      color: var(--accent-emerald);
+      font-weight: 600;
+    }
+
+    .quiz-option.correct .opt-letter {
+      background: var(--accent-emerald);
+      color: #ffffff;
+    }
+
+    .quiz-option.wrong {
+      background: var(--accent-rose-light);
+      border-color: var(--accent-rose);
+      color: var(--accent-rose);
+      font-weight: 600;
+    }
+
+    .quiz-option.wrong .opt-letter {
+      background: var(--accent-rose);
+      color: #ffffff;
+    }
+
+    .quiz-explanation {
+      display: none;
+      background: var(--bg-card-muted);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 14px 18px;
+      font-size: 13.5px;
+      color: var(--t2);
+      line-height: 1.55;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .quiz-explanation.show {
+      display: block;
+    }
+
+    .quiz-explanation strong {
+      display: block;
+      color: var(--t1);
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    /* Result Modal / Screen */
+    .quiz-results-card {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .score-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-full);
+      background: var(--primary-light);
+      border: 4px solid var(--primary);
+      color: var(--primary);
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px auto;
+    }
+
+    /* Cram Sheet Mode */
+    .cram-view-wrap {
+      display: none;
+    }
+
+    body.cram-mode .study-view-wrap {
+      display: none;
+    }
+
+    body.cram-mode .cram-view-wrap {
+      display: block;
+    }
+
+    .cram-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .cram-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+    }
+
+    .cram-card h4 {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    .cram-card ul {
+      list-style-position: inside;
+      font-size: 13px;
+      color: var(--t2);
+      line-height: 1.6;
+    }
+
+    .cram-card li {
+      margin-bottom: 6px;
+    }
+
+    .cram-card strong {
+      color: var(--t1);
+    }
+
+    /* Glossary Table */
+    .glossary-table-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    table.glossary-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    table.glossary-table th {
+      background: var(--bg-card-muted);
+      color: var(--t1);
+      font-weight: 700;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.5px;
+    }
+
+    table.glossary-table td {
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+      color: var(--t2);
+      vertical-align: top;
+    }
+
+    table.glossary-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.glossary-table td.term-cell {
+      font-weight: 700;
+      color: var(--primary);
+      white-space: nowrap;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      margin-top: auto;
+      text-align: center;
+      font-size: 13px;
+      color: var(--t3);
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      header.site-header, .sub-bar, .flashcard-actions, .fc-btn, .quiz-options, .nav-pills {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .tab-section {
+        display: block !important;
+      }
+      .char-card, .compare-card, .diagram-card {
+        page-break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <div class="brand-badge">EC</div>
+        <div class="brand-info">
+          <h1>EFFCOM REVIEWER</h1>
+          <p>Grade 11 Term 2 · First Long Quiz</p>
+        </div>
+      </div>
+
+      <!-- Navigation Pills -->
+      <nav class="nav-pills" id="mainNav">
+        <button class="nav-btn active" data-tab="tab-study">📖 Study Guide</button>
+        <button class="nav-btn" data-tab="tab-flashcards">⚡ Flashcards</button>
+        <button class="nav-btn" data-tab="tab-quiz">📝 Practice Exam</button>
+        <button class="nav-btn" data-tab="tab-tools">🛠️ Interactive Tools</button>
+        <button class="nav-btn" data-tab="tab-glossary">🔍 Glossary</button>
+      </nav>
+
+      <!-- Quick Actions -->
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" title="Toggle Light / Dark Mode">🌓</button>
+        <button class="icon-btn" id="printBtn" title="Print / PDF Export" onclick="window.print()">🖨️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub Header Bar with Search & Study Mode -->
+  <div class="sub-bar">
+    <div class="container sub-bar-inner">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search any concept, rule, or indicator (e.g. TEAC, Cornell, Hedging)..." />
+      </div>
+
+      <div class="view-toggles" id="viewModeSelector">
+        <button class="toggle-pill active" id="btnModeDeep" onclick="setStudyMode('deep')">Deep Study</button>
+        <button class="toggle-pill" id="btnModeCram" onclick="setStudyMode('cram')">⚡ Quick Cram Sheet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Body -->
+  <main class="container">
+
+    <!-- TAB 1: STUDY GUIDE -->
+    <section id="tab-study" class="tab-section active">
+      
+      <!-- Deep Study View -->
+      <div class="study-view-wrap">
+
+        <!-- Hero Unit Card -->
+        <div class="hero-card">
+          <div class="hero-text-side">
+            <span class="hero-tag">Unit 2 · Lesson 1</span>
+            <h2>Interpreting Meaning in Spoken, Written, and Multimodal Academic and Technical Texts</h2>
+            <p>Master the exact foundational principles for your First Long Quiz: the distinct nature and 6 core characteristics of scholarly vs. technical communication, the APC communication framework, and critical interpretation strategies across reading, listening, and viewing.</p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="badge-primary">48 Slides Covered</span>
+              <span class="badge-teal">Objective & Verified</span>
+              <span class="badge-primary">Interactive Examples</span>
+            </div>
+          </div>
+          <div class="hero-img-wrap" onclick="openLightbox('assets/academic_vs_technical.jpg')">
+            <img src="assets/academic_vs_technical.jpg" alt="Academic vs Technical Writing Comparison Illustration" />
+          </div>
+        </div>
+
+        <!-- Quick Jump Links -->
+        <div class="module-nav-grid">
+          <a href="#mod1-anchor" class="module-nav-card">
+            <div class="module-nav-num">1</div>
+            <div class="module-nav-content">
+              <h4>Nature & 6 Characteristics</h4>
+              <p>Academic vs. Technical definitions, goals, and the 6 foundational writing rules.</p>
+            </div>
+          </a>
+          <a href="#mod2-anchor" class="module-nav-card">
+            <div class="module-nav-num">2</div>
+            <div class="module-nav-content">
+              <h4>The APC Framework</h4>
+              <p>Audience (4 types), Purpose (3 goals), and Context (3 dimensions).</p>
+            </div>
+          </a>
+          <a href="#mod3-anchor" class="module-nav-card">
+            <div class="module-nav-num">3</div>
+            <div class="module-nav-content">
+              <h4>Critical Strategies</h4>
+              <p>Reading (SQ5R, TEAC), Listening (Cornell, Reflective), and Viewing (Integrity).</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- MODULE 1 -->
+        <div id="mod1-anchor">
+          <h2 class="section-heading">Module 1: Nature & Characteristics of Academic and Technical Writing</h2>
+          <p class="section-sub">Both genres sit under the shared umbrella of formal, informative communication, but diverge in primary audience, structural layout, and ultimate communicative intent.</p>
+
+          <!-- Side by Side Comparative Breakdown -->
+          <div class="compare-grid">
+            <div class="compare-card academic searchable-item">
+              <div class="compare-header">
+                <h4>Academic Texts</h4>
+                <span class="badge-primary">Scholarly Focus</span>
+              </div>
+              <p class="compare-def">
+                Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers.
+              </p>
+              <div class="compare-meta">
+                <strong>Core Goal:</strong>
+                <ul>
+                  <li>To inform, analyze, or persuade using scholarly research.</li>
+                </ul>
+                <strong>Common Examples:</strong>
+                <ul>
+                  <li>Research articles & empirical studies</li>
+                  <li>Position papers & academic essays</li>
+                  <li>Literature reviews & scholarly theses</li>
+                </ul>
+                <strong>Audience & Register:</strong>
+                <ul>
+                  <li>Academic evaluators, scholars, peer researchers</li>
+                  <li>Strict formal tone with standardized citations (APA, MLA)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="compare-card technical searchable-item">
+              <div class="compare-header">
+                <h4>Technical Texts</h4>
+                <span class="badge-teal">Practical Focus</span>
+              </div>
+              <p class="compare-def">
+                Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely, efficiently, and accurately.
+              </p>
+              <div class="compare-meta">
+                <strong>Core Goal:</strong>
+                <ul>
+                  <li>To guide action, explain a technical process, or document data.</li>
+                </ul>
+                <strong>Common Examples:</strong>
+                <ul>
+                  <li>User manuals & instructional guides</li>
+                  <li>Standard Operating Procedures (SOPs)</li>
+                  <li>Safety guidelines & lab procedure reports</li>
+                </ul>
+                <strong>Audience & Register:</strong>
+                <ul>
+                  <li>Operators, technicians, engineers, end-users</li>
+                  <li>Modular layout with step-by-step numbers and bulleted lists</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- The 6 Characteristics Header -->
+          <h3 class="subheading">The 6 Core Characteristics of Academic & Technical Texts</h3>
+          <p class="section-sub">These six principles are universally tested on exam day. Toggle the interactive examples on each card to test your understanding.</p>
+
+          <!-- Characteristic 1 -->
+          <div class="char-card searchable-item" id="char-1">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">1</div>
+                <h4>Evidence-Based / Objective</h4>
+              </div>
+              <span class="badge-primary">Empirical Support</span>
+            </div>
+            <p class="char-desc">
+              Arguments, claims, and conclusions presented in academic and technical contexts must always be supported by empirical data, reputable facts, expert insights, or primary observations. At the same time, the writing puts more emphasis on information and arguments and less on personal feelings or perspectives of the writer, focusing entirely on the subject matter.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators</h5>
+              <ul>
+                <li>Inclusion of survey results, laboratory data, statistics, and verifiable facts.</li>
+                <li>Consistent use of standardized in-text citations (e.g., APA, MLA) and complete reference lists.</li>
+                <li>Minimizing or eliminating first-person subjective expressions (e.g., <em>"I think"</em>, <em>"I feel"</em>, <em>"in my opinion"</em>) in favor of objective phrasing.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex1-bad')">❌ Unsupported</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex1-good')">✅ Evidence-Based</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex1-bad" class="example-pane bad-text active">
+                  "Online learning is obviously terrible because students hate sitting in front of screens all day."
+                  <div class="example-rationale">⚠️ Flaw: Sweeping assertion with zero data, relies on personal sentiment ("hate") and subjective hyperbole ("obviously terrible").</div>
+                </div>
+                <div id="ex1-good" class="example-pane good-text">
+                  "Survey data from 250 senior high school learners reveal that 68% experienced digital fatigue, which directly correlated with a 12% decrease in self-reported engagement during extended online lectures."
+                  <div class="example-rationale">✨ Why it works: Quantified sample size (n=250), specific percentages (68%, 12%), objective metrics, and neutral academic tone.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Characteristic 2 -->
+          <div class="char-card searchable-item" id="char-2">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">2</div>
+                <h4>Structured</h4>
+              </div>
+              <span class="badge-primary">Predictable Roadmap</span>
+            </div>
+            <p class="char-desc">
+              Text must follow a predictable, logical, and standardized organizational pattern. This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators</h5>
+              <ul>
+                <li><strong>Tripartite Structure for Essays:</strong> Clear Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher).</li>
+                <li><strong>Modular / Hierarchical Setup for Technical Texts:</strong> Numbered sequential steps, bulleted lists, and explicit subheadings.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex2-bad')">❌ Unstructured</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex2-good')">✅ Structured</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex2-bad" class="example-pane bad-text active">
+                  "The bacteria grew rapidly in the incubator. By the way, we used petri dishes from Batch 4. Also 42% died later. We wanted to test antibiotics."
+                  <div class="example-rationale">⚠️ Flaw: Disorganized stream of consciousness jumping straight into random outcomes without introducing research questions or methodology first.</div>
+                </div>
+                <div id="ex2-good" class="example-pane good-text">
+                  "1. Background & Hypothesis: This experiment evaluated antibiotic efficacy against bacterial growth. <br/>2. Methodology: Samples were inoculated into standardized petri dishes (Batch 4) and incubated at 37°C. <br/>3. Results & Discussion: While initial colony growth was rapid, antibiotic application yielded a 42% mortality rate."
+                  <div class="example-rationale">✨ Why it works: Logical tripartite progression: problem background → controlled method → analytical findings.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Characteristic 3 -->
+          <div class="char-card searchable-item" id="char-3">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">3</div>
+                <h4>Critical</h4>
+              </div>
+              <span class="badge-primary">Analytical Depth</span>
+            </div>
+            <p class="char-desc">
+              Academic writing requires analytical and evaluative thinking. Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators</h5>
+              <ul>
+                <li>Analyzing <strong>why and how</strong> a phenomenon occurs rather than just summarizing what happened.</li>
+                <li>Identifying gaps, limitations, or contradictions in existing literature.</li>
+                <li>Evaluating the validity, credibility, and relevance of sources before integrating them into an argument.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex3-bad')">❌ Merely Descriptive</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex3-good')">✅ Critical & Evaluative</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex3-bad" class="example-pane bad-text active">
+                  "Author A states that social media affects study habits. Author B also writes about social media and homework."
+                  <div class="example-rationale">⚠️ Flaw: Passive book-report style summary stating only what exists without analytical evaluation or synthesis.</div>
+                </div>
+                <div id="ex3-good" class="example-pane good-text">
+                  "While Author A attributes declining study hours directly to social media usage, Author B's findings suggest that screen time is merely a symptom of poor time management, highlighting a fundamental disagreement in how student distractibility should be conceptualized."
+                  <div class="example-rationale">✨ Why it works: Uncovers an underlying theoretical clash between authors, evaluates causative mechanisms, and produces intellectual depth.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Characteristic 4 -->
+          <div class="char-card searchable-item" id="char-4">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">4</div>
+                <h4>Balanced</h4>
+              </div>
+              <span class="badge-primary">Hedging & Nuance</span>
+            </div>
+            <p class="char-desc">
+              Academic writing aims to consider different perspectives or arguments on an issue or topic to avoid being biased or one-sided. Writers exercise caution when making claims or conclusions to avoid making sweeping generalizations or unfounded statements.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators & Hedging Toolkit</h5>
+              <ul>
+                <li>Acknowledging counterarguments, alternative explanations, or study limitations.</li>
+                <li><strong>Modal Verbs:</strong> <em>may, suggest, appear, seem, could</em>.</li>
+                <li><strong>Probability Adverbs:</strong> <em>likely, possibly, presumably, generally, relatively</em>.</li>
+                <li><strong>Tentative Phrases:</strong> <em>"the data imply that..."</em>, <em>"results indicate a potential correlation..."</em>.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex4-bad')">❌ Overgeneralized</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex4-good')">✅ Balanced (Hedged)</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex4-bad" class="example-pane bad-text active">
+                  "Artificial intelligence completely destroys student creativity and guarantees that no one will learn how to write."
+                  <div class="example-rationale">⚠️ Flaw: Dogmatic absolutism ("completely destroys", "guarantees") lacking nuance and ignoring conflicting positive evidence.</div>
+                </div>
+                <div id="ex4-good" class="example-pane good-text">
+                  "While the unmonitored use of AI tools may reduce independent drafting practice, preliminary findings suggest that structured AI integration can enhance students' critical editing and revision skills when guided ethically."
+                  <div class="example-rationale">✨ Why it works: Uses cautious hedging ("may reduce", "preliminary findings suggest", "can enhance") and balanced multi-angle perspective.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Characteristic 5 -->
+          <div class="char-card searchable-item" id="char-5">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">5</div>
+                <h4>Precise</h4>
+              </div>
+              <span class="badge-primary">Exact Quantifiable Language</span>
+            </div>
+            <p class="char-desc">
+              Strives to provide clear, accurate, and correct information that clearly captures what the data show. Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators</h5>
+              <ul>
+                <li>Using exact language and specific terms (e.g., specifying <em>"increased by 15%"</em> or <em>"decreased"</em> instead of merely saying the values <em>"changed"</em>).</li>
+                <li>Quantifying observations with exact measurements, units, percentages, and statistical values rather than vague modifiers like <em>"a lot"</em> or <em>"huge"</em>.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex5-bad')">❌ Vague</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex5-good')">✅ Precise</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex5-bad" class="example-pane bad-text active">
+                  "The temperature changed a lot, and many samples were ruined soon afterwards."
+                  <div class="example-rationale">⚠️ Flaw: Ambiguous terms ("changed a lot", "many", "soon") that prevent experimental replication and technical safety.</div>
+                </div>
+                <div id="ex5-good" class="example-pane good-text">
+                  "The incubation temperature increased by 4.8°C over a 15-minute interval, resulting in the thermal degradation of 42% (n=21) of the bacterial cultures."
+                  <div class="example-rationale">✨ Why it works: Exact numerical shift (+4.8°C), explicit time interval (15 min), and quantified sample degradation (42%, n=21).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Characteristic 6 -->
+          <div class="char-card searchable-item" id="char-6">
+            <div class="char-top">
+              <div class="char-title-group">
+                <div class="char-number">6</div>
+                <h4>Formal</h4>
+              </div>
+              <span class="badge-primary">Standard Conventions</span>
+            </div>
+            <p class="char-desc">
+              Academic writing observes formal conventions of writing. Adhering to formal language and tone maintains professionalism, establishes authority, and ensures respect across scholarly and technical communities.
+            </p>
+            <div class="char-indicators">
+              <h5>Key Indicators</h5>
+              <ul>
+                <li><strong>Zero Colloquialisms, Figures of Speech, or Slang:</strong> Avoiding casual expressions (e.g., <em>"cool"</em>, <em>"gonna"</em>, <em>"trash"</em>, <em>"freaked out"</em>).</li>
+                <li><strong>No Contractions:</strong> Spelling out words completely (e.g., writing <em>"cannot"</em>, <em>"did not"</em>, <em>"would have"</em> instead of <em>"can't"</em>, <em>"didn't"</em>, <em>"would've"</em>).</li>
+                <li><strong>Standard Mechanics:</strong> Observing proper capitalization, punctuation, subject-verb agreement, and rigorous citation formatting.</li>
+              </ul>
+            </div>
+            <div class="interactive-example-box">
+              <div class="example-header">
+                <span>Interactive Contrast Test</span>
+                <div class="example-tabs">
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex6-bad')">❌ Informal</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex6-good')">✅ Formal</button>
+                </div>
+              </div>
+              <div class="example-content">
+                <div id="ex6-bad" class="example-pane bad-text active">
+                  "The researchers couldn't figure out why the tech crashed, which was super frustrating for the team."
+                  <div class="example-rationale">⚠️ Flaw: Uses contractions ("couldn't"), slang/casual vocabulary ("tech", "super frustrating", "crashed").</div>
+                </div>
+                <div id="ex6-good" class="example-pane good-text">
+                  "The research team was unable to identify the immediate cause of the system failure, presenting a significant technical challenge during the initial testing phase."
+                  <div class="example-rationale">✨ Why it works: Uncontracted professional phrasing ("was unable to identify"), formal terminology ("system failure", "significant technical challenge").</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0;" />
+
+        <!-- MODULE 2 -->
+        <div id="mod2-anchor">
+          <h2 class="section-heading">Module 2: The APC Framework (Audience, Purpose, Context)</h2>
+          <p class="section-sub">Considering Audience, Purpose, and Context is a fundamental law of communication applying across every single register—from an email to a formal research paper or workplace technical report.</p>
+
+          <!-- APC Diagram Box -->
+          <div class="diagram-card">
+            <h4>The APC Triad</h4>
+            <p>Click the diagram to view in high resolution.</p>
+            <div class="diagram-img-box" onclick="openLightbox('assets/apc_framework.jpg')">
+              <img src="assets/apc_framework.jpg" alt="APC Framework Diagram" />
+            </div>
+          </div>
+
+          <!-- Audience Breakdown with Interactive Selector -->
+          <h3 class="subheading">1. Audience: The 4 Distinct Target Groups</h3>
+          <p class="section-sub">Understanding who will read your text dictates the required level of detail, technical depth, tone, and vocabulary. Select an audience to see the tailored writing strategy:</p>
+
+          <div class="aud-selector-bar">
+            <button class="aud-btn active" onclick="selectAudience('expert', this)">🔬 Expert Audience</button>
+            <button class="aud-btn" onclick="selectAudience('lay', this)">👥 Non-Expert / Lay</button>
+            <button class="aud-btn" onclick="selectAudience('peer', this)">🎓 Peer Audience</button>
+            <button class="aud-btn" onclick="selectAudience('eval', this)">📋 Academic Evaluators</button>
+          </div>
+
+          <div class="aud-display-card" id="audDisplayCard">
+            <!-- Dynamic Content populated via JS -->
+          </div>
+
+          <!-- Purpose & Context Grid -->
+          <div class="compare-grid" style="margin-top: 28px;">
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">2. Purpose: The 3 Intended Outcomes</h4>
+              <p class="char-desc">Purpose defines the intended goal or outcome of your text, determining structure, emphasis, and strategy:</p>
+              <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
+                <li><strong>To Inform / Explain:</strong> Present objective facts, methodologies, or mechanisms without bias.</li>
+                <li><strong>To Persuade / Argue:</strong> Convince the reader of a thesis using sound claims and empirical evidence.</li>
+                <li><strong>To Instruct / Direct:</strong> Guide procedural human action safely, step-by-step, toward a goal.</li>
+              </ul>
+            </div>
+
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">3. Context: The 3 Boundary Conditions</h4>
+              <p class="char-desc">Context encompasses surrounding circumstances, medium, environment, and discipline constraints:</p>
+              <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
+                <li><strong>Physical / Digital Setting:</strong> Classroom, laboratory, professional conference, or online database.</li>
+                <li><strong>Medium & Format:</strong> Print journal, slide presentation, PDF report, or web infographic.</li>
+                <li><strong>Discipline Expectations:</strong> <em>Humanities</em> prioritize argumentative critique and textual evidence; <em>Sciences</em> focus on methodology and replicable data.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0;" />
+
+        <!-- MODULE 3 -->
+        <div id="mod3-anchor">
+          <h2 class="section-heading">Module 3: Critical Strategies for Interpreting Texts</h2>
+          <p class="section-sub">Critical interpretation moves beyond passive consumption. It demands active analytical engagement across reading, listening, and viewing modalities.</p>
+
+          <!-- 1. Critical Reading -->
+          <h3 class="subheading">A. Critical Reading Strategies (3 Sequential Stages)</h3>
+          <p class="section-sub">Critical reading involves active analysis, interpretation, and evaluation of how an author constructs an argument.</p>
+
+          <!-- Pre-Reading -->
+          <div class="char-card searchable-item">
+            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 1: Pre-Reading Strategies</h4>
+            <div style="margin-bottom: 12px; font-size: 14px; color: var(--t2);">
+              <strong>Previewing:</strong> Reading titles, abstracts, author credentials, and figure captions to establish reading goals and activate schema.
+            </div>
+            <div style="font-size: 14px; color: var(--t2); margin-bottom: 14px;">
+              <strong>The SQ5R Method:</strong> A proven 5-step active study system:
+            </div>
+            
+            <div class="diagram-img-box" onclick="openLightbox('assets/sq5r_reading_flow.jpg')">
+              <img src="assets/sq5r_reading_flow.jpg" alt="SQ5R Reading Method Flow" />
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 12.5px;">
+              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
+                <strong>1. Survey:</strong> Scan headings, subheadings, charts, and summaries.
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
+                <strong>2. Question:</strong> Turn headings into inquisitive questions (e.g. "What causes X?").
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
+                <strong>3. Read:</strong> Read actively with pencil in hand to answer your generated questions.
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
+                <strong>4. Recite:</strong> Summarize core concepts in your own words aloud or in writing.
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
+                <strong>5. Review:</strong> Periodic recall checks to consolidate memory into long-term storage.
+              </div>
+            </div>
+          </div>
+
+          <!-- During Reading -->
+          <div class="char-card searchable-item">
+            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 2: During-Reading Strategies</h4>
+            <div style="margin-bottom: 14px; font-size: 14px; color: var(--t2);">
+              <strong>Annotation:</strong> Highlighting main claims, circling unfamiliar technical terms, and recording critical questions or counter-arguments directly in the text margins.
+            </div>
+
+            <div style="font-size: 14px; color: var(--t2); margin-bottom: 12px;">
+              <strong>The TEAC Model for Paragraph Structure:</strong> Standard organizational anatomy of a rigorous analytical paragraph:
+            </div>
+
+            <div class="diagram-img-box" onclick="openLightbox('assets/teac_paragraph_structure.jpg')">
+              <img src="assets/teac_paragraph_structure.jpg" alt="TEAC Paragraph Structure Diagram" />
+            </div>
+
+            <!-- Interactive TEAC Highlighter -->
+            <div style="border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px; background: var(--bg-card-muted);">
+              <h5 style="font-size: 12px; text-transform: uppercase; color: var(--t3); margin-bottom: 10px; font-weight: 700;">Interactive TEAC Paragraph Breakdown (Click each element):</h5>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <button class="ex-tab-btn active" style="background: #dbeafe; color: #1e40af;" onclick="highlightTeac('t')">T - Topic Sentence</button>
+                <button class="ex-tab-btn" style="background: #d1fae5; color: #065f46;" onclick="highlightTeac('e')">E - Evidence</button>
+                <button class="ex-tab-btn" style="background: #fef3c7; color: #92400e;" onclick="highlightTeac('a')">A - Analysis</button>
+                <button class="ex-tab-btn" style="background: #f3e8ff; color: #6b21a8;" onclick="highlightTeac('c')">C - Clincher</button>
+                <button class="ex-tab-btn" style="background: var(--bg-card); color: var(--t2);" onclick="highlightTeac('all')">Show All</button>
+              </div>
+              <div id="teacSampleText" style="line-height: 1.8; font-size: 14px; background: var(--bg-card); padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+                <span id="teac-t" style="background: #bfdbfe; padding: 2px 4px; border-radius: 3px;">Implementing structured active learning strategies significantly improves STEM student retention rates.</span>
+                <span id="teac-e" style="background: #a7f3d0; padding: 2px 4px; border-radius: 3px;">In a meta-analysis of 225 college science courses, Freeman et al. (2014) reported that average examination scores improved by 6% in active learning classrooms compared to traditional lecturing.</span>
+                <span id="teac-a" style="background: #fde68a; padding: 2px 4px; border-radius: 3px;">This performance discrepancy occurs because collaborative problem-solving forces students to reconstruct mental models and identify cognitive gaps in real time rather than passively absorbing lecture slides.</span>
+                <span id="teac-c" style="background: #e9d5ff; padding: 2px 4px; border-radius: 3px;">Consequently, educational institutions must prioritize participatory pedagogical models to foster durable analytical competence.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post-Reading -->
+          <div class="char-card searchable-item">
+            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 3: Post-Reading Strategies</h4>
+            <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
+              <li><strong>Double-Entry Journaling:</strong> A two-column graphic organizer that explicitly separates direct text citations/evidence (left column) from personal reflections, critiques, and analytical connections (right column).</li>
+              <li><strong>Hierarchical Outlining:</strong> Deconstructing a reading into a structured alphanumeric (I, A, 1, a) or indented bulleted format to lay bare the author's logical progression.</li>
+              <li><strong>Summarizing:</strong> Restating the core thesis and main supporting arguments strictly in your own words while eliminating minor anecdotes, redundant examples, and decorative phrasing.</li>
+            </ul>
+          </div>
+
+          <!-- 2. Critical Listening -->
+          <h3 class="subheading">B. Critical Listening Strategies</h3>
+          <p class="section-sub">Evaluating spoken academic arguments, detecting unstated assumptions, and ensuring message fidelity.</p>
+
+          <div class="compare-grid">
+            <!-- Active Listening -->
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">1. Active Listening</h4>
+              <p class="char-desc">Focuses full cognitive attention on the speaker, filtering out internal/external distractions and withholding hasty judgments until the message is fully communicated.</p>
+              <ul style="padding-left: 20px; line-height: 1.8; font-size: 13px; color: var(--t2);">
+                <li><strong>Paying Attention:</strong> Total focus on verbal cues, vocal cadence, and nonverbal body language.</li>
+                <li><strong>Evaluating:</strong> Analyzing logical soundness and verifying empirical backing of claims.</li>
+                <li><strong>Responding Thoughtfully:</strong> Formulating questions grounded in facts rather than immediate emotional reactivity.</li>
+              </ul>
+            </div>
+
+            <!-- Reflective Listening -->
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">2. Reflective Listening</h4>
+              <p class="char-desc">Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before advancing the dialogue.</p>
+              
+              <div class="diagram-img-box" style="margin-top: 10px;" onclick="openLightbox('assets/reflective_listening_flow.jpg')">
+                <img src="assets/reflective_listening_flow.jpg" alt="Reflective Listening Feedback Loop" />
+              </div>
+
+              <div style="background: var(--accent-emerald-light); border-left: 3px solid var(--accent-emerald); padding: 10px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 12.5px; color: var(--accent-emerald); font-weight: 600;">
+                Formula: "If I understand correctly, you are saying that [paraphrased main point]. Is that correct?"
+              </div>
+            </div>
+          </div>
+
+          <!-- Cornell Note-Taking System -->
+          <div class="char-card searchable-item" style="margin-top: 24px;">
+            <div class="char-top">
+              <div class="char-title-group">
+                <h4>3. The Cornell Note-Taking System</h4>
+              </div>
+              <span class="badge-primary">Systematic Note Architecture</span>
+            </div>
+            <p class="char-desc">A time-tested, structured layout designed to facilitate active note-taking during lectures and seamless self-quizzing during study review.</p>
+
+            <div class="diagram-img-box" onclick="openLightbox('assets/cornell_notes_system.jpg')">
+              <img src="assets/cornell_notes_system.jpg" alt="Cornell Note-Taking System Diagram" />
+            </div>
+
+            <!-- Layout Specs -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 14px;">
+              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-teal);">
+                <strong style="color: var(--accent-teal); font-size: 13px;">Cue Column (Left, 30% Width):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Formulated immediately <em>after</em> the lecture. Contains keywords, review prompts, and potential exam questions.</p>
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--primary);">
+                <strong style="color: var(--primary); font-size: 13px;">Notes Column (Right, 70% Width):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Recorded <em>during</em> the lecture. Contains main lecture ideas, abbreviations, bullet points, and data.</p>
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-amber);">
+                <strong style="color: var(--accent-amber); font-size: 13px;">Summary Block (Bottom, 2–3 inches):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Written during post-lecture review. A 2–4 sentence synthesis summarizing the entire page's core takeaways.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Critical Viewing -->
+          <h3 class="subheading" style="margin-top: 32px;">C. Critical Viewing Strategies</h3>
+          <p class="section-sub">Empowering learners to decode, analyze, and evaluate multimodal visuals (charts, infographics, diagrams, and videos) to detect bias, identify manipulated data, and verify claims.</p>
+
+          <div class="compare-grid">
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">1. Visual Grammar</h4>
+              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
+                Examining graphic hierarchy, color psychology, typography weight, and framing choices to determine what information the designer emphasized or minimized.
+              </p>
+            </div>
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">2. Scale Integrity</h4>
+              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
+                Scrutinizing chart axes. Ensuring the baseline starts at zero, intervals are uniform, and bar heights or pie slices accurately mirror numerical values without visual exaggeration.
+              </p>
+            </div>
+            <div class="char-card searchable-item" style="margin-bottom: 0;">
+              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">3. Source Credibility</h4>
+              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
+                Checking dataset recency, verifying the primary publishing entity, evaluating sample representation, and checking for commercial or ideological sponsor conflicts.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Quick Cram Sheet Mode (High Yield Bullet Points) -->
+      <div class="cram-view-wrap">
+        <div style="background: var(--primary-light); border: 1px solid var(--primary-border); border-radius: var(--radius-md); padding: 16px; margin-bottom: 20px;">
+          <h3 style="font-family: var(--font-display); color: var(--primary); font-size: 18px; margin-bottom: 4px;">⚡ High-Yield Exam Cram Sheet</h3>
+          <p style="font-size: 13px; color: var(--t2);">Review these concise bullet points right before stepping into the exam room.</p>
+        </div>
+
+        <div class="cram-grid">
+          <div class="cram-card">
+            <h4>Academic vs Technical Texts</h4>
+            <ul>
+              <li><strong>Academic:</strong> Formal, structured, linear, evidence-based. Goal: inform, analyze, persuade using scholarly research. Examples: essays, theses, position papers.</li>
+              <li><strong>Technical:</strong> Functional, practical, highly precise. Goal: direct human action, explain process, document data. Examples: user manuals, SOPs, safety guides.</li>
+              <li><strong>Shared Umbrella:</strong> Both are formal, objective, informative communication.</li>
+            </ul>
+          </div>
+
+          <div class="cram-card">
+            <h4>The 6 Characteristics</h4>
+            <ul>
+              <li><strong>1. Evidence-Based/Objective:</strong> Empirical data, citations (APA/MLA), no first-person feelings ("I think").</li>
+              <li><strong>2. Structured:</strong> Logical roadmap. Tripartite for essays (Intro, Body, Conclusion); Modular for technical (numbered steps, bullets).</li>
+              <li><strong>3. Critical:</strong> Depth over description; asking *why/how*, evaluating source credibility, finding literature gaps.</li>
+              <li><strong>4. Balanced:</strong> Multi-perspective, avoids bias. Uses **hedging**: modal verbs (*may, suggest*), probability adverbs (*likely*), tentative phrases.</li>
+              <li><strong>5. Precise:</strong> Exact data and terminology (use *increased/decreased* instead of *changed*); eliminates costly ambiguity.</li>
+              <li><strong>6. Formal:</strong> Professional standard; zero slang/colloquialisms, zero contractions (*cannot* not *can't*), proper grammar mechanics.</li>
+            </ul>
+          </div>
+
+          <div class="cram-card">
+            <h4>The APC Framework</h4>
+            <ul>
+              <li><strong>Audience:</strong>
+                <br/>• <em>Expert:</em> Use jargon directly without defining basics.
+                <br/>• <em>Lay / Non-Expert:</em> Simplify terms, everyday analogies, define jargon immediately.
+                <br/>• <em>Peer:</em> Balance rigor with engaging, relatable tone.
+                <br/>• <em>Academic Evaluator:</em> Prove mastery, strict formatting, exhaustive citations.
+              </li>
+              <li><strong>Purpose:</strong> To Inform/Explain, To Persuade/Argue, To Instruct/Direct.</li>
+              <li><strong>Context:</strong> Physical/Digital Setting, Medium/Format, Discipline Expectations (Humanities vs Sciences).</li>
+            </ul>
+          </div>
+
+          <div class="cram-card">
+            <h4>Critical Strategies</h4>
+            <ul>
+              <li><strong>Reading Pre:</strong> Previewing (titles/abstracts) & SQ5R (Survey, Question, Read, Recite, Review).</li>
+              <li><strong>Reading During:</strong> Annotation & TEAC (Topic Sentence, Evidence, Analysis, Clincher).</li>
+              <li><strong>Reading Post:</strong> Double-Entry Journal (Evidence vs Reflection), Outlining, Summarizing.</li>
+              <li><strong>Listening:</strong> Active Listening (cognitive focus, facts over emotion), Reflective Listening (confirming with paraphrasing), Cornell Notes (30% Cue, 70% Notes, Bottom Summary).</li>
+              <li><strong>Viewing:</strong> Visual Grammar, Scale Integrity (zero baseline), Source Credibility.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAB 2: FLASHCARDS -->
+    <section id="tab-flashcards" class="tab-section">
+      <div class="flashcard-wrapper">
+        <h2 class="section-heading" style="text-align: center;">Interactive Flashcards</h2>
+        <p class="section-sub" style="text-align: center; margin: 0 auto 20px auto;">Flip cards to test active recall. Use <kbd>Space</kbd> to flip and <kbd>←</kbd> <kbd>→</kbd> arrows to navigate.</p>
+
+        <div class="flashcard-controls-top">
+          <span style="font-size: 13px; font-weight: 700; color: var(--t3);" id="fcCounter">Card 1 of 20</span>
+          <div style="display: flex; gap: 8px;">
+            <button class="ex-tab-btn" onclick="shuffleFlashcards()">🔀 Shuffle</button>
+            <button class="ex-tab-btn" onclick="resetFlashcards()">🔄 Reset</button>
+          </div>
+        </div>
+
+        <div class="flashcard-progress-bar">
+          <div class="flashcard-progress-fill" id="fcProgressFill"></div>
+        </div>
+
+        <!-- The Flip Card -->
+        <div class="flashcard" id="mainFlashcard" onclick="flipCurrentCard()">
+          <span class="card-category-badge" id="fcBadge">Module 1 · Characteristics</span>
+          
+          <div class="flashcard-front">
+            <h3 id="fcFrontText">Academic Text</h3>
+            <p>Click card or press Space to reveal definition</p>
+          </div>
+
+          <div class="flashcard-back">
+            <p id="fcBackText">Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.</p>
+            <div class="card-ex" id="fcBackEx"><strong>Examples:</strong> Research articles, position papers, literature reviews.</div>
+          </div>
+
+          <div class="card-flip-prompt">
+            <span>🔄 Click to flip</span>
+          </div>
+        </div>
+
+        <!-- Flashcard Nav Controls -->
+        <div class="flashcard-actions">
+          <button class="fc-btn" onclick="prevFlashcard()">← Previous</button>
+          <button class="fc-btn primary" onclick="nextFlashcard()">Next Card →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: PRACTICE EXAM -->
+    <section id="tab-quiz" class="tab-section">
+      <div class="quiz-container">
+        <h2 class="section-heading">Comprehensive Practice Exam</h2>
+        <p class="section-sub">25 scenario-based questions directly extracted from all 48 lecture slides. Immediate explanations provided for every option.</p>
+
+        <!-- Quiz Progress Bar -->
+        <div class="quiz-progress-wrap" id="quizBar">
+          <span style="font-size: 13px; font-weight: 600; color: var(--t2);" id="quizProgressText">Question 1 of 25</span>
+          <span class="quiz-score-pill" id="quizLiveScore">Score: 0 / 0</span>
+        </div>
+
+        <!-- Question Container -->
+        <div id="quizQuestionsHost">
+          <!-- Rendered dynamically via JavaScript -->
+        </div>
+
+        <!-- Results Card -->
+        <div class="quiz-results-card" id="quizResultCard">
+          <div class="score-circle" id="finalScoreVal">88%</div>
+          <h3 style="font-family: var(--font-display); font-size: 22px; margin-bottom: 8px;" id="finalScoreTitle">Great Job!</h3>
+          <p style="color: var(--t3); font-size: 14.5px; margin-bottom: 24px;" id="finalScoreDesc">You have demonstrated high proficiency across the Effective Communication slides.</p>
+          <button class="fc-btn primary" style="margin: 0 auto;" onclick="restartQuiz()">🔄 Retake Exam</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: INTERACTIVE TOOLS -->
+    <section id="tab-tools" class="tab-section">
+      <h2 class="section-heading">Interactive Study Tools</h2>
+      <p class="section-sub">Hands-on interactive simulators to reinforce the Cornell Note-Taking layout, the TEAC paragraph builder, and data scale integrity.</p>
+
+      <!-- Tool 1: Interactive Cornell Note Maker -->
+      <div class="cornell-canvas-card">
+        <div class="char-top">
+          <h4>Interactive Cornell Note Simulator</h4>
+          <span class="badge-primary">Active Learning Tool</span>
+        </div>
+        <p class="char-desc">Practice the exact 30%-70%-Bottom Cornell layout. You can edit the text below, test yourself by hiding the notes column, or use the pre-loaded slide review notes!</p>
+
+        <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+          <button class="ex-tab-btn active" id="btnToggleNotes" onclick="toggleCornellNotes()">👁️ Toggle Notes (Recall Test)</button>
+          <button class="ex-tab-btn" onclick="loadCornellSample()">📥 Load Lesson Sample Notes</button>
+        </div>
+
+        <div class="cornell-mock-page">
+          <div class="cornell-mock-header">
+            <span><strong>Topic:</strong> Effective Communication - Unit 2 Lesson 1</span>
+            <span><strong>Date:</strong> Term 2 First Long Quiz Review</span>
+          </div>
+
+          <div class="cornell-mock-body">
+            <div class="cornell-cue-col">
+              <h5>Cue Column (30%)</h5>
+              <div id="cornellCueContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
+                • Academic vs Technical?<br/><br/>
+                • 6 Characteristics?<br/><br/>
+                • What is Hedging?<br/><br/>
+                • 4 Audience types?<br/><br/>
+                • SQ5R steps?<br/><br/>
+                • TEAC paragraph?
+              </div>
+            </div>
+
+            <div class="cornell-notes-col" id="cornellNotesCol">
+              <h5>Notes Column (70%)</h5>
+              <div id="cornellNotesContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
+                - Academic: Linear, scholarly research, thesis, formal (APA/MLA).<br/>
+                - Technical: Practical, guides human action, user manuals/SOPs.<br/>
+                - 6 Rules: Evidence-based (data), Structured (Tripartite/Modular), Critical (depth/why), Balanced (hedging: modal verbs), Precise (quantify numbers), Formal (no contractions/slang).<br/>
+                - APC: Audience dictates jargon; Purpose = inform/persuade/instruct; Context = setting/discipline.<br/>
+                - SQ5R: Survey, Question, Read, Recite, Review.<br/>
+                - TEAC: Topic Sentence, Evidence, Analysis, Clincher.
+              </div>
+            </div>
+          </div>
+
+          <div class="cornell-summary-row">
+            <h5>Summary Block (Bottom 2-3 Inches)</h5>
+            <div id="cornellSummaryContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
+              Academic and technical communication share formal, objective foundations but serve distinct purposes. Mastery requires analyzing audience/purpose/context, applying critical reading (SQ5R, TEAC), active/reflective listening, and maintaining visual scale integrity.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 2: Visual Scale Integrity Demo -->
+      <div class="char-card" style="margin-top: 28px;">
+        <h4>Scale Integrity Interactive Demo (Critical Viewing)</h4>
+        <p class="char-desc">See why Slide 47 emphasizes <em>Scale Integrity</em>. Adjust the baseline slider below to observe how truncating the Y-axis turns a tiny 2% difference into an exaggerated, misleading dramatic chasm!</p>
+
+        <div style="background: var(--bg-card-muted); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+            <label style="font-weight: 700; font-size: 13.5px;">Y-Axis Baseline: <span id="baselineVal" style="color: var(--primary);">0% (Honest Accurate Scale)</span></label>
+            <input type="range" id="baselineSlider" min="0" max="90" value="0" step="5" style="width: 200px;" oninput="updateScaleDemo(this.value)" />
+          </div>
+
+          <!-- Dynamic SVG Chart -->
+          <div style="background: var(--bg-card); border-radius: var(--radius-sm); padding: 20px; text-align: center; border: 1px solid var(--border);">
+            <svg id="scaleSvg" width="100%" height="200" viewBox="0 0 500 200">
+              <!-- Y Axis Line -->
+              <line x1="60" y1="20" x2="60" y2="160" stroke="var(--border-subtle)" stroke-width="2" />
+              <!-- Baseline -->
+              <line x1="60" y1="160" x2="460" y2="160" stroke="var(--border-subtle)" stroke-width="2" />
+              <!-- Bars will be drawn dynamically -->
+              <rect id="barA" x="120" y="30" width="80" height="130" fill="var(--primary)" rx="4" />
+              <rect id="barB" x="280" y="35" width="80" height="125" fill="var(--accent-teal)" rx="4" />
+              <!-- Labels -->
+              <text x="160" y="180" text-anchor="middle" font-size="12" fill="var(--t2)" font-weight="600">Method A (96%)</text>
+              <text x="320" y="180" text-anchor="middle" font-size="12" fill="var(--t2)" font-weight="600">Method B (94%)</text>
+              <text id="yLabelBottom" x="50" y="163" text-anchor="end" font-size="11" fill="var(--t3)">0%</text>
+              <text id="yLabelTop" x="50" y="25" text-anchor="end" font-size="11" fill="var(--t3)">100%</text>
+            </svg>
+          </div>
+          <div id="scaleCommentary" style="font-size: 12.5px; color: var(--accent-emerald); font-weight: 600; margin-top: 10px;">
+            ✅ Baseline starts at 0%: The true modest difference (96% vs 94%) is represented honestly and objectively without distortion.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: GLOSSARY -->
+    <section id="tab-glossary" class="tab-section">
+      <h2 class="section-heading">Key Terms & Definitions Glossary</h2>
+      <p class="section-sub">Alphabetical reference list of all technical and academic communication terminology found in the 48 slides.</p>
+
+      <div class="glossary-table-wrap">
+        <table class="glossary-table" id="glossaryTable">
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Category</th>
+              <th>Official Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="term-cell">Academic Evaluator</td>
+              <td>Audience</td>
+              <td>Teachers, professors, or thesis defense panel members who grade student output, requiring complete mastery and formal citations.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Academic Text</td>
+              <td>Text Genre</td>
+              <td>Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Active Listening</td>
+              <td>Listening</td>
+              <td>Focusing full cognitive attention on the speaker, filtering distractions, and withholding hasty judgments until the message is delivered.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Annotation</td>
+              <td>Reading</td>
+              <td>During-reading technique of highlighting main claims, circling key terms, and writing questions directly in text margins.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">APC Framework</td>
+              <td>Core Model</td>
+              <td>The fundamental communicative triad of Audience, Purpose, and Context that governs tone, register, and format.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Balanced Writing</td>
+              <td>Characteristic</td>
+              <td>Considering diverse perspectives to prevent bias; utilizing hedging (modal verbs, probability adverbs) to avoid overgeneralization.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Cornell Note-Taking</td>
+              <td>Listening / Note-Taking</td>
+              <td>Structured 3-part layout: 30% Cue Column (keywords/questions), 70% Notes Column (bullet points/abbreviations), and Bottom Summary Block.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Critical Reading</td>
+              <td>Reading</td>
+              <td>Analyzing, interpreting, and evaluating an author's argumentative logic beyond passive reading.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Critical Viewing</td>
+              <td>Viewing</td>
+              <td>Decoding multimodal visuals (charts, infographics, videos) to detect bias, identify manipulated data, and verify claims.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Double-Entry Journaling</td>
+              <td>Reading</td>
+              <td>A two-column graphic organizer separating direct textual evidence (left) from student analysis and reflection (right).</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Evidence-Based</td>
+              <td>Characteristic</td>
+              <td>Supporting arguments with empirical data, verifiable statistics, and reputable citations while eliminating subjective personal expressions.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Expert Audience</td>
+              <td>Audience</td>
+              <td>Specialists with deep domain knowledge (scientists, engineers) who can be addressed with technical jargon without defining basic terms.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Formal Writing</td>
+              <td>Characteristic</td>
+              <td>Adhering to professional language conventions: zero slang, no contractions (spelling out "cannot"), and standard grammar mechanics.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Hedging</td>
+              <td>Language Style</td>
+              <td>The deliberate use of cautious language (modal verbs: *may, suggest*; adverbs: *likely, possibly*) to prevent sweeping, unsupported claims.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Non-Expert / Lay Audience</td>
+              <td>Audience</td>
+              <td>Readers with little or no technical background; requires everyday analogies, simplified vocabulary, and immediate definitions of terms.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Precise Writing</td>
+              <td>Characteristic</td>
+              <td>Using unambiguous terms and quantifying observations with exact numbers, units, and percentages to enable scientific replication.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Reflective Listening</td>
+              <td>Listening</td>
+              <td>Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Scale Integrity</td>
+              <td>Viewing</td>
+              <td>Visual chart accuracy ensuring baselines begin at zero and axes are proportional to prevent misleading graphical distortion.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">SQ5R Method</td>
+              <td>Reading</td>
+              <td>Active study system: Survey, Question, Read, Recite, and Review.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">TEAC Model</td>
+              <td>Reading / Writing</td>
+              <td>Paragraph organizational formula: Topic sentence, Evidence, Analysis, and Clincher / Conclusion.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Technical Text</td>
+              <td>Text Genre</td>
+              <td>Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Tripartite Structure</td>
+              <td>Structure</td>
+              <td>The classical academic essay architecture consisting of Introduction (hook, background, thesis), Body (evidence), and Conclusion (synthesis).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal for Fullscreen Diagrams -->
+  <div id="imageLightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:2000; align-items:center; justify-content:center; padding:20px; cursor:zoom-out;" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" style="max-width:92%; max-height:90vh; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5);" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Effective Communication Reviewer</strong> · Grade 11 Term 2 First Long Quiz</p>
+      <p style="margin-top: 4px; font-size: 12px;">Curriculum mapped directly to Unit 2, Lesson 1 slide deck (48 Slides) · Built for Focused, High-Yield Learning</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    /* Theme Toggle */
+    const themeBtn = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('effcom_theme') || 'light';
+    if (currentTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+
+    themeBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const newTheme = isDark ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('effcom_theme', newTheme);
+    });
+
+    /* Tab Switching */
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const tabSections = document.querySelectorAll('.tab-section');
+
+    navButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        navButtons.forEach(b => b.classList.remove('active'));
+        tabSections.forEach(s => s.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-tab');
+        document.getElementById(targetId).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    /* Study Mode: Deep vs Cram */
+    function setStudyMode(mode) {
+      const btnDeep = document.getElementById('btnModeDeep');
+      const btnCram = document.getElementById('btnModeCram');
+      if (mode === 'cram') {
+        document.body.classList.add('cram-mode');
+        btnCram.classList.add('active');
+        btnDeep.classList.remove('active');
+      } else {
+        document.body.classList.remove('cram-mode');
+        btnDeep.classList.add('active');
+        btnCram.classList.remove('active');
+      }
+    }
+
+    /* Example Toggle */
+    function switchExample(btn, paneId) {
+      const parent = btn.closest('.interactive-example-box');
+      parent.querySelectorAll('.ex-tab-btn').forEach(b => b.classList.remove('active'));
+      parent.querySelectorAll('.example-pane').forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      parent.querySelector('#' + paneId).classList.add('active');
+    }
+
+    /* Audience Selector */
+    const audienceData = {
+      expert: {
+        title: "Expert Audience (Scientists, Engineers, Domain Specialists)",
+        strategy: "Use specialized technical jargon directly without stopping to define basic concepts. Focus directly on technical methodology, statistical rigor, and high-level analytical inferences.",
+        example: "'The enzyme kinetics demonstrated non-competitive allosteric inhibition with a Km of 4.2 µM.'"
+      },
+      lay: {
+        title: "Non-Expert / Lay Audience (General Public, End Users)",
+        strategy: "Simplify complex terms, rely on relatable everyday analogies, and immediately define any essential technical terms using plain, accessible language.",
+        example: "'The medication acts like a biological switch, gently slowing down the cell's engine so it doesn't overheat.'"
+      },
+      peer: {
+        title: "Peer Audience (Fellow Students, Colleagues in Same Field)",
+        strategy: "Balance professional rigor with engaging, relatable explanations. Assumes shared fundamental training but maintains respectful collaborative discourse.",
+        example: "'Our lab team observed that while the reaction completed within 10 minutes, temperature fluctuations required careful monitoring.'"
+      },
+      eval: {
+        title: "Academic Evaluators (Professors, Thesis Committee, Panel Defense)",
+        strategy: "Demonstrate complete subject mastery, exhaustive evidence-based citations, strict formal conventions, and precise methodological transparency.",
+        example: "'In accordance with APA standards, all empirical claims are substantiated via rigorous primary documentation and statistical significance testing (p < .01).'"
+      }
+    };
+
+    function selectAudience(key, btnEl) {
+      document.querySelectorAll('.aud-btn').forEach(b => b.classList.remove('active'));
+      if (btnEl) {
+        btnEl.classList.add('active');
+      } else {
+        const first = document.querySelector('.aud-btn');
+        if (first) first.classList.add('active');
+      }
+
+      const data = audienceData[key];
+      const host = document.getElementById('audDisplayCard');
+      if (!host || !data) return;
+      host.innerHTML = `
+        <h4 style="font-family: var(--font-display); font-size: 17px; margin-bottom: 8px; color: var(--primary);">${data.title}</h4>
+        <p style="font-size: 14px; color: var(--t2); line-height: 1.6; margin-bottom: 12px;"><strong>Appropriate Strategy:</strong> ${data.strategy}</p>
+        <div style="background: var(--bg-card-muted); padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; font-style: italic; color: var(--t2);">
+          <strong>Example Tone:</strong> ${data.example}
+        </div>
+      `;
+    }
+    // Initialize default audience
+    selectAudience('expert', null);
+
+    /* TEAC Highlighter */
+    function highlightTeac(part) {
+      const t = document.getElementById('teac-t');
+      const e = document.getElementById('teac-e');
+      const a = document.getElementById('teac-a');
+      const c = document.getElementById('teac-c');
+
+      const reset = () => {
+        t.style.opacity = '0.35';
+        e.style.opacity = '0.35';
+        a.style.opacity = '0.35';
+        c.style.opacity = '0.35';
+      };
+
+      if (part === 'all') {
+        t.style.opacity = '1';
+        e.style.opacity = '1';
+        a.style.opacity = '1';
+        c.style.opacity = '1';
+      } else {
+        reset();
+        document.getElementById('teac-' + part).style.opacity = '1';
+      }
+    }
+
+    /* Cornell Notes Recall Toggle */
+    let notesVisible = true;
+    function toggleCornellNotes() {
+      const col = document.getElementById('cornellNotesCol');
+      const btn = document.getElementById('btnToggleNotes');
+      notesVisible = !notesVisible;
+      if (!notesVisible) {
+        col.style.filter = 'blur(6px)';
+        col.style.pointerEvents = 'none';
+        btn.textContent = '🙈 Notes Blurred (Quiz Yourself from Cues!)';
+      } else {
+        col.style.filter = 'none';
+        col.style.pointerEvents = 'auto';
+        btn.textContent = '👁️ Toggle Notes (Recall Test)';
+      }
+    }
+
+    function loadCornellSample() {
+      document.getElementById('cornellCueContent').innerHTML = `
+        • Academic vs Technical?<br/><br/>
+        • 6 Characteristics?<br/><br/>
+        • What is Hedging?<br/><br/>
+        • 4 Audience types?<br/><br/>
+        • SQ5R steps?<br/><br/>
+        • TEAC paragraph?
+      `;
+      document.getElementById('cornellNotesContent').innerHTML = `
+        - Academic: Linear, scholarly research, thesis, formal (APA/MLA).<br/>
+        - Technical: Practical, guides human action, user manuals/SOPs.<br/>
+        - 6 Rules: Evidence-based (data), Structured (Tripartite/Modular), Critical (depth/why), Balanced (hedging: modal verbs), Precise (quantify numbers), Formal (no contractions/slang).<br/>
+        - APC: Audience dictates jargon; Purpose = inform/persuade/instruct; Context = setting/discipline.<br/>
+        - SQ5R: Survey, Question, Read, Recite, Review.<br/>
+        - TEAC: Topic Sentence, Evidence, Analysis, Clincher.
+      `;
+      document.getElementById('cornellSummaryContent').innerHTML = `
+        Academic and technical communication share formal, objective foundations but serve distinct purposes. Mastery requires analyzing audience/purpose/context, applying critical reading (SQ5R, TEAC), active/reflective listening, and maintaining visual scale integrity.
+      `;
+    }
+
+    /* Scale Integrity Visualizer */
+    function updateScaleDemo(val) {
+      const v = parseInt(val);
+      const span = document.getElementById('baselineVal');
+      const barA = document.getElementById('barA');
+      const barB = document.getElementById('barB');
+      const yLabelBottom = document.getElementById('yLabelBottom');
+      const comm = document.getElementById('scaleCommentary');
+
+      yLabelBottom.textContent = v + '%';
+
+      if (v === 0) {
+        span.textContent = '0% (Honest Accurate Scale)';
+        span.style.color = 'var(--primary)';
+        // 96% and 94% on 0-100 scale: heights roughly 125 and 122 out of 130
+        barA.setAttribute('y', '35');
+        barA.setAttribute('height', '125');
+        barB.setAttribute('y', '38');
+        barB.setAttribute('height', '122');
+        comm.innerHTML = '✅ Baseline starts at 0%: The modest 2% difference (96% vs 94%) is represented honestly and proportionally.';
+        comm.style.color = 'var(--accent-emerald)';
+      } else {
+        span.textContent = v + '% (Distorted Truncated Scale)';
+        span.style.color = 'var(--accent-rose)';
+        // Scale range from v to 100
+        const range = 100 - v;
+        const hA = Math.max(10, ((96 - v) / range) * 130);
+        const hB = Math.max(10, ((94 - v) / range) * 130);
+        barA.setAttribute('height', hA);
+        barA.setAttribute('y', 160 - hA);
+        barB.setAttribute('height', hB);
+        barB.setAttribute('y', 160 - hB);
+        comm.innerHTML = `⚠️ Truncated baseline at ${v}%: The tiny 2% difference appears dramatically magnified! This violates Scale Integrity in Critical Viewing.`;
+        comm.style.color = 'var(--accent-rose)';
+      }
+    }
+
+    /* Lightbox Modal */
+    function openLightbox(src) {
+      const box = document.getElementById('imageLightbox');
+      const img = document.getElementById('lightboxImg');
+      img.src = src;
+      box.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageLightbox').style.display = 'none';
+    }
+
+    /* Search Bar Live Filtering */
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      const items = document.querySelectorAll('.searchable-item');
+      const rows = document.querySelectorAll('#glossaryTable tbody tr');
+
+      if (!term) {
+        items.forEach(it => it.style.display = '');
+        rows.forEach(r => r.style.display = '');
+        return;
+      }
+
+      items.forEach(it => {
+        const text = it.textContent.toLowerCase();
+        if (text.includes(term)) {
+          it.style.display = '';
+        } else {
+          it.style.display = 'none';
+        }
+      });
+
+      rows.forEach(r => {
+        const text = r.textContent.toLowerCase();
+        if (text.includes(term)) {
+          r.style.display = '';
+        } else {
+          r.style.display = 'none';
+        }
+      });
+    });
+
+    /* FLASHCARD DATA & ENGINE */
+    const flashcards = [
+      {
+        badge: "Module 1 · Genre Definition",
+        front: "Academic Text",
+        back: "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.",
+        ex: "Examples: Research articles, position papers, literature reviews, academic essays."
+      },
+      {
+        badge: "Module 1 · Genre Definition",
+        front: "Technical Text",
+        back: "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently.",
+        ex: "Examples: User manuals, Standard Operating Procedures (SOPs), safety guidelines, lab reports."
+      },
+      {
+        badge: "Module 1 · Characteristic 1",
+        front: "Evidence-Based / Objective",
+        back: "Claims must be anchored in empirical data, reputable facts, and citations, with personal feelings and subjective first-person pronouns minimized.",
+        ex: "Indicator: Uses statistics (e.g. 68% digital fatigue) instead of emotional assertions ('students hate it')."
+      },
+      {
+        badge: "Module 1 · Characteristic 2",
+        front: "Structured (Tripartite vs Modular)",
+        back: "Follows a predictable logical roadmap. Essays use Tripartite Structure (Intro, Body, Conclusion); Technical texts use Modular Structure (numbered steps, subheadings).",
+        ex: "Intro has hook, background, thesis statement; Conclusion has restatement, summary, clincher."
+      },
+      {
+        badge: "Module 1 · Characteristic 3",
+        front: "Critical Writing",
+        back: "Moves beyond passive descriptive summary to analyze WHY and HOW phenomena occur, evaluate source credibility, and uncover intellectual gaps.",
+        ex: "Instead of saying 'Author A & B wrote about tech', it contrasts their conflicting causal theories."
+      },
+      {
+        badge: "Module 1 · Characteristic 4",
+        front: "Balanced Writing & Hedging",
+        back: "Considers multiple angles and exercises caution to avoid sweeping generalizations. Utilizes modal verbs, probability adverbs, and tentative phrases.",
+        ex: "Hedging toolkit: 'may, suggest, likely, data imply that...' instead of 'completely destroys'."
+      },
+      {
+        badge: "Module 1 · Characteristic 5",
+        front: "Precise Writing",
+        back: "Provides exact, unambiguous information capturing precisely what data show, preventing costly errors and allowing scientific replication.",
+        ex: "Writing 'increased by 4.8°C over 15 min' rather than 'the temperature changed a lot'."
+      },
+      {
+        badge: "Module 1 · Characteristic 6",
+        front: "Formal Writing",
+        back: "Adheres to professional language conventions: ZERO colloquialisms/slang, NO contractions (must spell out 'cannot', 'did not'), and standard mechanics.",
+        ex: "Write 'was unable to identify system failure' rather than 'couldn't figure out why tech crashed'."
+      },
+      {
+        badge: "Module 2 · APC Triad",
+        front: "The APC Framework",
+        back: "Audience, Purpose, and Context. The universal foundation of all effective communication that governs tone, depth, format, and vocabulary.",
+        ex: "Applies to everything from a peer text to a formal thesis defense or technical operating manual."
+      },
+      {
+        badge: "Module 2 · Audience",
+        front: "Expert Audience Strategy",
+        back: "Specialists with deep domain knowledge (engineers, scientists). Strategy: Use specialized technical jargon directly without defining basic terms.",
+        ex: "Discussing 'Km enzymatic affinity' directly without pausing to explain what an enzyme is."
+      },
+      {
+        badge: "Module 2 · Audience",
+        front: "Non-Expert / Lay Audience Strategy",
+        back: "General public with little to no technical background. Strategy: Simplify terms, use everyday analogies, and define technical terms immediately.",
+        ex: "Describing a microprocessor as the 'brain' of the computer."
+      },
+      {
+        badge: "Module 2 · Audience",
+        front: "Peer Audience Strategy",
+        back: "Colleagues or fellow students with similar training. Strategy: Balance professional academic rigor with relatable, engaging explanations.",
+        ex: "Collaborative laboratory reports, seminar discussions, and cohort presentations."
+      },
+      {
+        badge: "Module 2 · Audience",
+        front: "Academic Evaluator Strategy",
+        back: "Teachers, professors, or thesis defense panel members who grade output. Strategy: Prove complete subject mastery, strict formal conventions, and exhaustive citations.",
+        ex: "Formal thesis manuscripts, research defenses, and summative term examinations."
+      },
+      {
+        badge: "Module 2 · Purpose",
+        front: "The 3 Primary Purposes",
+        back: "1. To Inform / Explain (objective clarity)<br/>2. To Persuade / Argue (evidence-based conviction)<br/>3. To Instruct / Direct (action-oriented procedures).",
+        ex: "Determines the chosen structure, call-to-action, and rhetorical approach."
+      },
+      {
+        badge: "Module 2 · Context",
+        front: "Context: Discipline Expectations",
+        back: "Humanities prioritize qualitative argument, interpretation, and textual evidence; Sciences focus on empirical methodology, quantitative data, and replicability.",
+        ex: "Literature paper vs. Biology laboratory experiment report."
+      },
+      {
+        badge: "Module 3 · Reading",
+        front: "The SQ5R Method",
+        back: "Pre-reading and active study roadmap: Survey (scan), Question (turn headings to Qs), Read (seek answers), Recite (summarize), Review (check recall).",
+        ex: "Converts passive skim reading into cognitive inquiry."
+      },
+      {
+        badge: "Module 3 · Reading",
+        front: "The TEAC Paragraph Model",
+        back: "T = Topic Sentence (main claim)<br/>E = Evidence (data, study results, citations)<br/>A = Analysis (proves how evidence supports T)<br/>C = Clincher (synthesizes point & transitions).",
+        ex: "The standard building block for analytical academic paragraphs."
+      },
+      {
+        badge: "Module 3 · Reading",
+        front: "Double-Entry Journaling",
+        back: "A two-column graphic organizer separating direct text evidence (left column) from student analysis and critical reflections (right column).",
+        ex: "Used in post-reading to bridge reading comprehension with critical writing."
+      },
+      {
+        badge: "Module 3 · Listening",
+        front: "Active Listening",
+        back: "Full cognitive attention on the speaker: paying attention to verbal/body cues, evaluating logical validity, and responding based on facts rather than emotion.",
+        ex: "Withholding hasty interruptions until the entire concept is articulated."
+      },
+      {
+        badge: "Module 3 · Listening",
+        front: "Cornell Note-Taking Proportions",
+        back: "Right Notes Column (70%): recorded during lecture.<br/>Left Cue Column (30%): questions/keywords added after.<br/>Bottom Summary (2-3 inches): 2-4 sentence synthesis.",
+        ex: "Facilitates seamless active recall by covering the notes column."
+      },
+      {
+        badge: "Module 3 · Listening",
+        front: "Reflective Listening",
+        back: "Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward.",
+        ex: "'If I understand correctly, you are saying that [paraphrase]. Is that correct?'"
+      },
+      {
+        badge: "Module 3 · Viewing",
+        front: "Scale Integrity (Critical Viewing)",
+        back: "Ensuring visual charts represent numerical data honestly: baseline starting at zero, equal intervals, and proportional bar heights without distortion.",
+        ex: "Prevents a tiny 2% difference from appearing like an enormous collapse."
+      }
+    ];
+
+    let currentCardIndex = 0;
+    function updateFlashcardUI() {
+      const card = flashcards[currentCardIndex];
+      const fcEl = document.getElementById('mainFlashcard');
+      fcEl.classList.remove('flipped');
+
+      document.getElementById('fcBadge').textContent = card.badge;
+      document.getElementById('fcFrontText').textContent = card.front;
+      document.getElementById('fcBackText').innerHTML = card.back;
+      document.getElementById('fcBackEx').innerHTML = card.ex;
+
+      document.getElementById('fcCounter').textContent = `Card ${currentCardIndex + 1} of ${flashcards.length}`;
+      const pct = ((currentCardIndex + 1) / flashcards.length) * 100;
+      document.getElementById('fcProgressFill').style.width = pct + '%';
+    }
+
+    function flipCurrentCard() {
+      document.getElementById('mainFlashcard').classList.toggle('flipped');
+    }
+
+    function nextFlashcard() {
+      if (currentCardIndex < flashcards.length - 1) {
+        currentCardIndex++;
+      } else {
+        currentCardIndex = 0;
+      }
+      updateFlashcardUI();
+    }
+
+    function prevFlashcard() {
+      if (currentCardIndex > 0) {
+        currentCardIndex--;
+      } else {
+        currentCardIndex = flashcards.length - 1;
+      }
+      updateFlashcardUI();
+    }
+
+    function shuffleFlashcards() {
+      for (let i = flashcards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
+      }
+      currentCardIndex = 0;
+      updateFlashcardUI();
+    }
+
+    function resetFlashcards() {
+      currentCardIndex = 0;
+      updateFlashcardUI();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const activeTab = document.querySelector('.tab-section.active');
+      if (activeTab && activeTab.id === 'tab-flashcards') {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          flipCurrentCard();
+        } else if (e.code === 'ArrowRight') {
+          nextFlashcard();
+        } else if (e.code === 'ArrowLeft') {
+          prevFlashcard();
+        }
+      }
+    });
+
+    // Initialize Flashcard
+    updateFlashcardUI();
+
+    /* QUIZ DATABASE (25 QUESTIONS FROM 48 SLIDES) */
+    const quizQuestions = [
+      {
+        q: "What is the primary core goal of Academic Texts according to Slide 5?",
+        opts: [
+          "To instruct, direct, or document procedures for workplace tasks",
+          "To inform, analyze, or persuade using scholarly research",
+          "To entertain general readers with creative analogies",
+          "To market commercial products to expert consumers"
+        ],
+        ans: 1,
+        exp: "Slide 5 states that the core goal of Academic Texts is 'To inform, analyze, or persuade using scholarly research' (e.g., research articles, position papers, literature reviews)."
+      },
+      {
+        q: "Which of the following is a primary characteristic of Technical Texts according to Slide 6 & 7?",
+        opts: [
+          "Abstract theoretical speculation without empirical evidence",
+          "Subjective first-person narrative reflecting author emotion",
+          "Functional, practical, and highly precise writing designed to guide human action safely",
+          "Informal conversational tone using frequent colloquial contractions"
+        ],
+        ans: 2,
+        exp: "Technical texts are functional, practical, and highly precise, designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently (Slide 6)."
+      },
+      {
+        q: "Under the characteristic 'Evidence-Based / Objective', which practice must be strictly minimized or eliminated (Slide 11)?",
+        opts: [
+          "Survey results and laboratory data",
+          "Standardized APA or MLA in-text citations",
+          "First-person subjective expressions like 'I think', 'I feel', or 'in my opinion'",
+          "Empirical metrics and statistical values"
+        ],
+        ans: 2,
+        exp: "Slide 11 specifically highlights 'Minimizing or eliminating first-person subjective expressions (I think, I feel, in my opinion) in favor of objective phrasing.'"
+      },
+      {
+        q: "Consider this sentence: 'Online learning is obviously terrible because students hate sitting in front of screens all day.' Why is this NON-ACADEMIC (Slide 12)?",
+        opts: [
+          "It contains too many technical jargon terms",
+          "It makes an unsupported, sweeping claim based on personal sentiment without empirical data",
+          "It uses passive voice instead of active verbs",
+          "It follows a strict tripartite essay structure"
+        ],
+        ans: 1,
+        exp: "Slide 12 classifies this as 'Unsupported' because it relies on emotional hyperbole ('hate', 'obviously terrible') and lacks verifiable empirical data or sample sizes."
+      },
+      {
+        q: "What is the standard Tripartite Structure used in academic essays (Slide 14)?",
+        opts: [
+          "Hypothesis, Formula, and Appendix",
+          "Introduction (hook, background, thesis), Body (evidence & analysis), Conclusion (restatement, summary, clincher)",
+          "Cue column, Notes column, and Summary block",
+          "Abstract, User Manual, and Troubleshooting guide"
+        ],
+        ans: 1,
+        exp: "Slide 14 defines the Tripartite Structure for essays as: Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher)."
+      },
+      {
+        q: "What differentiates a 'Critical' text from a 'Merely Descriptive' text (Slide 16 & 17)?",
+        opts: [
+          "A critical text merely summarizes what happened without asking questions",
+          "A critical text analyzes why and how a phenomenon occurs, identifies literature gaps, and evaluates source credibility",
+          "A critical text uses emotional adjectives to criticize the authors",
+          "A critical text avoids using any topic sentences or evidence"
+        ],
+        ans: 1,
+        exp: "Slide 16 and 17 state that critical writing moves beyond passive summary to analyze why and how phenomena occur, uncovering depth, identifying gaps, and evaluating source validity."
+      },
+      {
+        q: "Which linguistic technique is used in 'Balanced' academic writing to avoid sweeping, dogmatic generalizations (Slide 20)?",
+        opts: [
+          "Exclamation marks and absolute assertions ('guarantees', 'destroys')",
+          "Hedging using modal verbs (may, suggest) and probability adverbs (likely, possibly)",
+          "Heavy informal slang and contractions",
+          "Eliminating the methodology section completely"
+        ],
+        ans: 1,
+        exp: "Slide 20 highlights hedging strategies: Modal Verbs (may, suggest, appear, seem), Probability Adverbs (likely, possibly, presumably), and Tentative Phrases."
+      },
+      {
+        q: "Why is precision vital in academic and technical texts according to Slide 22?",
+        opts: [
+          "Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable",
+          "Precision makes texts look longer and harder to understand",
+          "Precision allows the author to use poetic figures of speech",
+          "Precision removes the need for in-text citations"
+        ],
+        ans: 0,
+        exp: "Slide 22 notes: 'Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.'"
+      },
+      {
+        q: "Which of the following violates the 'Formal' characteristic of academic writing (Slide 25)?",
+        opts: [
+          "Writing 'cannot' instead of 'can't'",
+          "Using contractions like couldn't and colloquial slang like super frustrating",
+          "Applying standard capitalization and punctuation",
+          "Citing primary empirical literature"
+        ],
+        ans: 1,
+        exp: "Slide 25 and 26 state that formal texts maintain zero colloquialisms/slang and no contractions (spelling out words like 'cannot', 'did not', 'would have')."
+      },
+      {
+        q: "What does the communication acronym 'APC' stand for (Slide 27 & 28)?",
+        opts: [
+          "Abstract, Protocol, Conclusion",
+          "Audience, Purpose, Context",
+          "Analysis, Perspective, Citation",
+          "Accuracy, Precision, Clarity"
+        ],
+        ans: 1,
+        exp: "Slide 27 and 28 define the APC of academic and technical texts as Audience, Purpose, and Context."
+      },
+      {
+        q: "When communicating with an EXPERT AUDIENCE (scientists, engineers), what is the appropriate strategy (Slide 30)?",
+        opts: [
+          "Explain every basic term using everyday kindergarten analogies",
+          "Use specialized technical jargon directly without stopping to define basic concepts",
+          "Use informal contractions and casual humor to keep them entertained",
+          "Avoid presenting any statistical data or formulas"
+        ],
+        ans: 1,
+        exp: "Slide 30 states that for an Expert Audience: 'Use specialized technical jargon directly without stopping to define basic concepts.'"
+      },
+      {
+        q: "When writing for a NON-EXPERT / LAY AUDIENCE (general public), what strategy should you apply (Slide 31)?",
+        opts: [
+          "Use dense acronyms and assume they know advanced calculus",
+          "Simplify complex terms, use relatable everyday analogies, and define technical terms immediately",
+          "Submit the draft directly for doctoral peer review without explanations",
+          "Use exclusively passive voice with no clear subjects"
+        ],
+        ans: 1,
+        exp: "Slide 31 instructs: 'Simplify complex terms, use relatable everyday analogies, and define technical terms immediately.'"
+      },
+      {
+        q: "How should a writer tailor their work for ACADEMIC EVALUATORS (teachers, professors, thesis defense panels) (Slide 33)?",
+        opts: [
+          "Keep sentences extremely short and informal like a text message",
+          "Demonstrate complete subject mastery, rigorous citations, and strict formal structure",
+          "Omit literature reviews to save reading time",
+          "Rely solely on subjective personal opinions"
+        ],
+        ans: 1,
+        exp: "Slide 33 dictates: 'Demonstrate complete mastery, rigorous citation, and strict formal structure.'"
+      },
+      {
+        q: "What are the 3 primary purposes in writing academic and technical texts (Slide 34)?",
+        opts: [
+          "To Entertains, To Rhyme, To Exaggerate",
+          "To Inform / Explain, To Persuade / Argue, To Instruct / Direct",
+          "To Deceive, To Obscure, To Distract",
+          "To Monetize, To Advertise, To Brand"
+        ],
+        ans: 1,
+        exp: "Slide 34 specifies the 3 core purposes: 1. To Inform / Explain, 2. To Persuade / Argue, 3. To Instruct / Direct."
+      },
+      {
+        q: "How do discipline expectations differ between the Humanities and the Sciences under Context (Slide 36)?",
+        opts: [
+          "Humanities focus on lab replicability while Sciences focus on poetry",
+          "Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data",
+          "Both disciplines prohibit the use of citations and numbers",
+          "There is no difference in expectations between academic disciplines"
+        ],
+        ans: 1,
+        exp: "Slide 36 notes: 'Discipline Expectations: Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data.'"
+      },
+      {
+        q: "What are the 5 sequential steps of the SQ5R Reading Method (Slide 38 & 39)?",
+        opts: [
+          "Scan, Question, Record, Rewrite, Return",
+          "Survey, Question, Read, Recite, Review",
+          "Search, Quote, React, Reflect, Repeat",
+          "Study, Query, Read, Rephrase, Retest"
+        ],
+        ans: 1,
+        exp: "Slide 39 defines SQ5R as: Survey (scan headings/visuals), Question (turn headings into questions), Read (seek answers), Recite (summarize), Review (check recall)."
+      },
+      {
+        q: "In the TEAC Paragraph Model, what does the letter 'A' represent (Slide 40)?",
+        opts: [
+          "Appendix - adding supplementary charts",
+          "Analysis - explaining how the evidence proves the topic sentence",
+          "Audience - listing the names of people reading",
+          "Assertion - repeating the thesis without proof"
+        ],
+        ans: 1,
+        exp: "Slide 40 defines TEAC: T (Topic Sentence), E (Evidence), A (Analysis - explains how evidence proves the topic sentence), C (Clincher/Conclusion)."
+      },
+      {
+        q: "What is the function of a Double-Entry Journal in post-reading strategies (Slide 41)?",
+        opts: [
+          "It records monetary laboratory expenses",
+          "It explicitly separates direct text evidence from student analysis in a two-column format",
+          "It counts how many times the author uses contractions",
+          "It duplicates the entire text word-for-word into a diary"
+        ],
+        ans: 1,
+        exp: "Slide 41 defines Double-Entry Journaling as: 'A two-column graphic organizer that explicitly separates text evidence from student analysis.'"
+      },
+      {
+        q: "What are the 3 core components of Active Listening according to Slide 43?",
+        opts: [
+          "Speaking loudly, Interrupting quickly, Disagreeing emotionally",
+          "Paying Attention, Evaluating logical validity/facts, Responding Thoughtfully",
+          "Memorizing words, Daydreaming, Nodding passively",
+          "Taking verbatim shorthand, Grading speech, Looking at phone"
+        ],
+        ans: 1,
+        exp: "Slide 43 lists How to do Active Listening: 1. Paying Attention, 2. Evaluating, 3. Responding Thoughtfully."
+      },
+      {
+        q: "In the Cornell Note-Taking System, what is the standard layout width and function of the Cue Column (Slide 44 & 45)?",
+        opts: [
+          "Right side, 70% width, used for recording formulas during class",
+          "Left side, 30% width, formulated after class for key terms, main themes, and exam questions",
+          "Bottom, 2-3 inches, used for drawing doodles",
+          "Top header, 100% width, used for the lecturer's name only"
+        ],
+        ans: 1,
+        exp: "Slide 44 states that the Cue Column is on the Left (30% width), formulated immediately after the lecture to record key vocabulary, themes, and exam questions."
+      },
+      {
+        q: "In the Cornell Note-Taking System, what goes into the Summary Block at the bottom (Slide 44)?",
+        opts: [
+          "A verbatim transcript of the entire 1-hour lecture",
+          "A 2 to 4 sentence synthesis in your own words capturing the page's core takeaways",
+          "A list of all student attendance signatures",
+          "Unsolved homework math equations"
+        ],
+        ans: 1,
+        exp: "Slide 44 states: 'Summary Block (Bottom, 2-3 inches): Write a 2-4 sentence summary in your own words synthesizing the page's core content.'"
+      },
+      {
+        q: "What is Reflective Listening, and what phrase characterizes its practice (Slide 46 & 48)?",
+        opts: [
+          "Staring into a mirror while practicing a presentation speech",
+          "Paraphrasing or restating the speaker's core message back to confirm interpretation ('If I understand correctly, you are saying that...')",
+          "Remaining totally silent and refusing to answer follow-up questions",
+          "Critiquing the speaker's accent and vocal grammar"
+        ],
+        ans: 1,
+        exp: "Slide 46 & 48 define Reflective Listening as paraphrasing the core message back: 'If I understand correctly, you are saying that [paraphrased point]. Is that correct?'"
+      },
+      {
+        q: "What is the primary objective of Critical Viewing Strategies (Slide 47)?",
+        opts: [
+          "To watch educational videos in 4K resolution with high audio fidelity",
+          "To decode, analyze, and evaluate multimodal visuals to detect bias, identify manipulated data, and verify claims",
+          "To replace all written research papers with pictorial comic books",
+          "To create artistic oil paintings for scientific laboratories"
+        ],
+        ans: 1,
+        exp: "Slide 47 states: 'Critical viewing empowers learners to decode, analyze, and evaluate multimodal visuals (charts, diagrams, infographics, videos) to detect bias, identify manipulated data, and verify claims.'"
+      },
+      {
+        q: "What is 'Scale Integrity' in Critical Viewing (Slide 47)?",
+        opts: [
+          "Making sure weighing balances in chemistry labs are calibrated to grams",
+          "Ensuring charts and graphs maintain honest proportional axes (e.g. baseline at zero) to prevent misleading visual distortions",
+          "Scaling font sizes to maximum dimensions on presentation slides",
+          "Translating texts into foreign metric measurement systems"
+        ],
+        ans: 1,
+        exp: "Scale Integrity refers to ensuring chart axes and graphical representations maintain truthful, un-distorted numerical scales (avoiding truncated baselines that exaggerate tiny differences)."
+      },
+      {
+        q: "A student writes in their research paper: 'The AI model was tested on 500 images and demonstrated an 89.4% classification accuracy.' Which characteristics are demonstrated?",
+        opts: [
+          "Vague and Merely Descriptive",
+          "Evidence-Based, Precise, and Formal",
+          "Informal, Overgeneralized, and Unstructured",
+          "Subjective, Emotional, and Speculative"
+        ],
+        ans: 1,
+        exp: "This sentence contains verifiable empirical data (n=500), exact numerical precision (89.4%), formal uncontracted vocabulary, and zero emotional subjectivity."
+      }
+    ];
+
+    let userAnswers = {};
+    function renderQuiz() {
+      const host = document.getElementById('quizQuestionsHost');
+      host.innerHTML = quizQuestions.map((q, idx) => `
+        <div class="quiz-card" id="qCard-${idx}">
+          <div class="quiz-q-meta">
+            <span>Question ${idx + 1} of ${quizQuestions.length}</span>
+            <span id="qStatus-${idx}">Unanswered</span>
+          </div>
+          <div class="quiz-question-text">${q.q}</div>
+          <div class="quiz-options">
+            ${q.opts.map((opt, oIdx) => `
+              <button class="quiz-option" id="qOpt-${idx}-${oIdx}" onclick="selectQuizAnswer(${idx}, ${oIdx})">
+                <span class="opt-letter">${String.fromCharCode(65 + oIdx)}</span>
+                <span>${opt}</span>
+              </button>
+            `).join('')}
+          </div>
+          <div class="quiz-explanation" id="qExp-${idx}">
+            <strong>Rationale:</strong> ${q.exp}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function selectQuizAnswer(qIdx, oIdx) {
+      if (userAnswers[qIdx] !== undefined) return; // already answered
+      userAnswers[qIdx] = oIdx;
+
+      const q = quizQuestions[qIdx];
+      const optBtn = document.getElementById(`qOpt-${qIdx}-${oIdx}`);
+      const correctBtn = document.getElementById(`qOpt-${qIdx}-${q.ans}`);
+      const statusSpan = document.getElementById(`qStatus-${qIdx}`);
+      const expBox = document.getElementById(`qExp-${qIdx}`);
+
+      // Lock options
+      document.querySelectorAll(`[id^="qOpt-${qIdx}-"]`).forEach(b => b.classList.add('locked'));
+
+      if (oIdx === q.ans) {
+        optBtn.classList.add('correct');
+        statusSpan.textContent = '✅ Correct';
+        statusSpan.style.color = 'var(--accent-emerald)';
+      } else {
+        optBtn.classList.add('wrong');
+        correctBtn.classList.add('correct');
+        statusSpan.textContent = '❌ Incorrect';
+        statusSpan.style.color = 'var(--accent-rose)';
+      }
+
+      expBox.classList.add('show');
+      updateQuizProgress();
+    }
+
+    function updateQuizProgress() {
+      const answeredCount = Object.keys(userAnswers).length;
+      let correctCount = 0;
+      Object.keys(userAnswers).forEach(idx => {
+        if (userAnswers[idx] === quizQuestions[idx].ans) correctCount++;
+      });
+
+      document.getElementById('quizProgressText').textContent = `Answered ${answeredCount} of ${quizQuestions.length}`;
+      document.getElementById('quizLiveScore').textContent = `Score: ${correctCount} / ${answeredCount}`;
+
+      if (answeredCount === quizQuestions.length) {
+        showFinalQuizResults(correctCount);
+      }
+    }
+
+    function showFinalQuizResults(correct) {
+      const pct = Math.round((correct / quizQuestions.length) * 100);
+      const card = document.getElementById('quizResultCard');
+      const val = document.getElementById('finalScoreVal');
+      const title = document.getElementById('finalScoreTitle');
+      const desc = document.getElementById('finalScoreDesc');
+
+      val.textContent = pct + '%';
+      if (pct >= 90) {
+        title.textContent = '🌟 Outstanding Mastery!';
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. You are fully prepared to ace the First Long Quiz!`;
+      } else if (pct >= 75) {
+        title.textContent = '👍 Solid Proficiency!';
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Review the few missed rationales above to lock in a perfect score.`;
+      } else {
+        title.textContent = '📚 Keep Studying!';
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Flip through the Flashcards and review the 6 Characteristics in the Study Guide.`;
+      }
+      card.style.display = 'block';
+      card.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function restartQuiz() {
+      userAnswers = {};
+      document.getElementById('quizResultCard').style.display = 'none';
+      renderQuiz();
+      document.getElementById('quizProgressText').textContent = `Question 1 of ${quizQuestions.length}`;
+      document.getElementById('quizLiveScore').textContent = 'Score: 0 / 0';
+      window.scrollTo({ top: document.getElementById('tab-quiz').offsetTop - 60, behavior: 'smooth' });
+    }
+
+    // Initialize Quiz
+    renderQuiz();
+
+  </script>
+</body>
+</html>
