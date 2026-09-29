@@ -16,7 +16,7 @@
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
 
-      /* Clean, Minimalist Scandinavian Theme */
+      /* Clean, Minimalist Theme */
       --bg: #f8fafc;
       --bg-card: #ffffff;
       --bg-card-muted: #f1f5f9;
@@ -31,7 +31,7 @@
       --t3: #64748b;
       --t-light: #94a3b8;
 
-      /* Elegant Restrained Accents */
+      /* Restrained Accents */
       --primary: #1e40af;
       --primary-light: #eff6ff;
       --primary-border: #bfdbfe;
@@ -123,7 +123,6 @@
       transition: background-color 0.2s ease, color 0.2s ease;
     }
 
-    /* Container */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -187,7 +186,7 @@
       font-weight: 500;
     }
 
-    /* Top Nav Pills */
+    /* Navigation Pills */
     .nav-pills {
       display: flex;
       align-items: center;
@@ -251,7 +250,7 @@
       border-color: var(--border-subtle);
     }
 
-    /* Subheader & Search bar */
+    /* Sub-Bar */
     .sub-bar {
       background: var(--bg);
       border-bottom: 1px solid var(--border);
@@ -330,7 +329,7 @@
       box-shadow: var(--shadow-sm);
     }
 
-    /* Main Content */
+    /* Main Layout */
     main {
       flex: 1;
       padding: 32px 0 60px 0;
@@ -350,7 +349,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Typography */
+    /* Headings */
     h2.section-heading {
       font-family: var(--font-display);
       font-size: 26px;
@@ -364,7 +363,7 @@
       color: var(--t3);
       font-size: 14.5px;
       margin-bottom: 24px;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     h3.subheading {
@@ -445,7 +444,46 @@
       transform: scale(1.02);
     }
 
-    /* Lesson Navigation Quick Bar */
+    /* Verbatim Slide Tag */
+    .slide-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--accent-amber-light);
+      color: var(--accent-amber);
+      border: 1px solid var(--accent-amber-border);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+    }
+
+    .verbatim-quote-box {
+      background: var(--bg-card-muted);
+      border-left: 3.5px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 12px 0 16px 0;
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--t1);
+    }
+
+    .verbatim-quote-box .quote-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Quick Nav Cards */
     .module-nav-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -535,7 +573,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .compare-header h4 {
@@ -564,19 +602,12 @@
       border-radius: var(--radius-full);
     }
 
-    .compare-def {
-      font-size: 14px;
-      color: var(--t2);
-      line-height: 1.6;
-      margin-bottom: 16px;
-      flex: 1;
-    }
-
     .compare-meta {
       background: var(--bg-card-muted);
       border-radius: var(--radius-md);
       padding: 14px;
       font-size: 13px;
+      margin-top: 14px;
     }
 
     .compare-meta strong {
@@ -598,7 +629,7 @@
       margin-bottom: 0;
     }
 
-    /* Characteristics Detailed Cards */
+    /* Characteristic Cards */
     .char-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -606,11 +637,6 @@
       padding: 22px;
       margin-bottom: 24px;
       box-shadow: var(--shadow-sm);
-      transition: border-color 0.2s ease;
-    }
-
-    .char-card:hover {
-      border-color: var(--border-subtle);
     }
 
     .char-top {
@@ -649,13 +675,6 @@
       color: var(--t1);
     }
 
-    .char-desc {
-      font-size: 14.5px;
-      color: var(--t2);
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
     .char-indicators {
       background: var(--primary-light);
       border-left: 3px solid var(--primary);
@@ -680,7 +699,7 @@
     .char-indicators li {
       font-size: 13.5px;
       color: var(--t2);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
       position: relative;
       padding-left: 18px;
     }
@@ -768,7 +787,6 @@
       background: var(--accent-rose-light);
       border-radius: var(--radius-sm);
       padding: 10px 14px;
-      font-style: italic;
     }
 
     .example-pane.good-text {
@@ -815,6 +833,7 @@
       background: var(--bg);
       text-align: center;
       margin-bottom: 14px;
+      cursor: zoom-in;
     }
 
     .diagram-img-box img {
@@ -824,7 +843,7 @@
       margin: 0 auto;
     }
 
-    /* Interactive Audience Selector */
+    /* Audience Selector */
     .aud-selector-bar {
       display: flex;
       gap: 8px;
@@ -870,7 +889,7 @@
       border-left: 4px solid var(--primary);
     }
 
-    /* Interactive Cornell Canvas */
+    /* Cornell Canvas */
     .cornell-canvas-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -987,8 +1006,8 @@
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      min-height: 280px;
-      padding: 32px 28px;
+      min-height: 290px;
+      padding: 34px 28px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1054,7 +1073,7 @@
     }
 
     .flashcard-back p {
-      font-size: 16px;
+      font-size: 15.5px;
       color: var(--t1);
       line-height: 1.6;
       font-weight: 500;
@@ -1104,10 +1123,6 @@
       background: var(--primary);
       color: #ffffff;
       border-color: var(--primary);
-    }
-
-    .fc-btn.primary:hover {
-      opacity: 0.92;
     }
 
     /* Quiz Section */
@@ -1161,7 +1176,7 @@
 
     .quiz-question-text {
       font-family: var(--font-display);
-      font-size: 18px;
+      font-size: 17.5px;
       font-weight: 700;
       color: var(--t1);
       line-height: 1.45;
@@ -1257,7 +1272,7 @@
       font-size: 13px;
     }
 
-    /* Result Modal / Screen */
+    /* Results Card */
     .quiz-results-card {
       display: none;
       background: var(--bg-card);
@@ -1284,7 +1299,7 @@
       margin: 0 auto 20px auto;
     }
 
-    /* Cram Sheet Mode */
+    /* Cram Mode */
     .cram-view-wrap {
       display: none;
     }
@@ -1325,11 +1340,11 @@
       list-style-position: inside;
       font-size: 13px;
       color: var(--t2);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .cram-card li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .cram-card strong {
@@ -1368,6 +1383,7 @@
       border-bottom: 1px solid var(--border);
       color: var(--t2);
       vertical-align: top;
+      line-height: 1.55;
     }
 
     table.glossary-table tr:last-child td {
@@ -1393,7 +1409,7 @@
       color: var(--t3);
     }
 
-    /* Print Stylesheet */
+    /* Print Styles */
     @media print {
       header.site-header, .sub-bar, .flashcard-actions, .fc-btn, .quiz-options, .nav-pills {
         display: none !important;
@@ -1435,7 +1451,7 @@
         <button class="nav-btn" data-tab="tab-glossary">🔍 Glossary</button>
       </nav>
 
-      <!-- Quick Actions -->
+      <!-- Actions -->
       <div class="header-actions">
         <button class="icon-btn" id="themeToggle" title="Toggle Light / Dark Mode">🌓</button>
         <button class="icon-btn" id="printBtn" title="Print / PDF Export" onclick="window.print()">🖨️</button>
@@ -1448,7 +1464,7 @@
     <div class="container sub-bar-inner">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="Search any concept, rule, or indicator (e.g. TEAC, Cornell, Hedging)..." />
+        <input type="text" id="searchInput" class="search-input" placeholder="Search verbatim terms (e.g. SQ5R, TEAC, Tripartite, Modal Verbs, 30% Cue)..." />
       </div>
 
       <div class="view-toggles" id="viewModeSelector">
@@ -1472,15 +1488,18 @@
           <div class="hero-text-side">
             <span class="hero-tag">Unit 2 · Lesson 1</span>
             <h2>Interpreting Meaning in Spoken, Written, and Multimodal Academic and Technical Texts</h2>
-            <p>Master the exact foundational principles for your First Long Quiz: the distinct nature and 6 core characteristics of scholarly vs. technical communication, the APC communication framework, and critical interpretation strategies across reading, listening, and viewing.</p>
+            <div class="verbatim-quote-box" style="margin-top: 8px; margin-bottom: 12px;">
+              <span class="quote-title">📌 Verbatim Core Principle (Slide 8)</span>
+              "While academic writing and technical writing serve different primary audiences and purposes, they sit under the same umbrella of formal, informative communication and share a core set of fundamental characteristics."
+            </div>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-              <span class="badge-primary">48 Slides Covered</span>
-              <span class="badge-teal">Objective & Verified</span>
-              <span class="badge-primary">Interactive Examples</span>
+              <span class="slide-badge">48 Slides Total</span>
+              <span class="badge-primary">100% Verbatim Definitions</span>
+              <span class="badge-teal">Complete Indicator List</span>
             </div>
           </div>
           <div class="hero-img-wrap" onclick="openLightbox('assets/academic_vs_technical.jpg')">
-            <img src="assets/academic_vs_technical.jpg" alt="Academic vs Technical Writing Comparison Illustration" />
+            <img src="assets/academic_vs_technical.jpg" alt="Academic vs Technical Writing Comparison" />
           </div>
         </div>
 
@@ -1490,90 +1509,92 @@
             <div class="module-nav-num">1</div>
             <div class="module-nav-content">
               <h4>Nature & 6 Characteristics</h4>
-              <p>Academic vs. Technical definitions, goals, and the 6 foundational writing rules.</p>
+              <p>Slides 1–26: Exact definitions, core goals, and 6 core writing characteristics.</p>
             </div>
           </a>
           <a href="#mod2-anchor" class="module-nav-card">
             <div class="module-nav-num">2</div>
             <div class="module-nav-content">
               <h4>The APC Framework</h4>
-              <p>Audience (4 types), Purpose (3 goals), and Context (3 dimensions).</p>
+              <p>Slides 27–36: Audience (4 types), Purpose (3 goals), and Context (3 dimensions).</p>
             </div>
           </a>
           <a href="#mod3-anchor" class="module-nav-card">
             <div class="module-nav-num">3</div>
             <div class="module-nav-content">
               <h4>Critical Strategies</h4>
-              <p>Reading (SQ5R, TEAC), Listening (Cornell, Reflective), and Viewing (Integrity).</p>
+              <p>Slides 37–48: Critical Reading (SQ5R, TEAC), Listening (Cornell, Reflective), Viewing.</p>
             </div>
           </a>
         </div>
 
         <!-- MODULE 1 -->
         <div id="mod1-anchor">
-          <h2 class="section-heading">Module 1: Nature & Characteristics of Academic and Technical Writing</h2>
-          <p class="section-sub">Both genres sit under the shared umbrella of formal, informative communication, but diverge in primary audience, structural layout, and ultimate communicative intent.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;">
+            <h2 class="section-heading" style="margin-bottom: 0;">Module 1: Nature & Characteristics of Academic and Technical Writing</h2>
+            <span class="slide-badge">Slides 3 – 26</span>
+          </div>
+          <p class="section-sub">Verbatim definitions, core goals, real-world examples, and the 6 essential writing characteristics directly from the lecture slides.</p>
 
           <!-- Side by Side Comparative Breakdown -->
           <div class="compare-grid">
+            <!-- Academic Texts -->
             <div class="compare-card academic searchable-item">
               <div class="compare-header">
                 <h4>Academic Texts</h4>
-                <span class="badge-primary">Scholarly Focus</span>
+                <span class="slide-badge">Slide 4 & 5</span>
               </div>
-              <p class="compare-def">
-                Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers.
-              </p>
+              <div class="verbatim-quote-box">
+                <span class="quote-title">📖 Verbatim Definition (Slide 4)</span>
+                "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers."
+              </div>
               <div class="compare-meta">
-                <strong>Core Goal:</strong>
+                <strong>Core Goal (Slide 5):</strong>
                 <ul>
-                  <li>To inform, analyze, or persuade using scholarly research.</li>
+                  <li>"To inform, analyze, or persuade using scholarly research."</li>
                 </ul>
-                <strong>Common Examples:</strong>
+                <strong>Verbatim Examples (Slide 5):</strong>
                 <ul>
-                  <li>Research articles & empirical studies</li>
-                  <li>Position papers & academic essays</li>
-                  <li>Literature reviews & scholarly theses</li>
-                </ul>
-                <strong>Audience & Register:</strong>
-                <ul>
-                  <li>Academic evaluators, scholars, peer researchers</li>
-                  <li>Strict formal tone with standardized citations (APA, MLA)</li>
+                  <li>Research articles</li>
+                  <li>Position papers</li>
+                  <li>Literature reviews</li>
+                  <li>Academic essays</li>
                 </ul>
               </div>
             </div>
 
+            <!-- Technical Texts -->
             <div class="compare-card technical searchable-item">
               <div class="compare-header">
                 <h4>Technical Texts</h4>
-                <span class="badge-teal">Practical Focus</span>
+                <span class="slide-badge">Slide 6 & 7</span>
               </div>
-              <p class="compare-def">
-                Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely, efficiently, and accurately.
-              </p>
+              <div class="verbatim-quote-box">
+                <span class="quote-title">📖 Verbatim Definition (Slide 6)</span>
+                "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently."
+              </div>
               <div class="compare-meta">
-                <strong>Core Goal:</strong>
+                <strong>Core Goal (Slide 7):</strong>
                 <ul>
-                  <li>To guide action, explain a technical process, or document data.</li>
+                  <li>"To guide action, explain a technical process, or document data."</li>
                 </ul>
-                <strong>Common Examples:</strong>
+                <strong>Verbatim Examples (Slide 7):</strong>
                 <ul>
-                  <li>User manuals & instructional guides</li>
+                  <li>User manuals</li>
                   <li>Standard Operating Procedures (SOPs)</li>
-                  <li>Safety guidelines & lab procedure reports</li>
-                </ul>
-                <strong>Audience & Register:</strong>
-                <ul>
-                  <li>Operators, technicians, engineers, end-users</li>
-                  <li>Modular layout with step-by-step numbers and bulleted lists</li>
+                  <li>Safety guidelines</li>
+                  <li>Lab reports</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- The 6 Characteristics Header -->
-          <h3 class="subheading">The 6 Core Characteristics of Academic & Technical Texts</h3>
-          <p class="section-sub">These six principles are universally tested on exam day. Toggle the interactive examples on each card to test your understanding.</p>
+          <!-- Characteristics Header -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 32px 0 16px 0;">
+            <h3 class="subheading" style="margin: 0;">The 6 Core Characteristics of Academic & Technical Texts</h3>
+            <span class="slide-badge">Slides 8 – 26</span>
+          </div>
+          <p class="section-sub">These six characteristics form the core of Unit 2. All definitions, indicators, and examples below are quoted straight from the slide deck.</p>
 
           <!-- Characteristic 1 -->
           <div class="char-card searchable-item" id="char-1">
@@ -1582,22 +1603,24 @@
                 <div class="char-number">1</div>
                 <h4>Evidence-Based / Objective</h4>
               </div>
-              <span class="badge-primary">Empirical Support</span>
+              <span class="slide-badge">Slides 9, 10, 11, 12</span>
             </div>
-            <p class="char-desc">
-              Arguments, claims, and conclusions presented in academic and technical contexts must always be supported by empirical data, reputable facts, expert insights, or primary observations. At the same time, the writing puts more emphasis on information and arguments and less on personal feelings or perspectives of the writer, focusing entirely on the subject matter.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slides 9 & 10)</span>
+              "Arguments, claims, and conclusions presented in academic and technical contexts must always be supported by empirical data, reputable facts, expert insights, or primary observations.<br/><br/>
+              At the same time, the writing puts more emphasis on information and arguments and less on the feelings or personal perspectives of the writer, focusing entirely on the subject matter being discussed."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators</h5>
+              <h5>Key Indicators of Evidence-Based and Objective Texts (Slide 11):</h5>
               <ul>
-                <li>Inclusion of survey results, laboratory data, statistics, and verifiable facts.</li>
-                <li>Consistent use of standardized in-text citations (e.g., APA, MLA) and complete reference lists.</li>
-                <li>Minimizing or eliminating first-person subjective expressions (e.g., <em>"I think"</em>, <em>"I feel"</em>, <em>"in my opinion"</em>) in favor of objective phrasing.</li>
+                <li>"Inclusion of survey results, laboratory data, statistics, and verifiable facts."</li>
+                <li>"Consistent use of standardized in-text citations (e.g., APA, MLA) and complete reference lists."</li>
+                <li>"Minimizing or eliminating first-person subjective expressions ('I think,' 'I feel,' 'in my opinion') in favor of objective phrasing."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Verbatim Slide Examples (Slide 12)</span>
                 <div class="example-tabs">
                   <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex1-bad')">❌ Unsupported</button>
                   <button class="ex-tab-btn good" onclick="switchExample(this, 'ex1-good')">✅ Evidence-Based</button>
@@ -1606,11 +1629,11 @@
               <div class="example-content">
                 <div id="ex1-bad" class="example-pane bad-text active">
                   "Online learning is obviously terrible because students hate sitting in front of screens all day."
-                  <div class="example-rationale">⚠️ Flaw: Sweeping assertion with zero data, relies on personal sentiment ("hate") and subjective hyperbole ("obviously terrible").</div>
+                  <div class="example-rationale">⚠️ Flaw (Slide 12): Unsupported subjective assertion relying on emotional conjecture ("hate", "obviously terrible") with zero empirical backing.</div>
                 </div>
                 <div id="ex1-good" class="example-pane good-text">
                   "Survey data from 250 senior high school learners reveal that 68% experienced digital fatigue, which directly correlated with a 12% decrease in self-reported engagement during extended online lectures."
-                  <div class="example-rationale">✨ Why it works: Quantified sample size (n=250), specific percentages (68%, 12%), objective metrics, and neutral academic tone.</div>
+                  <div class="example-rationale">✨ Why it works (Slide 12): Quantified sample size (n=250), specific percentages (68%, 12%), objective metrics, and neutral formal tone.</div>
                 </div>
               </div>
             </div>
@@ -1623,21 +1646,22 @@
                 <div class="char-number">2</div>
                 <h4>Structured</h4>
               </div>
-              <span class="badge-primary">Predictable Roadmap</span>
+              <span class="slide-badge">Slides 13, 14, 15</span>
             </div>
-            <p class="char-desc">
-              Text must follow a predictable, logical, and standardized organizational pattern. This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 13)</span>
+              "It should follow a predictable, logical, and standardized organizational pattern. This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators</h5>
+              <h5>Key Indicators of Structured Texts (Slide 14):</h5>
               <ul>
-                <li><strong>Tripartite Structure for Essays:</strong> Clear Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher).</li>
-                <li><strong>Modular / Hierarchical Setup for Technical Texts:</strong> Numbered sequential steps, bulleted lists, and explicit subheadings.</li>
+                <li>"<strong>Tripartite Structure for Essays:</strong> A clear Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher)."</li>
+                <li>"<strong>Modular / Hierarchical Setup for Technical Texts:</strong> Numbered steps, bulleted lists, clear headings, and subheadings."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Verbatim Slide Examples (Slide 15)</span>
                 <div class="example-tabs">
                   <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex2-bad')">❌ Unstructured</button>
                   <button class="ex-tab-btn good" onclick="switchExample(this, 'ex2-good')">✅ Structured</button>
@@ -1645,12 +1669,12 @@
               </div>
               <div class="example-content">
                 <div id="ex2-bad" class="example-pane bad-text active">
-                  "The bacteria grew rapidly in the incubator. By the way, we used petri dishes from Batch 4. Also 42% died later. We wanted to test antibiotics."
-                  <div class="example-rationale">⚠️ Flaw: Disorganized stream of consciousness jumping straight into random outcomes without introducing research questions or methodology first.</div>
+                  "Jumping straight into data results without explaining the research problem or methodology first."
+                  <div class="example-rationale">⚠️ Flaw (Slide 15): Lacks introductory orientation, methodology, and predictable flow; disorients the evaluator.</div>
                 </div>
                 <div id="ex2-good" class="example-pane good-text">
-                  "1. Background & Hypothesis: This experiment evaluated antibiotic efficacy against bacterial growth. <br/>2. Methodology: Samples were inoculated into standardized petri dishes (Batch 4) and incubated at 37°C. <br/>3. Results & Discussion: While initial colony growth was rapid, antibiotic application yielded a 42% mortality rate."
-                  <div class="example-rationale">✨ Why it works: Logical tripartite progression: problem background → controlled method → analytical findings.</div>
+                  "Opening with a background context and thesis statement, developing each supporting point in dedicated body paragraphs, and concluding with a clear synthesis."
+                  <div class="example-rationale">✨ Why it works (Slide 15): Faithfully applies the Tripartite Structure (Intro → Body → Conclusion) to guide the reader seamlessly.</div>
                 </div>
               </div>
             </div>
@@ -1663,35 +1687,36 @@
                 <div class="char-number">3</div>
                 <h4>Critical</h4>
               </div>
-              <span class="badge-primary">Analytical Depth</span>
+              <span class="slide-badge">Slides 16, 17, 18</span>
             </div>
-            <p class="char-desc">
-              Academic writing requires analytical and evaluative thinking. Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 16)</span>
+              "Academic writing requires analytical and evaluative thinking. Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators</h5>
+              <h5>Key Indicators of Critical Texts (Slide 17):</h5>
               <ul>
-                <li>Analyzing <strong>why and how</strong> a phenomenon occurs rather than just summarizing what happened.</li>
-                <li>Identifying gaps, limitations, or contradictions in existing literature.</li>
-                <li>Evaluating the validity, credibility, and relevance of sources before integrating them into an argument.</li>
+                <li>"Analyzing <strong>why and how</strong> a phenomenon occurs rather than just summarizing what happened."</li>
+                <li>"Identifying gaps, limitations, or contradictions in existing literature."</li>
+                <li>"Evaluating the validity, credibility, and relevance of sources before integrating them into an argument."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Verbatim Slide Examples (Slide 18)</span>
                 <div class="example-tabs">
                   <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex3-bad')">❌ Merely Descriptive</button>
-                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex3-good')">✅ Critical & Evaluative</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex3-good')">✅ Critical</button>
                 </div>
               </div>
               <div class="example-content">
                 <div id="ex3-bad" class="example-pane bad-text active">
                   "Author A states that social media affects study habits. Author B also writes about social media and homework."
-                  <div class="example-rationale">⚠️ Flaw: Passive book-report style summary stating only what exists without analytical evaluation or synthesis.</div>
+                  <div class="example-rationale">⚠️ Flaw (Slide 18): Passive descriptive summary stating only the surface-level existence of texts without evaluation.</div>
                 </div>
                 <div id="ex3-good" class="example-pane good-text">
                   "While Author A attributes declining study hours directly to social media usage, Author B's findings suggest that screen time is merely a symptom of poor time management, highlighting a fundamental disagreement in how student distractibility should be conceptualized."
-                  <div class="example-rationale">✨ Why it works: Uncovers an underlying theoretical clash between authors, evaluates causative mechanisms, and produces intellectual depth.</div>
+                  <div class="example-rationale">✨ Why it works (Slide 18): Analyzes why/how findings conflict, exposes underlying theoretical tensions, and builds intellectual depth.</div>
                 </div>
               </div>
             </div>
@@ -1704,36 +1729,37 @@
                 <div class="char-number">4</div>
                 <h4>Balanced</h4>
               </div>
-              <span class="badge-primary">Hedging & Nuance</span>
+              <span class="slide-badge">Slides 19, 20, 21</span>
             </div>
-            <p class="char-desc">
-              Academic writing aims to consider different perspectives or arguments on an issue or topic to avoid being biased or one-sided. Writers exercise caution when making claims or conclusions to avoid making sweeping generalizations or unfounded statements.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 19)</span>
+              "Academic writing aims to consider different perspectives or arguments on an issue or topic to avoid being biased or one-sided. Writers exercise caution when making claims or conclusions to avoid making sweeping generalizations or unfounded statements."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators & Hedging Toolkit</h5>
+              <h5>Key Indicators of Balanced Texts (Slide 20):</h5>
               <ul>
-                <li>Acknowledging counterarguments, alternative explanations, or study limitations.</li>
-                <li><strong>Modal Verbs:</strong> <em>may, suggest, appear, seem, could</em>.</li>
-                <li><strong>Probability Adverbs:</strong> <em>likely, possibly, presumably, generally, relatively</em>.</li>
-                <li><strong>Tentative Phrases:</strong> <em>"the data imply that..."</em>, <em>"results indicate a potential correlation..."</em>.</li>
+                <li>"Acknowledging counterarguments, alternative explanations, or study limitations."</li>
+                <li>"<strong>Using Modal Verbs:</strong> (may, suggest, appear, seem)."</li>
+                <li>"<strong>Using Probability Adverbs:</strong> (likely, possibly, presumably, generally)."</li>
+                <li>"<strong>Using Tentative Phrases:</strong> ('the data imply that...', 'results indicate a potential link...')."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Verbatim Slide Examples (Slide 21)</span>
                 <div class="example-tabs">
                   <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex4-bad')">❌ Overgeneralized</button>
-                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex4-good')">✅ Balanced (Hedged)</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex4-good')">✅ Balanced</button>
                 </div>
               </div>
               <div class="example-content">
                 <div id="ex4-bad" class="example-pane bad-text active">
                   "Artificial intelligence completely destroys student creativity and guarantees that no one will learn how to write."
-                  <div class="example-rationale">⚠️ Flaw: Dogmatic absolutism ("completely destroys", "guarantees") lacking nuance and ignoring conflicting positive evidence.</div>
+                  <div class="example-rationale">⚠️ Flaw (Slide 21): Dogmatic absolutism ("completely destroys", "guarantees") lacking nuance and failing to consider alternate evidence.</div>
                 </div>
                 <div id="ex4-good" class="example-pane good-text">
-                  "While the unmonitored use of AI tools may reduce independent drafting practice, preliminary findings suggest that structured AI integration can enhance students' critical editing and revision skills when guided ethically."
-                  <div class="example-rationale">✨ Why it works: Uses cautious hedging ("may reduce", "preliminary findings suggest", "can enhance") and balanced multi-angle perspective.</div>
+                  "While the unmonitored use of AI tools may reduce independent drafting practice, preliminary findings suggest that structured AI integration can enhance student brainstorming and revision skills when guided ethically."
+                  <div class="example-rationale">✨ Why it works (Slide 21): Cautious hedging using modal verbs ("may reduce", "suggest", "can enhance") and balanced consideration of both risks and ethical benefits.</div>
                 </div>
               </div>
             </div>
@@ -1746,34 +1772,35 @@
                 <div class="char-number">5</div>
                 <h4>Precise</h4>
               </div>
-              <span class="badge-primary">Exact Quantifiable Language</span>
+              <span class="slide-badge">Slides 22 & 23</span>
             </div>
-            <p class="char-desc">
-              Strives to provide clear, accurate, and correct information that clearly captures what the data show. Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 22)</span>
+              "Academic and technical writing strives to provide clear, accurate, and correct information that clearly captures what the data show. Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators</h5>
+              <h5>Key Indicators of Precise Texts (Slide 23):</h5>
               <ul>
-                <li>Using exact language and specific terms (e.g., specifying <em>"increased by 15%"</em> or <em>"decreased"</em> instead of merely saying the values <em>"changed"</em>).</li>
-                <li>Quantifying observations with exact measurements, units, percentages, and statistical values rather than vague modifiers like <em>"a lot"</em> or <em>"huge"</em>.</li>
+                <li>"Using exact language and specific terms (e.g., using 'increase' or 'decrease' instead of merely saying the values 'changed')."</li>
+                <li>"Quantifying observations with exact measurements, percentages, and statistical values rather than vague modifiers."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Precision Application</span>
                 <div class="example-tabs">
-                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex5-bad')">❌ Vague</button>
-                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex5-good')">✅ Precise</button>
+                  <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex5-bad')">❌ Vague Descriptors</button>
+                  <button class="ex-tab-btn good" onclick="switchExample(this, 'ex5-good')">✅ Quantified Precision</button>
                 </div>
               </div>
               <div class="example-content">
                 <div id="ex5-bad" class="example-pane bad-text active">
-                  "The temperature changed a lot, and many samples were ruined soon afterwards."
-                  <div class="example-rationale">⚠️ Flaw: Ambiguous terms ("changed a lot", "many", "soon") that prevent experimental replication and technical safety.</div>
+                  "The values changed a lot after adding the solution, and many samples were ruined soon afterwards."
+                  <div class="example-rationale">⚠️ Flaw: Highly ambiguous terms ("changed a lot", "many", "soon") that prevent experimental replication.</div>
                 </div>
                 <div id="ex5-good" class="example-pane good-text">
                   "The incubation temperature increased by 4.8°C over a 15-minute interval, resulting in the thermal degradation of 42% (n=21) of the bacterial cultures."
-                  <div class="example-rationale">✨ Why it works: Exact numerical shift (+4.8°C), explicit time interval (15 min), and quantified sample degradation (42%, n=21).</div>
+                  <div class="example-rationale">✨ Why it works: Uses exact terms ("increased" rather than "changed"), specific numerical values (+4.8°C), time frames (15 min), and sample proportions (42%, n=21).</div>
                 </div>
               </div>
             </div>
@@ -1786,22 +1813,23 @@
                 <div class="char-number">6</div>
                 <h4>Formal</h4>
               </div>
-              <span class="badge-primary">Standard Conventions</span>
+              <span class="slide-badge">Slides 24, 25, 26</span>
             </div>
-            <p class="char-desc">
-              Academic writing observes formal conventions of writing. Adhering to formal language and tone maintains professionalism, establishes authority, and ensures respect across scholarly and technical communities.
-            </p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 24)</span>
+              "Academic writing observes formal conventions of writing. Adhering to formal language and tone maintains professionalism, establishes authority, and ensures respect across scholarly and technical communities."
+            </div>
             <div class="char-indicators">
-              <h5>Key Indicators</h5>
+              <h5>Key Indicators of Formal Texts (Slide 25):</h5>
               <ul>
-                <li><strong>Zero Colloquialisms, Figures of Speech, or Slang:</strong> Avoiding casual expressions (e.g., <em>"cool"</em>, <em>"gonna"</em>, <em>"trash"</em>, <em>"freaked out"</em>).</li>
-                <li><strong>No Contractions:</strong> Spelling out words completely (e.g., writing <em>"cannot"</em>, <em>"did not"</em>, <em>"would have"</em> instead of <em>"can't"</em>, <em>"didn't"</em>, <em>"would've"</em>).</li>
-                <li><strong>Standard Mechanics:</strong> Observing proper capitalization, punctuation, subject-verb agreement, and rigorous citation formatting.</li>
+                <li>"<strong>Zero Colloquialisms, Figures of Speech, or Slang:</strong> Avoiding casual expressions (e.g., 'cool,' 'gonna,' 'trash')."</li>
+                <li>"<strong>No Contractions:</strong> Spelling out words completely (e.g., writing 'cannot,' 'did not,' 'would have' instead of 'can't,' 'didn't,' 'would've')."</li>
+                <li>"<strong>Standard Mechanics:</strong> Observing proper capitalization, punctuation, subject-verb agreement, and correct citation formatting."</li>
               </ul>
             </div>
             <div class="interactive-example-box">
               <div class="example-header">
-                <span>Interactive Contrast Test</span>
+                <span>Verbatim Slide Examples (Slide 26)</span>
                 <div class="example-tabs">
                   <button class="ex-tab-btn bad active" onclick="switchExample(this, 'ex6-bad')">❌ Informal</button>
                   <button class="ex-tab-btn good" onclick="switchExample(this, 'ex6-good')">✅ Formal</button>
@@ -1810,11 +1838,11 @@
               <div class="example-content">
                 <div id="ex6-bad" class="example-pane bad-text active">
                   "The researchers couldn't figure out why the tech crashed, which was super frustrating for the team."
-                  <div class="example-rationale">⚠️ Flaw: Uses contractions ("couldn't"), slang/casual vocabulary ("tech", "super frustrating", "crashed").</div>
+                  <div class="example-rationale">⚠️ Flaw (Slide 26): Uses contractions ("couldn't") and colloquial expressions ("tech crashed", "super frustrating").</div>
                 </div>
                 <div id="ex6-good" class="example-pane good-text">
                   "The research team was unable to identify the immediate cause of the system failure, presenting a significant technical challenge during the initial testing phase."
-                  <div class="example-rationale">✨ Why it works: Uncontracted professional phrasing ("was unable to identify"), formal terminology ("system failure", "significant technical challenge").</div>
+                  <div class="example-rationale">✨ Why it works (Slide 26): Replaces contractions with full spelling ("was unable to identify") and utilizes elevated, objective vocabulary ("system failure", "significant technical challenge").</div>
                 </div>
               </div>
             </div>
@@ -1825,52 +1853,81 @@
 
         <!-- MODULE 2 -->
         <div id="mod2-anchor">
-          <h2 class="section-heading">Module 2: The APC Framework (Audience, Purpose, Context)</h2>
-          <p class="section-sub">Considering Audience, Purpose, and Context is a fundamental law of communication applying across every single register—from an email to a formal research paper or workplace technical report.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;">
+            <h2 class="section-heading" style="margin-bottom: 0;">Module 2: The APC of Academic and Technical Texts</h2>
+            <span class="slide-badge">Slides 27 – 36</span>
+          </div>
+          <div class="verbatim-quote-box">
+            <span class="quote-title">📖 Verbatim Foundation (Slide 28)</span>
+            "Considering Audience, Purpose, and Context (APC) is a fundamental rule of communication that applies across every single register—from a quick text to a friend to a formal academic paper or a workplace technical report."
+          </div>
 
           <!-- APC Diagram Box -->
           <div class="diagram-card">
             <h4>The APC Triad</h4>
-            <p>Click the diagram to view in high resolution.</p>
+            <p>Click diagram to expand fullscreen.</p>
             <div class="diagram-img-box" onclick="openLightbox('assets/apc_framework.jpg')">
               <img src="assets/apc_framework.jpg" alt="APC Framework Diagram" />
             </div>
           </div>
 
-          <!-- Audience Breakdown with Interactive Selector -->
-          <h3 class="subheading">1. Audience: The 4 Distinct Target Groups</h3>
-          <p class="section-sub">Understanding who will read your text dictates the required level of detail, technical depth, tone, and vocabulary. Select an audience to see the tailored writing strategy:</p>
+          <!-- 1. AUDIENCE -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 28px 0 8px 0;">
+            <h3 class="subheading" style="margin: 0;">1. Audience: 4 Types in Academic & Technical Contexts</h3>
+            <span class="slide-badge">Slides 29 – 33</span>
+          </div>
+          <div class="verbatim-quote-box" style="margin-top: 4px;">
+            <span class="quote-title">📖 Verbatim Principle (Slide 29)</span>
+            "Understanding who will read your text dictates the level of detail, tone, and vocabulary required."
+          </div>
 
+          <!-- Interactive Audience Selector -->
           <div class="aud-selector-bar">
-            <button class="aud-btn active" onclick="selectAudience('expert', this)">🔬 Expert Audience</button>
-            <button class="aud-btn" onclick="selectAudience('lay', this)">👥 Non-Expert / Lay</button>
-            <button class="aud-btn" onclick="selectAudience('peer', this)">🎓 Peer Audience</button>
-            <button class="aud-btn" onclick="selectAudience('eval', this)">📋 Academic Evaluators</button>
+            <button class="aud-btn active" onclick="selectAudience('expert', this)">1. Expert Audience (Slide 30)</button>
+            <button class="aud-btn" onclick="selectAudience('lay', this)">2. Non-Expert / Lay (Slide 31)</button>
+            <button class="aud-btn" onclick="selectAudience('peer', this)">3. Peer Audience (Slide 32)</button>
+            <button class="aud-btn" onclick="selectAudience('eval', this)">4. Academic Evaluators (Slide 33)</button>
           </div>
 
           <div class="aud-display-card" id="audDisplayCard">
             <!-- Dynamic Content populated via JS -->
           </div>
 
-          <!-- Purpose & Context Grid -->
+          <!-- 2. PURPOSE & 3. CONTEXT GRID -->
           <div class="compare-grid" style="margin-top: 28px;">
+            <!-- Purpose Card -->
             <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">2. Purpose: The 3 Intended Outcomes</h4>
-              <p class="char-desc">Purpose defines the intended goal or outcome of your text, determining structure, emphasis, and strategy:</p>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 0;">2. Purpose (Slide 34)</h4>
+                <span class="slide-badge">Slide 34</span>
+              </div>
+              <div class="verbatim-quote-box">
+                <span class="quote-title">📖 Verbatim Definition</span>
+                "Purpose defines the intended goal or outcome of your text. It determines the structure, strategy, focus, and call to action."
+              </div>
+              <strong style="font-size: 12px; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 6px;">3 Purposes in Writing (Slide 34):</strong>
               <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
-                <li><strong>To Inform / Explain:</strong> Present objective facts, methodologies, or mechanisms without bias.</li>
-                <li><strong>To Persuade / Argue:</strong> Convince the reader of a thesis using sound claims and empirical evidence.</li>
-                <li><strong>To Instruct / Direct:</strong> Guide procedural human action safely, step-by-step, toward a goal.</li>
+                <li><strong>1. To Inform / Explain:</strong> Present objective facts, descriptions, or explanations.</li>
+                <li><strong>2. To Persuade / Argue:</strong> Convince the reader using logical argumentation and evidence.</li>
+                <li><strong>3. To Instruct / Direct:</strong> Guide procedural human action safely, efficiently, and step-by-step.</li>
               </ul>
             </div>
 
+            <!-- Context Card -->
             <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">3. Context: The 3 Boundary Conditions</h4>
-              <p class="char-desc">Context encompasses surrounding circumstances, medium, environment, and discipline constraints:</p>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 0;">3. Context (Slide 35 & 36)</h4>
+                <span class="slide-badge">Slides 35 & 36</span>
+              </div>
+              <div class="verbatim-quote-box">
+                <span class="quote-title">📖 Verbatim Definition</span>
+                "Context encompasses the surrounding circumstances, environment, medium, and constraints of the interaction. It dictates the format, length, timing, and boundary conditions of your message."
+              </div>
+              <strong style="font-size: 12px; text-transform: uppercase; color: var(--accent-teal); display: block; margin-bottom: 6px;">Examples of Contexts (Slide 35 & 36):</strong>
               <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
-                <li><strong>Physical / Digital Setting:</strong> Classroom, laboratory, professional conference, or online database.</li>
-                <li><strong>Medium & Format:</strong> Print journal, slide presentation, PDF report, or web infographic.</li>
-                <li><strong>Discipline Expectations:</strong> <em>Humanities</em> prioritize argumentative critique and textual evidence; <em>Sciences</em> focus on methodology and replicable data.</li>
+                <li><strong>1. Physical / Digital Setting:</strong> "Classroom, laboratory, professional conference, or online database."</li>
+                <li><strong>2. Medium & Format:</strong> "Print journal, slide presentation, PDF report, or web infographic."</li>
+                <li><strong>3. Discipline Expectations:</strong> "Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data."</li>
               </ul>
             </div>
           </div>
@@ -1880,177 +1937,216 @@
 
         <!-- MODULE 3 -->
         <div id="mod3-anchor">
-          <h2 class="section-heading">Module 3: Critical Strategies for Interpreting Texts</h2>
-          <p class="section-sub">Critical interpretation moves beyond passive consumption. It demands active analytical engagement across reading, listening, and viewing modalities.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;">
+            <h2 class="section-heading" style="margin-bottom: 0;">Module 3: Critical Strategies for Interpreting Texts</h2>
+            <span class="slide-badge">Slides 37 – 48</span>
+          </div>
+          <p class="section-sub">Critical interpretation spans three core communication channels: Reading, Listening, and Viewing. Below are all strategies and models exactly as presented on the slides.</p>
 
-          <!-- 1. Critical Reading -->
-          <h3 class="subheading">A. Critical Reading Strategies (3 Sequential Stages)</h3>
-          <p class="section-sub">Critical reading involves active analysis, interpretation, and evaluation of how an author constructs an argument.</p>
+          <!-- A. CRITICAL READING STRATEGIES -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 24px 0 8px 0;">
+            <h3 class="subheading" style="margin: 0;">A. Critical Reading Strategies</h3>
+            <span class="slide-badge">Slides 38 – 41</span>
+          </div>
+          <div class="verbatim-quote-box">
+            <span class="quote-title">📖 Verbatim Definition (Slide 38)</span>
+            "Critical reading involves analysis, interpretation, and evaluation. It requires moving beyond passive reading to actively question, analyze, and evaluate how an author constructs an argument."
+          </div>
 
           <!-- Pre-Reading -->
           <div class="char-card searchable-item">
-            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 1: Pre-Reading Strategies</h4>
-            <div style="margin-bottom: 12px; font-size: 14px; color: var(--t2);">
-              <strong>Previewing:</strong> Reading titles, abstracts, author credentials, and figure captions to establish reading goals and activate schema.
+            <div class="char-top">
+              <h4 style="color: var(--primary);">1. Pre-Reading Strategies</h4>
+              <span class="slide-badge">Slide 39</span>
             </div>
-            <div style="font-size: 14px; color: var(--t2); margin-bottom: 14px;">
-              <strong>The SQ5R Method:</strong> A proven 5-step active study system:
-            </div>
-            
+            <ul style="list-style-type: none; line-height: 1.8; font-size: 14px; color: var(--t2); margin-bottom: 14px;">
+              <li>• <strong>Previewing:</strong> "Reading titles, abstracts, and captions to set reading goals."</li>
+              <li>• <strong>SQ5R Model:</strong></li>
+            </ul>
+
             <div class="diagram-img-box" onclick="openLightbox('assets/sq5r_reading_flow.jpg')">
-              <img src="assets/sq5r_reading_flow.jpg" alt="SQ5R Reading Method Flow" />
+              <img src="assets/sq5r_reading_flow.jpg" alt="SQ5R Reading Flow" />
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 12.5px;">
-              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
-                <strong>1. Survey:</strong> Scan headings, subheadings, charts, and summaries.
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 13px;">
+              <div style="background: var(--bg-card-muted); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid #3b82f6;">
+                <strong>1. Survey:</strong><br/>"Scan headings/ visuals"
               </div>
-              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
-                <strong>2. Question:</strong> Turn headings into inquisitive questions (e.g. "What causes X?").
+              <div style="background: var(--bg-card-muted); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid #0d9488;">
+                <strong>2. Question:</strong><br/>"Turn headings into questions"
               </div>
-              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
-                <strong>3. Read:</strong> Read actively with pencil in hand to answer your generated questions.
+              <div style="background: var(--bg-card-muted); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid #10b981;">
+                <strong>3. Read:</strong><br/>"Actively seek answers"
               </div>
-              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
-                <strong>4. Recite:</strong> Summarize core concepts in your own words aloud or in writing.
+              <div style="background: var(--bg-card-muted); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid #f59e0b;">
+                <strong>4. Recite:</strong><br/>"Summarize key points"
               </div>
-              <div style="background: var(--bg-card-muted); padding: 10px; border-radius: var(--radius-sm);">
-                <strong>5. Review:</strong> Periodic recall checks to consolidate memory into long-term storage.
+              <div style="background: var(--bg-card-muted); padding: 12px; border-radius: var(--radius-sm); border-left: 3px solid #8b5cf6;">
+                <strong>5. Review:</strong><br/>"Check overall recall"
               </div>
             </div>
           </div>
 
           <!-- During Reading -->
           <div class="char-card searchable-item">
-            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 2: During-Reading Strategies</h4>
-            <div style="margin-bottom: 14px; font-size: 14px; color: var(--t2);">
-              <strong>Annotation:</strong> Highlighting main claims, circling unfamiliar technical terms, and recording critical questions or counter-arguments directly in the text margins.
+            <div class="char-top">
+              <h4 style="color: var(--primary);">2. During Reading Strategies</h4>
+              <span class="slide-badge">Slide 40</span>
             </div>
-
-            <div style="font-size: 14px; color: var(--t2); margin-bottom: 12px;">
-              <strong>The TEAC Model for Paragraph Structure:</strong> Standard organizational anatomy of a rigorous analytical paragraph:
-            </div>
+            <ul style="list-style-type: none; line-height: 1.8; font-size: 14px; color: var(--t2); margin-bottom: 14px;">
+              <li>• <strong>Annotation:</strong> "Highlighting main claims, circling key terms, and writing questions in the margins."</li>
+              <li>• <strong>TEAC Model for Paragraph Structure:</strong></li>
+            </ul>
 
             <div class="diagram-img-box" onclick="openLightbox('assets/teac_paragraph_structure.jpg')">
-              <img src="assets/teac_paragraph_structure.jpg" alt="TEAC Paragraph Structure Diagram" />
+              <img src="assets/teac_paragraph_structure.jpg" alt="TEAC Model Diagram" />
             </div>
 
-            <!-- Interactive TEAC Highlighter -->
-            <div style="border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px; background: var(--bg-card-muted);">
-              <h5 style="font-size: 12px; text-transform: uppercase; color: var(--t3); margin-bottom: 10px; font-weight: 700;">Interactive TEAC Paragraph Breakdown (Click each element):</h5>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
-                <button class="ex-tab-btn active" style="background: #dbeafe; color: #1e40af;" onclick="highlightTeac('t')">T - Topic Sentence</button>
-                <button class="ex-tab-btn" style="background: #d1fae5; color: #065f46;" onclick="highlightTeac('e')">E - Evidence</button>
-                <button class="ex-tab-btn" style="background: #fef3c7; color: #92400e;" onclick="highlightTeac('a')">A - Analysis</button>
-                <button class="ex-tab-btn" style="background: #f3e8ff; color: #6b21a8;" onclick="highlightTeac('c')">C - Clincher</button>
-                <button class="ex-tab-btn" style="background: var(--bg-card); color: var(--t2);" onclick="highlightTeac('all')">Show All</button>
-              </div>
-              <div id="teacSampleText" style="line-height: 1.8; font-size: 14px; background: var(--bg-card); padding: 14px; border-radius: var(--radius-sm); border: 1px solid var(--border);">
-                <span id="teac-t" style="background: #bfdbfe; padding: 2px 4px; border-radius: 3px;">Implementing structured active learning strategies significantly improves STEM student retention rates.</span>
-                <span id="teac-e" style="background: #a7f3d0; padding: 2px 4px; border-radius: 3px;">In a meta-analysis of 225 college science courses, Freeman et al. (2014) reported that average examination scores improved by 6% in active learning classrooms compared to traditional lecturing.</span>
-                <span id="teac-a" style="background: #fde68a; padding: 2px 4px; border-radius: 3px;">This performance discrepancy occurs because collaborative problem-solving forces students to reconstruct mental models and identify cognitive gaps in real time rather than passively absorbing lecture slides.</span>
-                <span id="teac-c" style="background: #e9d5ff; padding: 2px 4px; border-radius: 3px;">Consequently, educational institutions must prioritize participatory pedagogical models to foster durable analytical competence.</span>
+            <div style="background: var(--bg-card-muted); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border); margin-top: 14px;">
+              <h5 style="font-size: 12.5px; text-transform: uppercase; color: var(--t1); margin-bottom: 10px; font-weight: 800;">Verbatim TEAC Definitions (Slide 40):</h5>
+              <div style="display: grid; gap: 8px; font-size: 13.5px; line-height: 1.6;">
+                <div style="background: #eff6ff; border-left: 4px solid #2563eb; padding: 8px 12px; border-radius: var(--radius-sm);">
+                  <strong>T (Topic Sentence):</strong> "States the main claim of the paragraph."
+                </div>
+                <div style="background: #ecfdf5; border-left: 4px solid #059669; padding: 8px 12px; border-radius: var(--radius-sm);">
+                  <strong>E (Evidence):</strong> "Presents statistics, study results, or expert quotes."
+                </div>
+                <div style="background: #fffbeb; border-left: 4px solid #d97706; padding: 8px 12px; border-radius: var(--radius-sm);">
+                  <strong>A (Analysis):</strong> "Explains how the evidence proves the topic sentence."
+                </div>
+                <div style="background: #fdf4ff; border-left: 4px solid #c026d3; padding: 8px 12px; border-radius: var(--radius-sm);">
+                  <strong>C (Clincher/Conclusion):</strong> "Summarizes the point or transitions to the next paragraph."
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Post-Reading -->
           <div class="char-card searchable-item">
-            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px; color: var(--primary);">Stage 3: Post-Reading Strategies</h4>
+            <div class="char-top">
+              <h4 style="color: var(--primary);">3. Post-Reading Strategies</h4>
+              <span class="slide-badge">Slide 41</span>
+            </div>
+            <div style="display: grid; gap: 12px; font-size: 13.5px; line-height: 1.65;">
+              <div style="background: var(--bg-card-muted); padding: 12px 16px; border-radius: var(--radius-sm);">
+                <strong>• Double-Entry Journaling (Slide 41):</strong><br/>
+                "A two-column graphic organizer that explicitly separates text evidence from student analysis."
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 12px 16px; border-radius: var(--radius-sm);">
+                <strong>• Outlining (Slide 41):</strong><br/>
+                "Deconstructing a text into a hierarchical alphanumeric or bulleted structure to make its organizational logic visible."
+              </div>
+              <div style="background: var(--bg-card-muted); padding: 12px 16px; border-radius: var(--radius-sm);">
+                <strong>• Summarizing (Slide 41):</strong><br/>
+                "Restating the central thesis and main supporting arguments of a text in your own words, removing minor details, examples, and repetitive phrasing."
+              </div>
+            </div>
+          </div>
+
+          <!-- B. CRITICAL LISTENING STRATEGIES -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 32px 0 8px 0;">
+            <h3 class="subheading" style="margin: 0;">B. Critical Listening Strategies</h3>
+            <span class="slide-badge">Slides 42 – 46, 48</span>
+          </div>
+          <div class="verbatim-quote-box">
+            <span class="quote-title">📖 Verbatim Definition (Slide 42)</span>
+            "Critical listening in academic settings requires evaluating arguments, assessing supporting evidence, and understanding messages beyond spoken words.<br/><br/>
+            <strong>Critical Listening Strategies:</strong> 1. Active Listening · 2. The Cornell Note-Taking System · 3. Reflective Listening."
+          </div>
+
+          <!-- Active Listening -->
+          <div class="char-card searchable-item">
+            <div class="char-top">
+              <h4>1. Active Listening</h4>
+              <span class="slide-badge">Slide 43</span>
+            </div>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 43)</span>
+              "Focuses full cognitive attention on the speaker, filtering out distractions and withholding hasty judgments until the message is fully delivered."
+            </div>
+            <strong style="font-size: 12px; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 6px;">How to do it (Slide 43):</strong>
             <ul style="padding-left: 20px; line-height: 1.8; font-size: 13.5px; color: var(--t2);">
-              <li><strong>Double-Entry Journaling:</strong> A two-column graphic organizer that explicitly separates direct text citations/evidence (left column) from personal reflections, critiques, and analytical connections (right column).</li>
-              <li><strong>Hierarchical Outlining:</strong> Deconstructing a reading into a structured alphanumeric (I, A, 1, a) or indented bulleted format to lay bare the author's logical progression.</li>
-              <li><strong>Summarizing:</strong> Restating the core thesis and main supporting arguments strictly in your own words while eliminating minor anecdotes, redundant examples, and decorative phrasing.</li>
+              <li><strong>Paying Attention:</strong> "Giving total focus to verbal cues, vocal tone, and body language."</li>
+              <li><strong>Evaluating:</strong> "Analyzing the logical validity of the arguments and checking if claims are supported by facts."</li>
+              <li><strong>Responding Thoughtfully:</strong> "Formulating questions or feedback based on accurate facts rather than emotional reaction."</li>
             </ul>
           </div>
 
-          <!-- 2. Critical Listening -->
-          <h3 class="subheading">B. Critical Listening Strategies</h3>
-          <p class="section-sub">Evaluating spoken academic arguments, detecting unstated assumptions, and ensuring message fidelity.</p>
-
-          <div class="compare-grid">
-            <!-- Active Listening -->
-            <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">1. Active Listening</h4>
-              <p class="char-desc">Focuses full cognitive attention on the speaker, filtering out internal/external distractions and withholding hasty judgments until the message is fully communicated.</p>
-              <ul style="padding-left: 20px; line-height: 1.8; font-size: 13px; color: var(--t2);">
-                <li><strong>Paying Attention:</strong> Total focus on verbal cues, vocal cadence, and nonverbal body language.</li>
-                <li><strong>Evaluating:</strong> Analyzing logical soundness and verifying empirical backing of claims.</li>
-                <li><strong>Responding Thoughtfully:</strong> Formulating questions grounded in facts rather than immediate emotional reactivity.</li>
-              </ul>
-            </div>
-
-            <!-- Reflective Listening -->
-            <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">2. Reflective Listening</h4>
-              <p class="char-desc">Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before advancing the dialogue.</p>
-              
-              <div class="diagram-img-box" style="margin-top: 10px;" onclick="openLightbox('assets/reflective_listening_flow.jpg')">
-                <img src="assets/reflective_listening_flow.jpg" alt="Reflective Listening Feedback Loop" />
-              </div>
-
-              <div style="background: var(--accent-emerald-light); border-left: 3px solid var(--accent-emerald); padding: 10px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 12.5px; color: var(--accent-emerald); font-weight: 600;">
-                Formula: "If I understand correctly, you are saying that [paraphrased main point]. Is that correct?"
-              </div>
-            </div>
-          </div>
-
           <!-- Cornell Note-Taking System -->
-          <div class="char-card searchable-item" style="margin-top: 24px;">
+          <div class="char-card searchable-item">
             <div class="char-top">
-              <div class="char-title-group">
-                <h4>3. The Cornell Note-Taking System</h4>
-              </div>
-              <span class="badge-primary">Systematic Note Architecture</span>
+              <h4>2. The Cornell Note-Taking System</h4>
+              <span class="slide-badge">Slides 44 & 45</span>
             </div>
-            <p class="char-desc">A time-tested, structured layout designed to facilitate active note-taking during lectures and seamless self-quizzing during study review.</p>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 44)</span>
+              "A structured format for taking, organizing, and reviewing lecture notes."
+            </div>
+            <strong style="font-size: 12px; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 8px;">How to do it (Slide 44):</strong>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px;">
+              <div style="background: var(--accent-teal-light); border-left: 3px solid var(--accent-teal); padding: 12px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+                <strong style="color: var(--accent-teal); font-size: 13px;">Cue Column (Left, 30% width):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">"Formulated immediately after the lecture; record key vocabulary terms, main themes, and potential exam questions."</p>
+              </div>
+              <div style="background: var(--primary-light); border-left: 3px solid var(--primary); padding: 12px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+                <strong style="color: var(--primary); font-size: 13px;">Notes Column (Right, 70% width):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">"Record main lecture concepts, facts, and equations using abbreviations and bullet points during the presentation."</p>
+              </div>
+              <div style="background: var(--accent-amber-light); border-left: 3px solid var(--accent-amber); padding: 12px 14px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+                <strong style="color: var(--accent-amber); font-size: 13px;">Summary Block (Bottom, 2-3 inches):</strong>
+                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">"Write a 2-4 sentence summary in your own words synthesizing the page's core content."</p>
+              </div>
+            </div>
 
             <div class="diagram-img-box" onclick="openLightbox('assets/cornell_notes_system.jpg')">
               <img src="assets/cornell_notes_system.jpg" alt="Cornell Note-Taking System Diagram" />
             </div>
+          </div>
 
-            <!-- Layout Specs -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 14px;">
-              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-teal);">
-                <strong style="color: var(--accent-teal); font-size: 13px;">Cue Column (Left, 30% Width):</strong>
-                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Formulated immediately <em>after</em> the lecture. Contains keywords, review prompts, and potential exam questions.</p>
-              </div>
-              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--primary);">
-                <strong style="color: var(--primary); font-size: 13px;">Notes Column (Right, 70% Width):</strong>
-                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Recorded <em>during</em> the lecture. Contains main lecture ideas, abbreviations, bullet points, and data.</p>
-              </div>
-              <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-amber);">
-                <strong style="color: var(--accent-amber); font-size: 13px;">Summary Block (Bottom, 2–3 inches):</strong>
-                <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Written during post-lecture review. A 2–4 sentence synthesis summarizing the entire page's core takeaways.</p>
-              </div>
+          <!-- Reflective Listening -->
+          <div class="char-card searchable-item">
+            <div class="char-top">
+              <h4>3. Reflective Listening</h4>
+              <span class="slide-badge">Slides 46 & 48</span>
+            </div>
+            <div class="verbatim-quote-box">
+              <span class="quote-title">📖 Verbatim Definition (Slide 46 & 48)</span>
+              "Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward."
+            </div>
+            <div style="background: var(--accent-emerald-light); border: 1px solid var(--accent-emerald-border); padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: 14px;">
+              <strong style="color: var(--accent-emerald); font-size: 13px; display: block; margin-bottom: 4px;">Verbatim Example (Slide 46 & 48):</strong>
+              <span style="font-size: 14px; color: var(--t1); font-weight: 600;">"If I understand correctly, you are saying that [paraphrased main point]. Is that correct?"</span>
+            </div>
+
+            <div class="diagram-img-box" onclick="openLightbox('assets/reflective_listening_flow.jpg')">
+              <img src="assets/reflective_listening_flow.jpg" alt="Reflective Listening Diagram" />
             </div>
           </div>
 
-          <!-- 3. Critical Viewing -->
-          <h3 class="subheading" style="margin-top: 32px;">C. Critical Viewing Strategies</h3>
-          <p class="section-sub">Empowering learners to decode, analyze, and evaluate multimodal visuals (charts, infographics, diagrams, and videos) to detect bias, identify manipulated data, and verify claims.</p>
-
-          <div class="compare-grid">
-            <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">1. Visual Grammar</h4>
-              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
-                Examining graphic hierarchy, color psychology, typography weight, and framing choices to determine what information the designer emphasized or minimized.
-              </p>
+          <!-- C. CRITICAL VIEWING STRATEGIES -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 32px 0 8px 0;">
+            <h3 class="subheading" style="margin: 0;">C. Critical Viewing Strategies</h3>
+            <span class="slide-badge">Slide 47</span>
+          </div>
+          <div class="verbatim-quote-box">
+            <span class="quote-title">📖 Verbatim Definition (Slide 47)</span>
+            "Critical viewing empowers learners to decode, analyze, and evaluate multimodal visuals (charts, diagrams, infographics, and videos) to detect bias, identify manipulated data, and verify claims."
+          </div>
+          <strong style="font-size: 12px; text-transform: uppercase; color: var(--primary); display: block; margin-bottom: 8px;">What to look out for (Slide 47):</strong>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+            <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--primary);">
+              <strong>1. Visual Grammar:</strong>
+              <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Graphic hierarchy, framing, color psychology, and symbolic iconography used to direct viewer emphasis.</p>
             </div>
-            <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">2. Scale Integrity</h4>
-              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
-                Scrutinizing chart axes. Ensuring the baseline starts at zero, intervals are uniform, and bar heights or pie slices accurately mirror numerical values without visual exaggeration.
-              </p>
+            <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-teal);">
+              <strong>2. Scale Integrity:</strong>
+              <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Ensuring chart axes begin at zero with proportional, uniform intervals to prevent exaggerated distortions.</p>
             </div>
-            <div class="char-card searchable-item" style="margin-bottom: 0;">
-              <h4 style="font-family: var(--font-display); font-size: 16px; margin-bottom: 6px;">3. Source Credibility</h4>
-              <p style="font-size: 13px; color: var(--t2); line-height: 1.6;">
-                Checking dataset recency, verifying the primary publishing entity, evaluating sample representation, and checking for commercial or ideological sponsor conflicts.
-              </p>
+            <div style="background: var(--bg-card-muted); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-amber);">
+              <strong>3. Source Credibility:</strong>
+              <p style="font-size: 12.5px; color: var(--t2); margin-top: 4px;">Evaluating dataset recency, publication credibility, sampling integrity, and checking for commercial/sponsor bias.</p>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -2058,54 +2154,56 @@
       <!-- Quick Cram Sheet Mode (High Yield Bullet Points) -->
       <div class="cram-view-wrap">
         <div style="background: var(--primary-light); border: 1px solid var(--primary-border); border-radius: var(--radius-md); padding: 16px; margin-bottom: 20px;">
-          <h3 style="font-family: var(--font-display); color: var(--primary); font-size: 18px; margin-bottom: 4px;">⚡ High-Yield Exam Cram Sheet</h3>
-          <p style="font-size: 13px; color: var(--t2);">Review these concise bullet points right before stepping into the exam room.</p>
+          <h3 style="font-family: var(--font-display); color: var(--primary); font-size: 18px; margin-bottom: 4px;">⚡ High-Yield Exam Cram Sheet (Verbatim Essentials)</h3>
+          <p style="font-size: 13px; color: var(--t2);">Exact definitions and rules from the 48 slides compiled for rapid last-minute memorization.</p>
         </div>
 
         <div class="cram-grid">
           <div class="cram-card">
-            <h4>Academic vs Technical Texts</h4>
+            <h4>Academic vs Technical Texts (Slides 4–7)</h4>
             <ul>
-              <li><strong>Academic:</strong> Formal, structured, linear, evidence-based. Goal: inform, analyze, persuade using scholarly research. Examples: essays, theses, position papers.</li>
-              <li><strong>Technical:</strong> Functional, practical, highly precise. Goal: direct human action, explain process, document data. Examples: user manuals, SOPs, safety guides.</li>
-              <li><strong>Shared Umbrella:</strong> Both are formal, objective, informative communication.</li>
+              <li><strong>Academic Text:</strong> "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge." (Goal: inform, analyze, persuade).</li>
+              <li><strong>Technical Text:</strong> "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently." (Goal: guide action, explain process, document data).</li>
+              <li><strong>Shared Umbrella (Slide 8):</strong> Formal, informative communication.</li>
             </ul>
           </div>
 
           <div class="cram-card">
-            <h4>The 6 Characteristics</h4>
+            <h4>The 6 Characteristics (Slides 8–26)</h4>
             <ul>
-              <li><strong>1. Evidence-Based/Objective:</strong> Empirical data, citations (APA/MLA), no first-person feelings ("I think").</li>
-              <li><strong>2. Structured:</strong> Logical roadmap. Tripartite for essays (Intro, Body, Conclusion); Modular for technical (numbered steps, bullets).</li>
-              <li><strong>3. Critical:</strong> Depth over description; asking *why/how*, evaluating source credibility, finding literature gaps.</li>
-              <li><strong>4. Balanced:</strong> Multi-perspective, avoids bias. Uses **hedging**: modal verbs (*may, suggest*), probability adverbs (*likely*), tentative phrases.</li>
-              <li><strong>5. Precise:</strong> Exact data and terminology (use *increased/decreased* instead of *changed*); eliminates costly ambiguity.</li>
-              <li><strong>6. Formal:</strong> Professional standard; zero slang/colloquialisms, zero contractions (*cannot* not *can't*), proper grammar mechanics.</li>
+              <li><strong>1. Evidence-Based/Objective:</strong> Supported by empirical data/facts; zero first-person feelings ("I think", "I feel").</li>
+              <li><strong>2. Structured:</strong> Tripartite Structure (Intro, Body, Conclusion); Technical = Modular (numbered steps, subheadings).</li>
+              <li><strong>3. Critical:</strong> Analytical depth; asks *why and how*, finds literature gaps, evaluates source validity.</li>
+              <li><strong>4. Balanced:</strong> Multi-perspective, avoids sweeping claims. Hedging: modal verbs (*may, suggest*), adverbs (*likely, possibly*), tentative phrases.</li>
+              <li><strong>5. Precise:</strong> Exact data (use *increased/decreased* instead of *changed*); quantifies numbers, units, and percentages.</li>
+              <li><strong>6. Formal:</strong> Zero slang/colloquialisms, no contractions (spell out *cannot, did not*), standard mechanics.</li>
             </ul>
           </div>
 
           <div class="cram-card">
-            <h4>The APC Framework</h4>
+            <h4>The APC Framework (Slides 27–36)</h4>
             <ul>
-              <li><strong>Audience:</strong>
-                <br/>• <em>Expert:</em> Use jargon directly without defining basics.
-                <br/>• <em>Lay / Non-Expert:</em> Simplify terms, everyday analogies, define jargon immediately.
-                <br/>• <em>Peer:</em> Balance rigor with engaging, relatable tone.
-                <br/>• <em>Academic Evaluator:</em> Prove mastery, strict formatting, exhaustive citations.
+              <li><strong>Audience (Slide 29):</strong> Dictates level of detail, tone, and vocabulary.
+                <br/>• <em>Expert (Slide 30):</em> Use specialized technical jargon directly without defining basic concepts.
+                <br/>• <em>Non-Expert / Lay (Slide 31):</em> Simplify terms, use relatable everyday analogies, define terms immediately.
+                <br/>• <em>Peer (Slide 32):</em> Balance professional rigor with engaging, relatable explanations.
+                <br/>• <em>Academic Evaluator (Slide 33):</em> Demonstrate complete mastery, rigorous citation, and strict formal structure.
               </li>
-              <li><strong>Purpose:</strong> To Inform/Explain, To Persuade/Argue, To Instruct/Direct.</li>
-              <li><strong>Context:</strong> Physical/Digital Setting, Medium/Format, Discipline Expectations (Humanities vs Sciences).</li>
+              <li><strong>Purpose (Slide 34):</strong> 1. To Inform / Explain, 2. To Persuade / Argue, 3. To Instruct / Direct.</li>
+              <li><strong>Context (Slide 35 & 36):</strong> Setting, Medium/Format, Discipline Expectations (Humanities = argument/textual evidence; Sciences = methodology/replicable data).</li>
             </ul>
           </div>
 
           <div class="cram-card">
-            <h4>Critical Strategies</h4>
+            <h4>Critical Strategies (Slides 37–48)</h4>
             <ul>
-              <li><strong>Reading Pre:</strong> Previewing (titles/abstracts) & SQ5R (Survey, Question, Read, Recite, Review).</li>
-              <li><strong>Reading During:</strong> Annotation & TEAC (Topic Sentence, Evidence, Analysis, Clincher).</li>
-              <li><strong>Reading Post:</strong> Double-Entry Journal (Evidence vs Reflection), Outlining, Summarizing.</li>
-              <li><strong>Listening:</strong> Active Listening (cognitive focus, facts over emotion), Reflective Listening (confirming with paraphrasing), Cornell Notes (30% Cue, 70% Notes, Bottom Summary).</li>
-              <li><strong>Viewing:</strong> Visual Grammar, Scale Integrity (zero baseline), Source Credibility.</li>
+              <li><strong>Reading Pre (Slide 39):</strong> Previewing & SQ5R (Survey, Question, Read, Recite, Review).</li>
+              <li><strong>Reading During (Slide 40):</strong> Annotation & TEAC (Topic sentence, Evidence, Analysis, Clincher).</li>
+              <li><strong>Reading Post (Slide 41):</strong> Double-Entry Journaling (text evidence vs student analysis), Outlining, Summarizing.</li>
+              <li><strong>Listening Active (Slide 43):</strong> Paying Attention, Evaluating, Responding Thoughtfully.</li>
+              <li><strong>Listening Cornell (Slide 44):</strong> Left Cue (30% width), Right Notes (70% width), Bottom Summary (2-3 inches).</li>
+              <li><strong>Listening Reflective (Slide 46):</strong> Paraphrasing: *"If I understand correctly, you are saying that [paraphrase]. Is that correct?"*</li>
+              <li><strong>Viewing (Slide 47):</strong> Visual Grammar, Scale Integrity (zero baseline), Source Credibility.</li>
             </ul>
           </div>
         </div>
@@ -2116,11 +2214,11 @@
     <!-- TAB 2: FLASHCARDS -->
     <section id="tab-flashcards" class="tab-section">
       <div class="flashcard-wrapper">
-        <h2 class="section-heading" style="text-align: center;">Interactive Flashcards</h2>
-        <p class="section-sub" style="text-align: center; margin: 0 auto 20px auto;">Flip cards to test active recall. Use <kbd>Space</kbd> to flip and <kbd>←</kbd> <kbd>→</kbd> arrows to navigate.</p>
+        <h2 class="section-heading" style="text-align: center;">Interactive Flashcards (Verbatim Deck)</h2>
+        <p class="section-sub" style="text-align: center; margin: 0 auto 20px auto;">Test active recall using verbatim slide definitions. Press <kbd>Space</kbd> to flip, and <kbd>←</kbd> <kbd>→</kbd> arrows to navigate.</p>
 
         <div class="flashcard-controls-top">
-          <span style="font-size: 13px; font-weight: 700; color: var(--t3);" id="fcCounter">Card 1 of 20</span>
+          <span style="font-size: 13px; font-weight: 700; color: var(--t3);" id="fcCounter">Card 1 of 22</span>
           <div style="display: flex; gap: 8px;">
             <button class="ex-tab-btn" onclick="shuffleFlashcards()">🔀 Shuffle</button>
             <button class="ex-tab-btn" onclick="resetFlashcards()">🔄 Reset</button>
@@ -2131,18 +2229,18 @@
           <div class="flashcard-progress-fill" id="fcProgressFill"></div>
         </div>
 
-        <!-- The Flip Card -->
+        <!-- Flip Card -->
         <div class="flashcard" id="mainFlashcard" onclick="flipCurrentCard()">
-          <span class="card-category-badge" id="fcBadge">Module 1 · Characteristics</span>
+          <span class="card-category-badge" id="fcBadge">Module 1 · Slide 4</span>
           
           <div class="flashcard-front">
-            <h3 id="fcFrontText">Academic Text</h3>
-            <p>Click card or press Space to reveal definition</p>
+            <h3 id="fcFrontText">Academic Texts</h3>
+            <p>Click card or press Space to reveal verbatim definition</p>
           </div>
 
           <div class="flashcard-back">
-            <p id="fcBackText">Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.</p>
-            <div class="card-ex" id="fcBackEx"><strong>Examples:</strong> Research articles, position papers, literature reviews.</div>
+            <p id="fcBackText">"Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers."</p>
+            <div class="card-ex" id="fcBackEx"><strong>Core Goal (Slide 5):</strong> To inform, analyze, or persuade using scholarly research.</div>
           </div>
 
           <div class="card-flip-prompt">
@@ -2150,7 +2248,7 @@
           </div>
         </div>
 
-        <!-- Flashcard Nav Controls -->
+        <!-- Controls -->
         <div class="flashcard-actions">
           <button class="fc-btn" onclick="prevFlashcard()">← Previous</button>
           <button class="fc-btn primary" onclick="nextFlashcard()">Next Card →</button>
@@ -2161,19 +2259,17 @@
     <!-- TAB 3: PRACTICE EXAM -->
     <section id="tab-quiz" class="tab-section">
       <div class="quiz-container">
-        <h2 class="section-heading">Comprehensive Practice Exam</h2>
-        <p class="section-sub">25 scenario-based questions directly extracted from all 48 lecture slides. Immediate explanations provided for every option.</p>
+        <h2 class="section-heading">Comprehensive Practice Exam (25 Questions)</h2>
+        <p class="section-sub">Mapped word-for-word against all 48 slides. Test your mastery and review instant rationale explanations.</p>
 
-        <!-- Quiz Progress Bar -->
+        <!-- Progress -->
         <div class="quiz-progress-wrap" id="quizBar">
           <span style="font-size: 13px; font-weight: 600; color: var(--t2);" id="quizProgressText">Question 1 of 25</span>
           <span class="quiz-score-pill" id="quizLiveScore">Score: 0 / 0</span>
         </div>
 
-        <!-- Question Container -->
-        <div id="quizQuestionsHost">
-          <!-- Rendered dynamically via JavaScript -->
-        </div>
+        <!-- Questions Host -->
+        <div id="quizQuestionsHost"></div>
 
         <!-- Results Card -->
         <div class="quiz-results-card" id="quizResultCard">
@@ -2188,15 +2284,15 @@
     <!-- TAB 4: INTERACTIVE TOOLS -->
     <section id="tab-tools" class="tab-section">
       <h2 class="section-heading">Interactive Study Tools</h2>
-      <p class="section-sub">Hands-on interactive simulators to reinforce the Cornell Note-Taking layout, the TEAC paragraph builder, and data scale integrity.</p>
+      <p class="section-sub">Hands-on tools reinforcing the Cornell Note-Taking proportions and chart scale integrity.</p>
 
-      <!-- Tool 1: Interactive Cornell Note Maker -->
+      <!-- Cornell Canvas -->
       <div class="cornell-canvas-card">
         <div class="char-top">
-          <h4>Interactive Cornell Note Simulator</h4>
-          <span class="badge-primary">Active Learning Tool</span>
+          <h4>Interactive Cornell Note Simulator (Slide 44 & 45)</h4>
+          <span class="slide-badge">Slides 44 & 45</span>
         </div>
-        <p class="char-desc">Practice the exact 30%-70%-Bottom Cornell layout. You can edit the text below, test yourself by hiding the notes column, or use the pre-loaded slide review notes!</p>
+        <p class="char-desc">Practice the verbatim layout: Left Cue Column (30% width), Right Notes Column (70% width), and Bottom Summary Block (2-3 inches).</p>
 
         <div style="display: flex; gap: 8px; margin-bottom: 12px;">
           <button class="ex-tab-btn active" id="btnToggleNotes" onclick="toggleCornellNotes()">👁️ Toggle Notes (Recall Test)</button>
@@ -2211,7 +2307,7 @@
 
           <div class="cornell-mock-body">
             <div class="cornell-cue-col">
-              <h5>Cue Column (30%)</h5>
+              <h5>Cue Column (30% Width - Slide 44)</h5>
               <div id="cornellCueContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
                 • Academic vs Technical?<br/><br/>
                 • 6 Characteristics?<br/><br/>
@@ -2223,7 +2319,7 @@
             </div>
 
             <div class="cornell-notes-col" id="cornellNotesCol">
-              <h5>Notes Column (70%)</h5>
+              <h5>Notes Column (70% Width - Slide 44)</h5>
               <div id="cornellNotesContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
                 - Academic: Linear, scholarly research, thesis, formal (APA/MLA).<br/>
                 - Technical: Practical, guides human action, user manuals/SOPs.<br/>
@@ -2236,7 +2332,7 @@
           </div>
 
           <div class="cornell-summary-row">
-            <h5>Summary Block (Bottom 2-3 Inches)</h5>
+            <h5>Summary Block (Bottom 2-3 Inches - Slide 44)</h5>
             <div id="cornellSummaryContent" contenteditable="true" style="outline: none; font-size: 13px; line-height: 1.6; color: var(--t1);">
               Academic and technical communication share formal, objective foundations but serve distinct purposes. Mastery requires analyzing audience/purpose/context, applying critical reading (SQ5R, TEAC), active/reflective listening, and maintaining visual scale integrity.
             </div>
@@ -2244,10 +2340,13 @@
         </div>
       </div>
 
-      <!-- Tool 2: Visual Scale Integrity Demo -->
+      <!-- Scale Integrity Demo -->
       <div class="char-card" style="margin-top: 28px;">
-        <h4>Scale Integrity Interactive Demo (Critical Viewing)</h4>
-        <p class="char-desc">See why Slide 47 emphasizes <em>Scale Integrity</em>. Adjust the baseline slider below to observe how truncating the Y-axis turns a tiny 2% difference into an exaggerated, misleading dramatic chasm!</p>
+        <div class="char-top">
+          <h4>Scale Integrity Interactive Demo (Slide 47)</h4>
+          <span class="slide-badge">Slide 47</span>
+        </div>
+        <p class="char-desc">Slide 47 emphasizes <em>Scale Integrity</em>. Adjust the slider to see how truncating the Y-axis baseline turns a modest 2% difference into an exaggerated visual distortion.</p>
 
         <div style="background: var(--bg-card-muted); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border);">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
@@ -2255,17 +2354,13 @@
             <input type="range" id="baselineSlider" min="0" max="90" value="0" step="5" style="width: 200px;" oninput="updateScaleDemo(this.value)" />
           </div>
 
-          <!-- Dynamic SVG Chart -->
+          <!-- SVG Chart -->
           <div style="background: var(--bg-card); border-radius: var(--radius-sm); padding: 20px; text-align: center; border: 1px solid var(--border);">
             <svg id="scaleSvg" width="100%" height="200" viewBox="0 0 500 200">
-              <!-- Y Axis Line -->
               <line x1="60" y1="20" x2="60" y2="160" stroke="var(--border-subtle)" stroke-width="2" />
-              <!-- Baseline -->
               <line x1="60" y1="160" x2="460" y2="160" stroke="var(--border-subtle)" stroke-width="2" />
-              <!-- Bars will be drawn dynamically -->
-              <rect id="barA" x="120" y="30" width="80" height="130" fill="var(--primary)" rx="4" />
-              <rect id="barB" x="280" y="35" width="80" height="125" fill="var(--accent-teal)" rx="4" />
-              <!-- Labels -->
+              <rect id="barA" x="120" y="35" width="80" height="125" fill="var(--primary)" rx="4" />
+              <rect id="barB" x="280" y="38" width="80" height="122" fill="var(--accent-teal)" rx="4" />
               <text x="160" y="180" text-anchor="middle" font-size="12" fill="var(--t2)" font-weight="600">Method A (96%)</text>
               <text x="320" y="180" text-anchor="middle" font-size="12" fill="var(--t2)" font-weight="600">Method B (94%)</text>
               <text id="yLabelBottom" x="50" y="163" text-anchor="end" font-size="11" fill="var(--t3)">0%</text>
@@ -2281,128 +2376,247 @@
 
     <!-- TAB 5: GLOSSARY -->
     <section id="tab-glossary" class="tab-section">
-      <h2 class="section-heading">Key Terms & Definitions Glossary</h2>
-      <p class="section-sub">Alphabetical reference list of all technical and academic communication terminology found in the 48 slides.</p>
+      <h2 class="section-heading">Verbatim Slide Terminology Glossary</h2>
+      <p class="section-sub">Comprehensive master glossary: every single term, definition, indicator, and example from all 48 slides quoted word-for-word with exact slide citations.</p>
 
       <div class="glossary-table-wrap">
         <table class="glossary-table" id="glossaryTable">
           <thead>
             <tr>
               <th>Term</th>
+              <th>Slide</th>
               <th>Category</th>
-              <th>Official Definition</th>
+              <th>Verbatim Slide Definition & Key Indicators</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="term-cell">Academic Evaluator</td>
+              <td>Slide 33</td>
               <td>Audience</td>
-              <td>Teachers, professors, or thesis defense panel members who grade student output, requiring complete mastery and formal citations.</td>
+              <td>"Teachers, professors, or panel defense members who grade output." Appropriate strategy: "Demonstrate complete mastery, rigorous citation, and strict formal structure."</td>
             </tr>
             <tr>
               <td class="term-cell">Academic Text</td>
-              <td>Text Genre</td>
-              <td>Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.</td>
+              <td>Slide 4 & 5</td>
+              <td>Genre</td>
+              <td>"Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers." Core Goal: "To inform, analyze, or persuade using scholarly research." Examples: Research articles, position papers, literature reviews, academic essays.</td>
             </tr>
             <tr>
               <td class="term-cell">Active Listening</td>
+              <td>Slide 43</td>
               <td>Listening</td>
-              <td>Focusing full cognitive attention on the speaker, filtering distractions, and withholding hasty judgments until the message is delivered.</td>
+              <td>"Focuses full cognitive attention on the speaker, filtering out distractions and withholding hasty judgments until the message is fully delivered." How to do it: Paying Attention (verbal cues, vocal tone, body language), Evaluating (logical validity of arguments, facts), Responding Thoughtfully (accurate facts rather than emotional reaction).</td>
             </tr>
             <tr>
               <td class="term-cell">Annotation</td>
+              <td>Slide 40</td>
               <td>Reading</td>
-              <td>During-reading technique of highlighting main claims, circling key terms, and writing questions directly in text margins.</td>
+              <td>"Highlighting main claims, circling key terms, and writing questions in the margins." (During-reading strategy).</td>
             </tr>
             <tr>
-              <td class="term-cell">APC Framework</td>
-              <td>Core Model</td>
-              <td>The fundamental communicative triad of Audience, Purpose, and Context that governs tone, register, and format.</td>
+              <td class="term-cell">APC of Academic and Technical Texts</td>
+              <td>Slide 28</td>
+              <td>Framework</td>
+              <td>"Considering Audience, Purpose, and Context (APC) is a fundamental rule of communication that applies across every single register—from a quick text to a friend to a formal academic paper or a workplace technical report."</td>
             </tr>
             <tr>
-              <td class="term-cell">Balanced Writing</td>
+              <td class="term-cell">Audience</td>
+              <td>Slide 29</td>
+              <td>APC</td>
+              <td>"Understanding who will read your text dictates the level of detail, tone, and vocabulary required." 4 Types: Expert, Non-Expert / Lay, Peer, Academic Evaluators.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Balanced</td>
+              <td>Slide 19 & 20</td>
               <td>Characteristic</td>
-              <td>Considering diverse perspectives to prevent bias; utilizing hedging (modal verbs, probability adverbs) to avoid overgeneralization.</td>
+              <td>"Academic writing aims to consider different perspectives or arguments on an issue or topic to avoid being biased or one-sided. Writers exercise caution when making claims or conclusions to avoid making sweeping generalizations or unfounded statements." Indicators: acknowledging counterarguments, modal verbs (may, suggest, appear, seem), probability adverbs (likely, possibly, presumably, generally), tentative phrases ("the data imply that...", "results indicate a potential link...").</td>
             </tr>
             <tr>
-              <td class="term-cell">Cornell Note-Taking</td>
-              <td>Listening / Note-Taking</td>
-              <td>Structured 3-part layout: 30% Cue Column (keywords/questions), 70% Notes Column (bullet points/abbreviations), and Bottom Summary Block.</td>
+              <td class="term-cell">Context</td>
+              <td>Slide 35 & 36</td>
+              <td>APC</td>
+              <td>"Context encompasses the surrounding circumstances, environment, medium, and constraints of the interaction. It dictates the format, length, timing, and boundary conditions of your message." Examples: 1. Physical / Digital Setting, 2. Medium & Format, 3. Discipline Expectations.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Cornell Note-Taking System</td>
+              <td>Slide 44 & 45</td>
+              <td>Listening</td>
+              <td>"A structured format for taking, organizing, and reviewing lecture notes." Notes Column (Right, 70% width): main concepts, facts, equations, abbreviations during lecture. Cue Column (Left, 30% width): vocabulary, main themes, exam questions after lecture. Summary Block (Bottom, 2-3 inches): 2-4 sentence summary in own words synthesizing core content.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Critical</td>
+              <td>Slide 16 & 17</td>
+              <td>Characteristic</td>
+              <td>"Academic writing requires analytical and evaluative thinking. Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights." Indicators: analyzing why and how, identifying gaps/contradictions, evaluating source validity/relevance.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Critical Listening</td>
+              <td>Slide 42</td>
+              <td>Listening</td>
+              <td>"Critical listening in academic settings requires evaluating arguments, assessing supporting evidence, and understanding messages beyond spoken words." 3 Strategies: Active Listening, Cornell Note-Taking System, Reflective Listening.</td>
             </tr>
             <tr>
               <td class="term-cell">Critical Reading</td>
+              <td>Slide 38</td>
               <td>Reading</td>
-              <td>Analyzing, interpreting, and evaluating an author's argumentative logic beyond passive reading.</td>
+              <td>"Critical reading involves analysis, interpretation, and evaluation. It requires moving beyond passive reading to actively question, analyze, and evaluate how an author constructs an argument." 3 Stages: Pre-Reading, During Reading, Post-Reading.</td>
             </tr>
             <tr>
               <td class="term-cell">Critical Viewing</td>
+              <td>Slide 47</td>
               <td>Viewing</td>
-              <td>Decoding multimodal visuals (charts, infographics, videos) to detect bias, identify manipulated data, and verify claims.</td>
+              <td>"Critical viewing empowers learners to decode, analyze, and evaluate multimodal visuals (charts, diagrams, infographics, and videos) to detect bias, identify manipulated data, and verify claims." What to look out for: 1. Visual Grammar, 2. Scale Integrity, 3. Source Credibility.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Discipline Expectations</td>
+              <td>Slide 36</td>
+              <td>Context</td>
+              <td>"Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data."</td>
             </tr>
             <tr>
               <td class="term-cell">Double-Entry Journaling</td>
+              <td>Slide 41</td>
               <td>Reading</td>
-              <td>A two-column graphic organizer separating direct textual evidence (left) from student analysis and reflection (right).</td>
+              <td>"A two-column graphic organizer that explicitly separates text evidence from student analysis." (Post-reading strategy).</td>
             </tr>
             <tr>
-              <td class="term-cell">Evidence-Based</td>
+              <td class="term-cell">Evidence-Based / Objective</td>
+              <td>Slide 9 & 10</td>
               <td>Characteristic</td>
-              <td>Supporting arguments with empirical data, verifiable statistics, and reputable citations while eliminating subjective personal expressions.</td>
+              <td>"Arguments, claims, and conclusions presented in academic and technical contexts must always be supported by empirical data, reputable facts, expert insights, or primary observations. At the same time, the writing puts more emphasis on information and arguments and less on the feelings or personal perspectives of the writer, focusing entirely on the subject matter being discussed." Indicators: survey results, lab data, statistics, verifiable facts; standardized citations (APA, MLA); minimizing first-person expressions ("I think," "I feel," "in my opinion").</td>
             </tr>
             <tr>
               <td class="term-cell">Expert Audience</td>
+              <td>Slide 30</td>
               <td>Audience</td>
-              <td>Specialists with deep domain knowledge (scientists, engineers) who can be addressed with technical jargon without defining basic terms.</td>
+              <td>"Specialists who possess deep background knowledge (e.g., scientists, engineers)." Appropriate Strategy: "Use specialized technical jargon directly without stopping to define basic concepts."</td>
             </tr>
             <tr>
-              <td class="term-cell">Formal Writing</td>
+              <td class="term-cell">Formal</td>
+              <td>Slide 24 & 25</td>
               <td>Characteristic</td>
-              <td>Adhering to professional language conventions: zero slang, no contractions (spelling out "cannot"), and standard grammar mechanics.</td>
+              <td>"Academic writing observes formal conventions of writing. Adhering to formal language and tone maintains professionalism, establishes authority, and ensures respect across scholarly and technical communities." Indicators: zero colloquialisms/slang ("cool," "gonna," "trash"), no contractions ("cannot," "did not" instead of "can't," "didn't"), standard mechanics.</td>
             </tr>
             <tr>
-              <td class="term-cell">Hedging</td>
-              <td>Language Style</td>
-              <td>The deliberate use of cautious language (modal verbs: *may, suggest*; adverbs: *likely, possibly*) to prevent sweeping, unsupported claims.</td>
+              <td class="term-cell">Hedging / Tentative Language</td>
+              <td>Slide 20</td>
+              <td>Language</td>
+              <td>Cautious phrasing in Balanced writing: Modal Verbs (may, suggest, appear, seem), Probability Adverbs (likely, possibly, presumably, generally), and Tentative Phrases ("the data imply that...", "results indicate a potential link...").</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Medium & Format</td>
+              <td>Slide 36</td>
+              <td>Context</td>
+              <td>"Print journal, slide presentation, PDF report, or web infographic."</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Modular / Hierarchical Setup</td>
+              <td>Slide 14</td>
+              <td>Structure</td>
+              <td>Format for Technical Texts: "Numbered steps, bulleted lists, clear headings, and subheadings."</td>
             </tr>
             <tr>
               <td class="term-cell">Non-Expert / Lay Audience</td>
+              <td>Slide 31</td>
               <td>Audience</td>
-              <td>Readers with little or no technical background; requires everyday analogies, simplified vocabulary, and immediate definitions of terms.</td>
+              <td>"Readers with little or no technical background (e.g., the general public)." Appropriate Strategy: "Simplify complex terms, use relatable everyday analogies, and define technical terms immediately."</td>
             </tr>
             <tr>
-              <td class="term-cell">Precise Writing</td>
+              <td class="term-cell">Outlining</td>
+              <td>Slide 41</td>
+              <td>Reading</td>
+              <td>"Deconstructing a text into a hierarchical alphanumeric or bulleted structure to make its organizational logic visible." (Post-reading strategy).</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Peer Audience</td>
+              <td>Slide 32</td>
+              <td>Audience</td>
+              <td>"Fellow students or colleagues with a similar level of training." Appropriate Strategy: "Balance professional rigor with engaging, relatable explanations."</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Physical / Digital Setting</td>
+              <td>Slide 36</td>
+              <td>Context</td>
+              <td>"Classroom, laboratory, professional conference, or online database."</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Precise</td>
+              <td>Slide 22 & 23</td>
               <td>Characteristic</td>
-              <td>Using unambiguous terms and quantifying observations with exact numbers, units, and percentages to enable scientific replication.</td>
+              <td>"Academic and technical writing strives to provide clear, accurate, and correct information that clearly captures what the data show. Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable." Indicators: exact language (use "increase" or "decrease" instead of "changed"), quantifying with exact measurements, percentages, and statistical values.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Previewing</td>
+              <td>Slide 39</td>
+              <td>Reading</td>
+              <td>"Reading titles, abstracts, and captions to set reading goals." (Pre-reading strategy).</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Purpose</td>
+              <td>Slide 34</td>
+              <td>APC</td>
+              <td>"Purpose defines the intended goal or outcome of your text. It determines the structure, strategy, focus, and call to action." 3 Purposes: 1. To Inform / Explain, 2. To Persuade / Argue, 3. To Instruct / Direct.</td>
             </tr>
             <tr>
               <td class="term-cell">Reflective Listening</td>
+              <td>Slide 46 & 48</td>
               <td>Listening</td>
-              <td>Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward.</td>
+              <td>"Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward." Formula: "If I understand correctly, you are saying that [paraphrased main point]. Is that correct?"</td>
             </tr>
             <tr>
               <td class="term-cell">Scale Integrity</td>
+              <td>Slide 47</td>
               <td>Viewing</td>
-              <td>Visual chart accuracy ensuring baselines begin at zero and axes are proportional to prevent misleading graphical distortion.</td>
+              <td>Scrutinizing chart axes so that baselines begin at zero, intervals are uniform, and representations reflect proportional data values without distortion.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Source Credibility</td>
+              <td>Slide 47</td>
+              <td>Viewing</td>
+              <td>Evaluating dataset recency, publication credibility, sampling integrity, and checking for commercial/sponsor bias.</td>
             </tr>
             <tr>
               <td class="term-cell">SQ5R Method</td>
+              <td>Slide 39</td>
               <td>Reading</td>
-              <td>Active study system: Survey, Question, Read, Recite, and Review.</td>
+              <td>Pre-reading study system: Survey (scan headings/visuals), Question (turn headings into questions), Read (actively seek answers), Recite (summarize key points), Review (check overall recall).</td>
             </tr>
             <tr>
-              <td class="term-cell">TEAC Model</td>
-              <td>Reading / Writing</td>
-              <td>Paragraph organizational formula: Topic sentence, Evidence, Analysis, and Clincher / Conclusion.</td>
+              <td class="term-cell">Structured</td>
+              <td>Slide 13 & 14</td>
+              <td>Characteristic</td>
+              <td>"It should follow a predictable, logical, and standardized organizational pattern. This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter." Essays: Tripartite Structure. Technical: Modular / Hierarchical Setup.</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Summarizing</td>
+              <td>Slide 41</td>
+              <td>Reading</td>
+              <td>"Restating the central thesis and main supporting arguments of a text in your own words, removing minor details, examples, and repetitive phrasing." (Post-reading strategy).</td>
+            </tr>
+            <tr>
+              <td class="term-cell">TEAC Model for Paragraph Structure</td>
+              <td>Slide 40</td>
+              <td>Reading</td>
+              <td>Paragraph organizational formula: T (Topic Sentence: states main claim), E (Evidence: presents statistics, study results, expert quotes), A (Analysis: explains how evidence proves topic sentence), C (Clincher/Conclusion: summarizes point or transitions to next paragraph).</td>
             </tr>
             <tr>
               <td class="term-cell">Technical Text</td>
-              <td>Text Genre</td>
-              <td>Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely.</td>
+              <td>Slide 6 & 7</td>
+              <td>Genre</td>
+              <td>"Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently." Core Goal: "To guide action, explain a technical process, or document data." Examples: User manuals, Standard Operating Procedures (SOPs), safety guidelines, lab reports.</td>
             </tr>
             <tr>
-              <td class="term-cell">Tripartite Structure</td>
+              <td class="term-cell">Tripartite Structure for Essays</td>
+              <td>Slide 14</td>
               <td>Structure</td>
-              <td>The classical academic essay architecture consisting of Introduction (hook, background, thesis), Body (evidence), and Conclusion (synthesis).</td>
+              <td>"A clear Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher)."</td>
+            </tr>
+            <tr>
+              <td class="term-cell">Visual Grammar</td>
+              <td>Slide 47</td>
+              <td>Viewing</td>
+              <td>Examining layout hierarchy, color coding, framing, and iconography in multimodal visual texts.</td>
             </tr>
           </tbody>
         </table>
@@ -2411,7 +2625,7 @@
 
   </main>
 
-  <!-- Lightbox Modal for Fullscreen Diagrams -->
+  <!-- Lightbox Modal -->
   <div id="imageLightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:2000; align-items:center; justify-content:center; padding:20px; cursor:zoom-out;" onclick="closeLightbox()">
     <img id="lightboxImg" src="" style="max-width:92%; max-height:90vh; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5);" />
   </div>
@@ -2479,27 +2693,35 @@
       parent.querySelector('#' + paneId).classList.add('active');
     }
 
-    /* Audience Selector */
+    /* Audience Selector (Slides 29-33) */
     const audienceData = {
       expert: {
-        title: "Expert Audience (Scientists, Engineers, Domain Specialists)",
-        strategy: "Use specialized technical jargon directly without stopping to define basic concepts. Focus directly on technical methodology, statistical rigor, and high-level analytical inferences.",
-        example: "'The enzyme kinetics demonstrated non-competitive allosteric inhibition with a Km of 4.2 µM.'"
+        slide: "Slide 30",
+        title: "Expert Audience (Slide 30)",
+        def: "Specialists who possess deep background knowledge (e.g., scientists, engineers).",
+        strategy: "Use specialized technical jargon directly without stopping to define basic concepts.",
+        example: "'The allosteric binding kinetics demonstrated competitive inhibition with a Km of 4.2 µM.'"
       },
       lay: {
-        title: "Non-Expert / Lay Audience (General Public, End Users)",
-        strategy: "Simplify complex terms, rely on relatable everyday analogies, and immediately define any essential technical terms using plain, accessible language.",
-        example: "'The medication acts like a biological switch, gently slowing down the cell's engine so it doesn't overheat.'"
+        slide: "Slide 31",
+        title: "Non-Expert / Lay Audience (Slide 31)",
+        def: "Readers with little or no technical background (e.g., the general public).",
+        strategy: "Simplify complex terms, use relatable everyday analogies, and define technical terms immediately.",
+        example: "'The medicine works like a key in a lock, gently slowing down the cell engine so it doesn't overheat.'"
       },
       peer: {
-        title: "Peer Audience (Fellow Students, Colleagues in Same Field)",
-        strategy: "Balance professional rigor with engaging, relatable explanations. Assumes shared fundamental training but maintains respectful collaborative discourse.",
-        example: "'Our lab team observed that while the reaction completed within 10 minutes, temperature fluctuations required careful monitoring.'"
+        slide: "Slide 32",
+        title: "Peer Audience (Slide 32)",
+        def: "Fellow students or colleagues with a similar level of training.",
+        strategy: "Balance professional rigor with engaging, relatable explanations.",
+        example: "'As observed in our biology lab sessions, temperature shifts significantly altered bacterial growth rates.'"
       },
       eval: {
-        title: "Academic Evaluators (Professors, Thesis Committee, Panel Defense)",
-        strategy: "Demonstrate complete subject mastery, exhaustive evidence-based citations, strict formal conventions, and precise methodological transparency.",
-        example: "'In accordance with APA standards, all empirical claims are substantiated via rigorous primary documentation and statistical significance testing (p < .01).'"
+        slide: "Slide 33",
+        title: "Academic Evaluators (Slide 33)",
+        def: "Teachers, professors, or panel defense members who grade output.",
+        strategy: "Demonstrate complete mastery, rigorous citation, and strict formal structure.",
+        example: "'In accordance with APA standards, all empirical claims are substantiated via rigorous primary documentation (p < .01).'"
       }
     };
 
@@ -2516,40 +2738,22 @@
       const host = document.getElementById('audDisplayCard');
       if (!host || !data) return;
       host.innerHTML = `
-        <h4 style="font-family: var(--font-display); font-size: 17px; margin-bottom: 8px; color: var(--primary);">${data.title}</h4>
-        <p style="font-size: 14px; color: var(--t2); line-height: 1.6; margin-bottom: 12px;"><strong>Appropriate Strategy:</strong> ${data.strategy}</p>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+          <h4 style="font-family: var(--font-display); font-size: 17px; margin-bottom: 0; color: var(--primary);">${data.title}</h4>
+          <span class="slide-badge">${data.slide}</span>
+        </div>
+        <div class="verbatim-quote-box" style="margin: 6px 0 10px 0;">
+          <span class="quote-title">📖 Verbatim Definition</span>
+          "${data.def}"
+        </div>
+        <p style="font-size: 14px; color: var(--t2); line-height: 1.6; margin-bottom: 12px;"><strong>Appropriate Strategy to Use:</strong> "${data.strategy}"</p>
         <div style="background: var(--bg-card-muted); padding: 10px 14px; border-radius: var(--radius-sm); font-size: 13px; font-style: italic; color: var(--t2);">
           <strong>Example Tone:</strong> ${data.example}
         </div>
       `;
     }
-    // Initialize default audience
+    // Initialize default audience safely
     selectAudience('expert', null);
-
-    /* TEAC Highlighter */
-    function highlightTeac(part) {
-      const t = document.getElementById('teac-t');
-      const e = document.getElementById('teac-e');
-      const a = document.getElementById('teac-a');
-      const c = document.getElementById('teac-c');
-
-      const reset = () => {
-        t.style.opacity = '0.35';
-        e.style.opacity = '0.35';
-        a.style.opacity = '0.35';
-        c.style.opacity = '0.35';
-      };
-
-      if (part === 'all') {
-        t.style.opacity = '1';
-        e.style.opacity = '1';
-        a.style.opacity = '1';
-        c.style.opacity = '1';
-      } else {
-        reset();
-        document.getElementById('teac-' + part).style.opacity = '1';
-      }
-    }
 
     /* Cornell Notes Recall Toggle */
     let notesVisible = true;
@@ -2590,7 +2794,7 @@
       `;
     }
 
-    /* Scale Integrity Visualizer */
+    /* Scale Integrity Visualizer (Slide 47) */
     function updateScaleDemo(val) {
       const v = parseInt(val);
       const span = document.getElementById('baselineVal');
@@ -2604,7 +2808,6 @@
       if (v === 0) {
         span.textContent = '0% (Honest Accurate Scale)';
         span.style.color = 'var(--primary)';
-        // 96% and 94% on 0-100 scale: heights roughly 125 and 122 out of 130
         barA.setAttribute('y', '35');
         barA.setAttribute('height', '125');
         barB.setAttribute('y', '38');
@@ -2614,7 +2817,6 @@
       } else {
         span.textContent = v + '% (Distorted Truncated Scale)';
         span.style.color = 'var(--accent-rose)';
-        // Scale range from v to 100
         const range = 100 - v;
         const hA = Math.max(10, ((96 - v) / range) * 130);
         const hB = Math.max(10, ((94 - v) / range) * 130);
@@ -2622,7 +2824,7 @@
         barA.setAttribute('y', 160 - hA);
         barB.setAttribute('height', hB);
         barB.setAttribute('y', 160 - hB);
-        comm.innerHTML = `⚠️ Truncated baseline at ${v}%: The tiny 2% difference appears dramatically magnified! This violates Scale Integrity in Critical Viewing.`;
+        comm.innerHTML = `⚠️ Truncated baseline at ${v}%: The tiny 2% difference appears dramatically magnified! This violates Scale Integrity in Critical Viewing (Slide 47).`;
         comm.style.color = 'var(--accent-rose)';
       }
     }
@@ -2654,158 +2856,159 @@
 
       items.forEach(it => {
         const text = it.textContent.toLowerCase();
-        if (text.includes(term)) {
-          it.style.display = '';
-        } else {
-          it.style.display = 'none';
-        }
+        it.style.display = text.includes(term) ? '' : 'none';
       });
 
       rows.forEach(r => {
         const text = r.textContent.toLowerCase();
-        if (text.includes(term)) {
-          r.style.display = '';
-        } else {
-          r.style.display = 'none';
-        }
+        r.style.display = text.includes(term) ? '' : 'none';
       });
     });
 
-    /* FLASHCARD DATA & ENGINE */
+    /* FLASHCARD DATA & ENGINE (VERBATIM SLIDE QUOTES) */
+
+    /* FLASHCARD DATA & ENGINE (VERBATIM SLIDE QUOTES) */
     const flashcards = [
       {
-        badge: "Module 1 · Genre Definition",
-        front: "Academic Text",
-        back: "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge.",
-        ex: "Examples: Research articles, position papers, literature reviews, academic essays."
+            "badge": "Slide 4 — Definition",
+            "front": "Academic Texts",
+            "back": "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers.",
+            "ex": "<strong>Core Goal (Slide 5):</strong> To inform, analyze, or persuade using scholarly research.<br/><strong>Examples:</strong> Research articles, position papers, literature reviews, academic essays."
       },
       {
-        badge: "Module 1 · Genre Definition",
-        front: "Technical Text",
-        back: "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently.",
-        ex: "Examples: User manuals, Standard Operating Procedures (SOPs), safety guidelines, lab reports."
+            "badge": "Slide 6 — Definition",
+            "front": "Technical Texts",
+            "back": "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently.",
+            "ex": "<strong>Core Goal (Slide 7):</strong> To guide action, explain a technical process, or document data.<br/><strong>Examples:</strong> User manuals, Standard Operating Procedures (SOPs), safety guidelines, lab reports."
       },
       {
-        badge: "Module 1 · Characteristic 1",
-        front: "Evidence-Based / Objective",
-        back: "Claims must be anchored in empirical data, reputable facts, and citations, with personal feelings and subjective first-person pronouns minimized.",
-        ex: "Indicator: Uses statistics (e.g. 68% digital fatigue) instead of emotional assertions ('students hate it')."
+            "badge": "Slide 8 — Fundamental Concept",
+            "front": "Shared Umbrella of Academic & Technical Writing",
+            "back": "While academic writing and technical writing serve different primary audiences and purposes, they sit under the same umbrella of formal, informative communication and share a core set of fundamental characteristics.",
+            "ex": "Both require evidence-based objectivity, predictable structure, precision, critical evaluation, balance, and formal mechanics."
       },
       {
-        badge: "Module 1 · Characteristic 2",
-        front: "Structured (Tripartite vs Modular)",
-        back: "Follows a predictable logical roadmap. Essays use Tripartite Structure (Intro, Body, Conclusion); Technical texts use Modular Structure (numbered steps, subheadings).",
-        ex: "Intro has hook, background, thesis statement; Conclusion has restatement, summary, clincher."
+            "badge": "Slide 9 & 10 — Characteristic 1",
+            "front": "Evidence-Based / Objective",
+            "back": "Arguments, claims, and conclusions presented in academic and technical contexts must always be supported by empirical data, reputable facts, expert insights, or primary observations.<br/><br/>At the same time, the writing puts more emphasis on information and arguments and less on the feelings or personal perspectives of the writer, focusing entirely on the subject matter being discussed.",
+            "ex": "<strong>Indicators (Slide 11):</strong> Survey data, statistics, APA/MLA citations; eliminating first-person subjective expressions (\"I think,\" \"I feel\")."
       },
       {
-        badge: "Module 1 · Characteristic 3",
-        front: "Critical Writing",
-        back: "Moves beyond passive descriptive summary to analyze WHY and HOW phenomena occur, evaluate source credibility, and uncover intellectual gaps.",
-        ex: "Instead of saying 'Author A & B wrote about tech', it contrasts their conflicting causal theories."
+            "badge": "Slide 13 — Characteristic 2",
+            "front": "Structured",
+            "back": "It should follow a predictable, logical, and standardized organizational pattern. This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter.",
+            "ex": "<strong>Indicators (Slide 14):</strong><br/>• Tripartite Structure for Essays (Introduction, Body, Conclusion)<br/>• Modular / Hierarchical Setup for Technical Texts (numbered steps, bulleted lists, subheadings)."
       },
       {
-        badge: "Module 1 · Characteristic 4",
-        front: "Balanced Writing & Hedging",
-        back: "Considers multiple angles and exercises caution to avoid sweeping generalizations. Utilizes modal verbs, probability adverbs, and tentative phrases.",
-        ex: "Hedging toolkit: 'may, suggest, likely, data imply that...' instead of 'completely destroys'."
+            "badge": "Slide 16 — Characteristic 3",
+            "front": "Critical",
+            "back": "Academic writing requires analytical and evaluative thinking. Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights.",
+            "ex": "<strong>Indicators (Slide 17):</strong> Analyzing why and how a phenomenon occurs; identifying gaps/limitations in existing literature; evaluating source validity before citing."
       },
       {
-        badge: "Module 1 · Characteristic 5",
-        front: "Precise Writing",
-        back: "Provides exact, unambiguous information capturing precisely what data show, preventing costly errors and allowing scientific replication.",
-        ex: "Writing 'increased by 4.8°C over 15 min' rather than 'the temperature changed a lot'."
+            "badge": "Slide 19 — Characteristic 4",
+            "front": "Balanced",
+            "back": "Academic writing aims to consider different perspectives or arguments on an issue or topic to avoid being biased or one-sided. Writers exercise caution when making claims or conclusions to avoid making sweeping generalizations or unfounded statements.",
+            "ex": "<strong>Indicators (Slide 20 - Hedging):</strong> Modal verbs (may, suggest), probability adverbs (likely, possibly), tentative phrases (\"the data imply that\")."
       },
       {
-        badge: "Module 1 · Characteristic 6",
-        front: "Formal Writing",
-        back: "Adheres to professional language conventions: ZERO colloquialisms/slang, NO contractions (must spell out 'cannot', 'did not'), and standard mechanics.",
-        ex: "Write 'was unable to identify system failure' rather than 'couldn't figure out why tech crashed'."
+            "badge": "Slide 22 — Characteristic 5",
+            "front": "Precise",
+            "back": "Academic and technical writing strives to provide clear, accurate, and correct information that clearly captures what the data show. Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.",
+            "ex": "<strong>Indicators (Slide 23):</strong> Exact vocabulary (increase/decrease instead of changed); quantifying observations with measurements, percentages, and units."
       },
       {
-        badge: "Module 2 · APC Triad",
-        front: "The APC Framework",
-        back: "Audience, Purpose, and Context. The universal foundation of all effective communication that governs tone, depth, format, and vocabulary.",
-        ex: "Applies to everything from a peer text to a formal thesis defense or technical operating manual."
+            "badge": "Slide 24 — Characteristic 6",
+            "front": "Formal",
+            "back": "Academic writing observes formal conventions of writing. Adhering to formal language and tone maintains professionalism, establishes authority, and ensures respect across scholarly and technical communities.",
+            "ex": "<strong>Indicators (Slide 25):</strong> Zero colloquialisms/slang (\"cool,\" \"gonna\"); No contractions (spell out \"cannot,\" \"did not\"); Standard mechanics and citations."
       },
       {
-        badge: "Module 2 · Audience",
-        front: "Expert Audience Strategy",
-        back: "Specialists with deep domain knowledge (engineers, scientists). Strategy: Use specialized technical jargon directly without defining basic terms.",
-        ex: "Discussing 'Km enzymatic affinity' directly without pausing to explain what an enzyme is."
+            "badge": "Slide 28 — Core Model",
+            "front": "The APC Framework",
+            "back": "The foundational communication model standing for Audience, Purpose, and Context. Every effective text is shaped by who it is for (Audience), what it aims to achieve (Purpose), and the environment/medium in which it operates (Context).",
+            "ex": "Slide 28-36: Aligns register, vocabulary, tone, structure, and length to rhetorical constraints."
       },
       {
-        badge: "Module 2 · Audience",
-        front: "Non-Expert / Lay Audience Strategy",
-        back: "General public with little to no technical background. Strategy: Simplify terms, use everyday analogies, and define technical terms immediately.",
-        ex: "Describing a microprocessor as the 'brain' of the computer."
+            "badge": "Slide 29 & 30 — APC: Audience",
+            "front": "Expert Audience",
+            "back": "Specialists who possess deep background knowledge (e.g., scientists, engineers).",
+            "ex": "<strong>Appropriate Strategy (Slide 30):</strong> Use specialized technical jargon directly without stopping to define basic concepts."
       },
       {
-        badge: "Module 2 · Audience",
-        front: "Peer Audience Strategy",
-        back: "Colleagues or fellow students with similar training. Strategy: Balance professional academic rigor with relatable, engaging explanations.",
-        ex: "Collaborative laboratory reports, seminar discussions, and cohort presentations."
+            "badge": "Slide 31 — APC: Audience",
+            "front": "Non-Expert / Lay Audience",
+            "back": "Readers with little or no technical background (e.g., the general public).",
+            "ex": "<strong>Appropriate Strategy (Slide 31):</strong> Simplify complex terms, use relatable everyday analogies, and define technical terms immediately."
       },
       {
-        badge: "Module 2 · Audience",
-        front: "Academic Evaluator Strategy",
-        back: "Teachers, professors, or thesis defense panel members who grade output. Strategy: Prove complete subject mastery, strict formal conventions, and exhaustive citations.",
-        ex: "Formal thesis manuscripts, research defenses, and summative term examinations."
+            "badge": "Slide 32 — APC: Audience",
+            "front": "Peer Audience",
+            "back": "Fellow students or colleagues with a similar level of training.",
+            "ex": "<strong>Appropriate Strategy (Slide 32):</strong> Balance professional rigor with engaging, relatable explanations."
       },
       {
-        badge: "Module 2 · Purpose",
-        front: "The 3 Primary Purposes",
-        back: "1. To Inform / Explain (objective clarity)<br/>2. To Persuade / Argue (evidence-based conviction)<br/>3. To Instruct / Direct (action-oriented procedures).",
-        ex: "Determines the chosen structure, call-to-action, and rhetorical approach."
+            "badge": "Slide 33 — APC: Audience",
+            "front": "Academic Evaluators",
+            "back": "Teachers, professors, or defense panel members who grade output.",
+            "ex": "<strong>Appropriate Strategy (Slide 33):</strong> Demonstrate complete mastery, rigorous citation, and strict formal structure."
       },
       {
-        badge: "Module 2 · Context",
-        front: "Context: Discipline Expectations",
-        back: "Humanities prioritize qualitative argument, interpretation, and textual evidence; Sciences focus on empirical methodology, quantitative data, and replicability.",
-        ex: "Literature paper vs. Biology laboratory experiment report."
+            "badge": "Slide 34 — APC: Purpose",
+            "front": "Purposes in Academic & Technical Texts",
+            "back": "Purpose defines the intended goal or outcome of your text. It determines the structure, strategy, focus, and call to action.<br/><br/>1. To Inform / Explain<br/>2. To Persuade / Argue<br/>3. To Instruct / Direct",
+            "ex": "Slide 34: Academic texts prioritize informing/persuading; technical texts prioritize instructing/directing."
       },
       {
-        badge: "Module 3 · Reading",
-        front: "The SQ5R Method",
-        back: "Pre-reading and active study roadmap: Survey (scan), Question (turn headings to Qs), Read (seek answers), Recite (summarize), Review (check recall).",
-        ex: "Converts passive skim reading into cognitive inquiry."
+            "badge": "Slide 35 & 36 — APC: Context",
+            "front": "Context & Its 3 Categories",
+            "back": "Context encompasses the surrounding circumstances, environment, medium, and constraints of the interaction. It dictates the format, length, timing, and boundary conditions of your message.<br/><br/>1. Physical / Digital Setting<br/>2. Medium & Format<br/>3. Discipline Expectations",
+            "ex": "<strong>Discipline Rule (Slide 36):</strong> Humanities prioritize argument and textual evidence; Sciences focus on methodology and replicable data."
       },
       {
-        badge: "Module 3 · Reading",
-        front: "The TEAC Paragraph Model",
-        back: "T = Topic Sentence (main claim)<br/>E = Evidence (data, study results, citations)<br/>A = Analysis (proves how evidence supports T)<br/>C = Clincher (synthesizes point & transitions).",
-        ex: "The standard building block for analytical academic paragraphs."
+            "badge": "Slide 38 & 39 — Reading",
+            "front": "Pre-Reading: Previewing & SQ5R",
+            "back": "<strong>Previewing:</strong> Reading titles, abstracts, and captions to set reading goals.<br/><br/><strong>SQ5R Model:</strong><br/>• Survey: scan headings/visuals<br/>• Question: turn headings into questions<br/>• Read: actively seek answers<br/>• Recite: summarize key points<br/>• Review: check overall recall",
+            "ex": "Slide 38 & 39 Critical Reading Strategies."
       },
       {
-        badge: "Module 3 · Reading",
-        front: "Double-Entry Journaling",
-        back: "A two-column graphic organizer separating direct text evidence (left column) from student analysis and critical reflections (right column).",
-        ex: "Used in post-reading to bridge reading comprehension with critical writing."
+            "badge": "Slide 40 — Reading",
+            "front": "During Reading: Annotation & TEAC Model",
+            "back": "<strong>Annotation:</strong> Highlighting main claims, circling key terms, and writing questions in the margins.<br/><br/><strong>TEAC Paragraph Structure:</strong><br/>• T (Topic Sentence): States the main claim.<br/>• E (Evidence): Statistics, study results, expert quotes.<br/>• A (Analysis): Explains how evidence proves topic sentence.<br/>• C (Clincher/Conclusion): Summarizes point or transitions.",
+            "ex": "Slide 40 TEAC Model for paragraph cohesion."
       },
       {
-        badge: "Module 3 · Listening",
-        front: "Active Listening",
-        back: "Full cognitive attention on the speaker: paying attention to verbal/body cues, evaluating logical validity, and responding based on facts rather than emotion.",
-        ex: "Withholding hasty interruptions until the entire concept is articulated."
+            "badge": "Slide 41 — Reading",
+            "front": "Post-Reading: Journaling, Outlining, Summarizing",
+            "back": "• <strong>Double-Entry Journaling:</strong> A two-column graphic organizer that explicitly separates text evidence from student analysis.<br/>• <strong>Outlining:</strong> Deconstructing a text into a hierarchical alphanumeric or bulleted structure to make its organizational logic visible.<br/>• <strong>Summarizing:</strong> Restating the central thesis and main supporting arguments in your own words, removing minor details, examples, and repetitive phrasing.",
+            "ex": "Slide 41 Post-Reading Strategies."
       },
       {
-        badge: "Module 3 · Listening",
-        front: "Cornell Note-Taking Proportions",
-        back: "Right Notes Column (70%): recorded during lecture.<br/>Left Cue Column (30%): questions/keywords added after.<br/>Bottom Summary (2-3 inches): 2-4 sentence synthesis.",
-        ex: "Facilitates seamless active recall by covering the notes column."
+            "badge": "Slide 43 — Listening",
+            "front": "Active Listening (How to do it)",
+            "back": "Focuses full cognitive attention on the speaker, filtering out distractions and withholding hasty judgments until the message is fully delivered.<br/><br/>• Paying Attention: Total focus on verbal cues, vocal tone, body language.<br/>• Evaluating: Analyzing logical validity of arguments and checking factual support.<br/>• Responding Thoughtfully: Formulating questions/feedback based on accurate facts rather than emotional reaction.",
+            "ex": "Slide 43 Active Listening steps."
       },
       {
-        badge: "Module 3 · Listening",
-        front: "Reflective Listening",
-        back: "Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward.",
-        ex: "'If I understand correctly, you are saying that [paraphrase]. Is that correct?'"
+            "badge": "Slide 44 & 45 — Listening",
+            "front": "The Cornell Note-Taking System Layout",
+            "back": "A structured format for taking, organizing, and reviewing lecture notes.<br/><br/>• <strong>Notes Column (Right, 70% width):</strong> Record main lecture concepts, facts, equations using abbreviations and bullet points during presentation.<br/>• <strong>Cue Column (Left, 30% width):</strong> Formulated immediately after lecture; record key vocabulary terms, main themes, potential exam questions.<br/>• <strong>Summary Block (Bottom, 2-3 inches):</strong> Write 2-4 sentence summary synthesizing page's core content.",
+            "ex": "Slide 44 & 45 Cornell Note layout."
       },
       {
-        badge: "Module 3 · Viewing",
-        front: "Scale Integrity (Critical Viewing)",
-        back: "Ensuring visual charts represent numerical data honestly: baseline starting at zero, equal intervals, and proportional bar heights without distortion.",
-        ex: "Prevents a tiny 2% difference from appearing like an enormous collapse."
+            "badge": "Slide 46 & 48 — Listening",
+            "front": "Reflective Listening",
+            "back": "Paraphrasing or restating the speaker's core message back to them to confirm accurate interpretation before moving forward.<br/><br/><strong>Verbatim Formula (Slide 46 & 48):</strong><br/><em>\"If I understand correctly, you are saying that [paraphrased main point]. Is that correct?\"</em>",
+            "ex": "Slide 46 & 48 Reflective Listening protocol."
+      },
+      {
+            "badge": "Slide 47 — Viewing",
+            "front": "Critical Viewing Strategies",
+            "back": "Empowers learners to decode, analyze, and evaluate multimodal visuals (charts, diagrams, infographics, videos) to detect bias, identify manipulated data, and verify claims.<br/><br/><strong>What to look out for:</strong><br/>1. Visual Grammar: layout, symbols, color coding, typography<br/>2. Scale Integrity: zero baselines, proportional axes<br/>3. Source Credibility: provenance and credentials",
+            "ex": "Slide 47 Critical Viewing checkpoints."
       }
-    ];
+];
+
 
     let currentCardIndex = 0;
     function updateFlashcardUI() {
@@ -2877,287 +3080,291 @@
     updateFlashcardUI();
 
     /* QUIZ DATABASE (25 QUESTIONS FROM 48 SLIDES) */
+
+    /* QUIZ DATA & ENGINE (VERBATIM SLIDE QUESTIONS) */
     const quizQuestions = [
       {
-        q: "What is the primary core goal of Academic Texts according to Slide 5?",
-        opts: [
-          "To instruct, direct, or document procedures for workplace tasks",
-          "To inform, analyze, or persuade using scholarly research",
-          "To entertain general readers with creative analogies",
-          "To market commercial products to expert consumers"
-        ],
-        ans: 1,
-        exp: "Slide 5 states that the core goal of Academic Texts is 'To inform, analyze, or persuade using scholarly research' (e.g., research articles, position papers, literature reviews)."
+            "q": "According to Slide 4, what is the exact definition of an Academic Text?",
+            "opts": [
+                  "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures",
+                  "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers",
+                  "A creative compilation of personal opinions, fictional narratives, and emotional interpretations of cultural events",
+                  "Informal correspondence between colleagues designed to speed up team workflows"
+            ],
+            "ans": 1,
+            "exp": "Slide 4 verbatim defines Academic Texts as: 'Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas, construct arguments, or build knowledge for academic evaluators and readers.'"
       },
       {
-        q: "Which of the following is a primary characteristic of Technical Texts according to Slide 6 & 7?",
-        opts: [
-          "Abstract theoretical speculation without empirical evidence",
-          "Subjective first-person narrative reflecting author emotion",
-          "Functional, practical, and highly precise writing designed to guide human action safely",
-          "Informal conversational tone using frequent colloquial contractions"
-        ],
-        ans: 2,
-        exp: "Technical texts are functional, practical, and highly precise, designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently (Slide 6)."
+            "q": "According to Slide 6, what is the verbatim definition of a Technical Text?",
+            "opts": [
+                  "Formal, structured, linear, and evidence-based writing used in scholarly settings to analyze ideas",
+                  "Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently",
+                  "Persuasive essays written exclusively for thesis defense committees and academic researchers",
+                  "Descriptive narrative accounts detailing subjective experiences in workplace environments"
+            ],
+            "ans": 1,
+            "exp": "Slide 6 explicitly defines Technical Texts as 'Functional, practical, and highly precise writing designed to instruct, direct, or document procedures so readers can perform tasks safely and efficiently.'"
       },
       {
-        q: "Under the characteristic 'Evidence-Based / Objective', which practice must be strictly minimized or eliminated (Slide 11)?",
-        opts: [
-          "Survey results and laboratory data",
-          "Standardized APA or MLA in-text citations",
-          "First-person subjective expressions like 'I think', 'I feel', or 'in my opinion'",
-          "Empirical metrics and statistical values"
-        ],
-        ans: 2,
-        exp: "Slide 11 specifically highlights 'Minimizing or eliminating first-person subjective expressions (I think, I feel, in my opinion) in favor of objective phrasing.'"
+            "q": "What core concept does Slide 8 establish regarding the relationship between Academic and Technical writing?",
+            "opts": [
+                  "They are fundamentally opposed and share no stylistic or structural commonalities",
+                  "Technical writing is an informal, unreferenced precursor to true academic scholarship",
+                  "While serving different primary audiences and purposes, they sit under the same umbrella of formal, informative communication and share fundamental characteristics",
+                  "Academic writing relies on personal feelings, while technical writing relies on fiction"
+            ],
+            "ans": 2,
+            "exp": "Slide 8 establishes that both genres 'sit under the same umbrella of formal, informative communication and share a core set of fundamental characteristics.'"
       },
       {
-        q: "Consider this sentence: 'Online learning is obviously terrible because students hate sitting in front of screens all day.' Why is this NON-ACADEMIC (Slide 12)?",
-        opts: [
-          "It contains too many technical jargon terms",
-          "It makes an unsupported, sweeping claim based on personal sentiment without empirical data",
-          "It uses passive voice instead of active verbs",
-          "It follows a strict tripartite essay structure"
-        ],
-        ans: 1,
-        exp: "Slide 12 classifies this as 'Unsupported' because it relies on emotional hyperbole ('hate', 'obviously terrible') and lacks verifiable empirical data or sample sizes."
+            "q": "According to Slide 10, how does an Evidence-Based / Objective text treat personal perspectives?",
+            "opts": [
+                  "It makes personal emotions the primary framework for validating arguments",
+                  "It puts more emphasis on information and arguments and less on the feelings or personal perspectives of the writer, focusing entirely on the subject matter",
+                  "It requires the writer to include first-person narrative anecdotes in every paragraph",
+                  "It eliminates references and relies exclusively on intuitive reasoning"
+            ],
+            "ans": 1,
+            "exp": "Slide 10 verbatim states: 'the writing puts more emphasis on information and arguments and less on the feelings or personal perspectives of the writer, focusing entirely on the subject matter being discussed.'"
       },
       {
-        q: "What is the standard Tripartite Structure used in academic essays (Slide 14)?",
-        opts: [
-          "Hypothesis, Formula, and Appendix",
-          "Introduction (hook, background, thesis), Body (evidence & analysis), Conclusion (restatement, summary, clincher)",
-          "Cue column, Notes column, and Summary block",
-          "Abstract, User Manual, and Troubleshooting guide"
-        ],
-        ans: 1,
-        exp: "Slide 14 defines the Tripartite Structure for essays as: Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher)."
+            "q": "Which of the following phrases violates the objectivity guideline in Slide 11?",
+            "opts": [
+                  "\"Survey data from 250 learners reveal a 12% decrease in engagement...\"",
+                  "\"In my personal opinion, I strongly feel that online homework is terrible...\"",
+                  "\"The laboratory results indicate that solution temperature reached 78°C...\"",
+                  "\"As established by Garcia (2024), screen fatigue is prevalent among adolescents...\""
+            ],
+            "ans": 1,
+            "exp": "Slide 11 explicitly highlights 'Minimizing or eliminating first-person subjective expressions (\"I think,\" \"I feel,\" \"in my opinion\") in favor of objective phrasing.'"
       },
       {
-        q: "What differentiates a 'Critical' text from a 'Merely Descriptive' text (Slide 16 & 17)?",
-        opts: [
-          "A critical text merely summarizes what happened without asking questions",
-          "A critical text analyzes why and how a phenomenon occurs, identifies literature gaps, and evaluates source credibility",
-          "A critical text uses emotional adjectives to criticize the authors",
-          "A critical text avoids using any topic sentences or evidence"
-        ],
-        ans: 1,
-        exp: "Slide 16 and 17 state that critical writing moves beyond passive summary to analyze why and how phenomena occur, uncovering depth, identifying gaps, and evaluating source validity."
+            "q": "According to Slide 14, what constitutes the Tripartite Structure for academic essays?",
+            "opts": [
+                  "Cue Column, Main Notes Column, and Summary Block",
+                  "Survey, Question, and Read",
+                  "A clear Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher)",
+                  "Topic Sentence, Evidence, and Analysis"
+            ],
+            "ans": 2,
+            "exp": "Slide 14 defines the Tripartite Structure as: 'Introduction (hook, background, thesis statement), Body (evidence and analysis), and Conclusion (thesis restatement, summary, clincher).'"
       },
       {
-        q: "Which linguistic technique is used in 'Balanced' academic writing to avoid sweeping, dogmatic generalizations (Slide 20)?",
-        opts: [
-          "Exclamation marks and absolute assertions ('guarantees', 'destroys')",
-          "Hedging using modal verbs (may, suggest) and probability adverbs (likely, possibly)",
-          "Heavy informal slang and contractions",
-          "Eliminating the methodology section completely"
-        ],
-        ans: 1,
-        exp: "Slide 20 highlights hedging strategies: Modal Verbs (may, suggest, appear, seem), Probability Adverbs (likely, possibly, presumably), and Tentative Phrases."
+            "q": "What is the primary function of structure in academic and technical texts according to Slide 13?",
+            "opts": [
+                  "To meet arbitrary word counts imposed by academic institutions",
+                  "It serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter",
+                  "To disguise weak arguments behind dense formatting and typography",
+                  "To allow the author to insert emotional digressions at random intervals"
+            ],
+            "ans": 1,
+            "exp": "Slide 13 states verbatim: 'This structure serves as a roadmap that guides the reader seamlessly through complex ideas without unnecessary digressions or scatter.'"
       },
       {
-        q: "Why is precision vital in academic and technical texts according to Slide 22?",
-        opts: [
-          "Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable",
-          "Precision makes texts look longer and harder to understand",
-          "Precision allows the author to use poetic figures of speech",
-          "Precision removes the need for in-text citations"
-        ],
-        ans: 0,
-        exp: "Slide 22 notes: 'Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.'"
+            "q": "According to Slide 16, what does being 'Critical' require writers to do?",
+            "opts": [
+                  "Merely describe or summarize information found in textbooks",
+                  "Aggressively attack opposing authors using emotional insults",
+                  "Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights",
+                  "Accept all published sources as indisputable facts without questioning methodology"
+            ],
+            "ans": 2,
+            "exp": "Slide 16 states verbatim: 'Writers must not merely describe or summarize information; they must develop clear, logical arguments, create depth, avoid stating the obvious, and uncover underlying insights.'"
       },
       {
-        q: "Which of the following violates the 'Formal' characteristic of academic writing (Slide 25)?",
-        opts: [
-          "Writing 'cannot' instead of 'can't'",
-          "Using contractions like couldn't and colloquial slang like super frustrating",
-          "Applying standard capitalization and punctuation",
-          "Citing primary empirical literature"
-        ],
-        ans: 1,
-        exp: "Slide 25 and 26 state that formal texts maintain zero colloquialisms/slang and no contractions (spelling out words like 'cannot', 'did not', 'would have')."
+            "q": "Slide 20 identifies hedging techniques to maintain a 'Balanced' text. Which group contains examples of Modal Verbs?",
+            "opts": [
+                  "likely, possibly, presumably, generally",
+                  "may, suggest, appear, seem",
+                  "\"the data imply that...\", \"results indicate a potential link...\"",
+                  "always, undeniably, absolutely, guaranteed"
+            ],
+            "ans": 1,
+            "exp": "Slide 20 explicitly lists 'Modal Verbs (may, suggest, appear, seem)' as key indicators of balanced texts."
       },
       {
-        q: "What does the communication acronym 'APC' stand for (Slide 27 & 28)?",
-        opts: [
-          "Abstract, Protocol, Conclusion",
-          "Audience, Purpose, Context",
-          "Analysis, Perspective, Citation",
-          "Accuracy, Precision, Clarity"
-        ],
-        ans: 1,
-        exp: "Slide 27 and 28 define the APC of academic and technical texts as Audience, Purpose, and Context."
+            "q": "Why is precision mandatory in academic and technical writing according to Slide 22?",
+            "opts": [
+                  "Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable",
+                  "It allows texts to be translated into foreign languages without proofreading",
+                  "It increases the length and vocabulary score of published papers",
+                  "It ensures that non-specialists cannot understand the content"
+            ],
+            "ans": 0,
+            "exp": "Slide 22 states: 'Vague descriptors create ambiguity, lead to costly errors, or render scientific procedures non-replicable.'"
       },
       {
-        q: "When communicating with an EXPERT AUDIENCE (scientists, engineers), what is the appropriate strategy (Slide 30)?",
-        opts: [
-          "Explain every basic term using everyday kindergarten analogies",
-          "Use specialized technical jargon directly without stopping to define basic concepts",
-          "Use informal contractions and casual humor to keep them entertained",
-          "Avoid presenting any statistical data or formulas"
-        ],
-        ans: 1,
-        exp: "Slide 30 states that for an Expert Audience: 'Use specialized technical jargon directly without stopping to define basic concepts.'"
+            "q": "What does Slide 25 mandate regarding Contractions in Formal academic texts?",
+            "opts": [
+                  "Contractions are preferred because they make the writing relatable and approachable",
+                  "Contractions can be used freely in body paragraphs but never in conclusions",
+                  "No Contractions: Spelling out words completely (e.g., writing \"cannot,\" \"did not,\" \"would have\" instead of \"can't,\" \"didn't,\" \"would've\")",
+                  "Contractions are only prohibited in scientific laboratory manuals"
+            ],
+            "ans": 2,
+            "exp": "Slide 25 explicitly mandates: 'No Contractions: Spelling out words completely (e.g., writing \"cannot,\" \"did not,\" \"would have\" instead of \"can't,\" \"didn't,\" \"would've\").'"
       },
       {
-        q: "When writing for a NON-EXPERT / LAY AUDIENCE (general public), what strategy should you apply (Slide 31)?",
-        opts: [
-          "Use dense acronyms and assume they know advanced calculus",
-          "Simplify complex terms, use relatable everyday analogies, and define technical terms immediately",
-          "Submit the draft directly for doctoral peer review without explanations",
-          "Use exclusively passive voice with no clear subjects"
-        ],
-        ans: 1,
-        exp: "Slide 31 instructs: 'Simplify complex terms, use relatable everyday analogies, and define technical terms immediately.'"
+            "q": "What does the acronym APC stand for according to Slide 28?",
+            "opts": [
+                  "Analysis, Purpose, Conclusion",
+                  "Audience, Purpose, and Context",
+                  "Argument, Proof, and Citation",
+                  "Academic, Practical, and Critical"
+            ],
+            "ans": 1,
+            "exp": "Slide 28 explicitly defines the APC framework as Audience, Purpose, and Context."
       },
       {
-        q: "How should a writer tailor their work for ACADEMIC EVALUATORS (teachers, professors, thesis defense panels) (Slide 33)?",
-        opts: [
-          "Keep sentences extremely short and informal like a text message",
-          "Demonstrate complete subject mastery, rigorous citations, and strict formal structure",
-          "Omit literature reviews to save reading time",
-          "Rely solely on subjective personal opinions"
-        ],
-        ans: 1,
-        exp: "Slide 33 dictates: 'Demonstrate complete mastery, rigorous citation, and strict formal structure.'"
+            "q": "When writing for an Expert Audience (Slide 30), what is the appropriate strategy?",
+            "opts": [
+                  "Simplify terms, use relatable everyday analogies, and define basic concepts immediately",
+                  "Use specialized technical jargon directly without stopping to define basic concepts",
+                  "Avoid all technical vocabulary and rely exclusively on visual cartoons",
+                  "Use casual slang to keep the reading experience entertaining"
+            ],
+            "ans": 1,
+            "exp": "Slide 30 states: 'Appropriate Strategy to Use: Use specialized technical jargon directly without stopping to define basic concepts.'"
       },
       {
-        q: "What are the 3 primary purposes in writing academic and technical texts (Slide 34)?",
-        opts: [
-          "To Entertains, To Rhyme, To Exaggerate",
-          "To Inform / Explain, To Persuade / Argue, To Instruct / Direct",
-          "To Deceive, To Obscure, To Distract",
-          "To Monetize, To Advertise, To Brand"
-        ],
-        ans: 1,
-        exp: "Slide 34 specifies the 3 core purposes: 1. To Inform / Explain, 2. To Persuade / Argue, 3. To Instruct / Direct."
+            "q": "When communicating with a Non-Expert / Lay Audience (Slide 31), what must the author do?",
+            "opts": [
+                  "Present raw differential equations without narrative text",
+                  "Simplify complex terms, use relatable everyday analogies, and define technical terms immediately",
+                  "Assume the reader has an advanced doctorate in the field",
+                  "Use dense acronyms without explaining their definitions"
+            ],
+            "ans": 1,
+            "exp": "Slide 31 explicitly advises: 'Simplify complex terms, use relatable everyday analogies, and define technical terms immediately.'"
       },
       {
-        q: "How do discipline expectations differ between the Humanities and the Sciences under Context (Slide 36)?",
-        opts: [
-          "Humanities focus on lab replicability while Sciences focus on poetry",
-          "Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data",
-          "Both disciplines prohibit the use of citations and numbers",
-          "There is no difference in expectations between academic disciplines"
-        ],
-        ans: 1,
-        exp: "Slide 36 notes: 'Discipline Expectations: Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data.'"
+            "q": "What strategy is required when writing for Academic Evaluators according to Slide 33?",
+            "opts": [
+                  "Use casual language to prove confidence and informality",
+                  "Demonstrate complete mastery, rigorous citation, and strict formal structure",
+                  "Rely on uncited Wikipedia summaries to speed up research",
+                  "Write short bullet points without explanations or evidence"
+            ],
+            "ans": 1,
+            "exp": "Slide 33 states: 'Appropriate Strategy to Use: Demonstrate complete mastery, rigorous citation, and strict formal structure.'"
       },
       {
-        q: "What are the 5 sequential steps of the SQ5R Reading Method (Slide 38 & 39)?",
-        opts: [
-          "Scan, Question, Record, Rewrite, Return",
-          "Survey, Question, Read, Recite, Review",
-          "Search, Quote, React, Reflect, Repeat",
-          "Study, Query, Read, Rephrase, Retest"
-        ],
-        ans: 1,
-        exp: "Slide 39 defines SQ5R as: Survey (scan headings/visuals), Question (turn headings into questions), Read (seek answers), Recite (summarize), Review (check recall)."
+            "q": "What are the three primary purposes in academic and technical texts listed in Slide 34?",
+            "opts": [
+                  "To Entertain, To Exaggerate, To Conclude",
+                  "To Inform / Explain, To Persuade / Argue, To Instruct / Direct",
+                  "To Survey, To Question, To Recite",
+                  "To Topic-sentence, To Evidence, To Analyze"
+            ],
+            "ans": 1,
+            "exp": "Slide 34 lists the three primary purposes: '1. To Inform / Explain, 2. To Persuade / Argue, 3. To Instruct / Direct.'"
       },
       {
-        q: "In the TEAC Paragraph Model, what does the letter 'A' represent (Slide 40)?",
-        opts: [
-          "Appendix - adding supplementary charts",
-          "Analysis - explaining how the evidence proves the topic sentence",
-          "Audience - listing the names of people reading",
-          "Assertion - repeating the thesis without proof"
-        ],
-        ans: 1,
-        exp: "Slide 40 defines TEAC: T (Topic Sentence), E (Evidence), A (Analysis - explains how evidence proves the topic sentence), C (Clincher/Conclusion)."
+            "q": "According to Slide 36, how do Discipline Expectations differ between Humanities and Sciences?",
+            "opts": [
+                  "Humanities focus on lab apparatus; Sciences focus on poetic rhyming",
+                  "Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data",
+                  "Humanities prohibit citations; Sciences prohibit equations",
+                  "Both disciplines prohibit peer review and empirical research"
+            ],
+            "ans": 1,
+            "exp": "Slide 36 explicitly states: 'Humanities prioritize argument and textual evidence, while Sciences focus on methodology and replicable data.'"
       },
       {
-        q: "What is the function of a Double-Entry Journal in post-reading strategies (Slide 41)?",
-        opts: [
-          "It records monetary laboratory expenses",
-          "It explicitly separates direct text evidence from student analysis in a two-column format",
-          "It counts how many times the author uses contractions",
-          "It duplicates the entire text word-for-word into a diary"
-        ],
-        ans: 1,
-        exp: "Slide 41 defines Double-Entry Journaling as: 'A two-column graphic organizer that explicitly separates text evidence from student analysis.'"
+            "q": "What is the pre-reading strategy defined in Slide 39 as 'Reading titles, abstracts, and captions to set reading goals'?",
+            "opts": [
+                  "Annotation",
+                  "Previewing",
+                  "Double-Entry Journaling",
+                  "Outlining"
+            ],
+            "ans": 1,
+            "exp": "Slide 39 defines 'Previewing: Reading titles, abstracts, and captions to set reading goals.'"
       },
       {
-        q: "What are the 3 core components of Active Listening according to Slide 43?",
-        opts: [
-          "Speaking loudly, Interrupting quickly, Disagreeing emotionally",
-          "Paying Attention, Evaluating logical validity/facts, Responding Thoughtfully",
-          "Memorizing words, Daydreaming, Nodding passively",
-          "Taking verbatim shorthand, Grading speech, Looking at phone"
-        ],
-        ans: 1,
-        exp: "Slide 43 lists How to do Active Listening: 1. Paying Attention, 2. Evaluating, 3. Responding Thoughtfully."
+            "q": "What does each step of the SQ5R model stand for according to Slide 39?",
+            "opts": [
+                  "Search, Query, Read, Re-read, Review",
+                  "Survey, Question, Read, Recite, Review",
+                  "Study, Question, Read, Remember, Repeat",
+                  "Scan, Quote, Read, Reflect, Revise"
+            ],
+            "ans": 1,
+            "exp": "Slide 39 defines SQ5R as: Survey (scan headings/visuals), Question (turn headings into questions), Read (actively seek answers), Recite (summarize key points), Review (check overall recall)."
       },
       {
-        q: "In the Cornell Note-Taking System, what is the standard layout width and function of the Cue Column (Slide 44 & 45)?",
-        opts: [
-          "Right side, 70% width, used for recording formulas during class",
-          "Left side, 30% width, formulated after class for key terms, main themes, and exam questions",
-          "Bottom, 2-3 inches, used for drawing doodles",
-          "Top header, 100% width, used for the lecturer's name only"
-        ],
-        ans: 1,
-        exp: "Slide 44 states that the Cue Column is on the Left (30% width), formulated immediately after the lecture to record key vocabulary, themes, and exam questions."
+            "q": "In the TEAC paragraph structure (Slide 40), what does 'A' represent and what is its role?",
+            "opts": [
+                  "Audience: Identifies who is reading the paragraph",
+                  "Analysis: Explains how the evidence proves the topic sentence",
+                  "Appendix: Lists bibliographic citations at the end of the text",
+                  "Assertion: Repeats the topic sentence in capitalized letters"
+            ],
+            "ans": 1,
+            "exp": "Slide 40 defines 'A (Analysis): Explains how the evidence proves the topic sentence.'"
       },
       {
-        q: "In the Cornell Note-Taking System, what goes into the Summary Block at the bottom (Slide 44)?",
-        opts: [
-          "A verbatim transcript of the entire 1-hour lecture",
-          "A 2 to 4 sentence synthesis in your own words capturing the page's core takeaways",
-          "A list of all student attendance signatures",
-          "Unsolved homework math equations"
-        ],
-        ans: 1,
-        exp: "Slide 44 states: 'Summary Block (Bottom, 2-3 inches): Write a 2-4 sentence summary in your own words synthesizing the page's core content.'"
+            "q": "According to Slide 41, what is a Double-Entry Journal?",
+            "opts": [
+                  "A diary where two students write entries on alternating days",
+                  "A financial ledger documenting research grant expenses",
+                  "A two-column graphic organizer that explicitly separates text evidence from student analysis",
+                  "A document submitted twice to academic evaluators for re-grading"
+            ],
+            "ans": 2,
+            "exp": "Slide 41 defines Double-Entry Journaling as: 'A two-column graphic organizer that explicitly separates text evidence from student analysis.'"
       },
       {
-        q: "What is Reflective Listening, and what phrase characterizes its practice (Slide 46 & 48)?",
-        opts: [
-          "Staring into a mirror while practicing a presentation speech",
-          "Paraphrasing or restating the speaker's core message back to confirm interpretation ('If I understand correctly, you are saying that...')",
-          "Remaining totally silent and refusing to answer follow-up questions",
-          "Critiquing the speaker's accent and vocal grammar"
-        ],
-        ans: 1,
-        exp: "Slide 46 & 48 define Reflective Listening as paraphrasing the core message back: 'If I understand correctly, you are saying that [paraphrased point]. Is that correct?'"
+            "q": "What are the three components of Active Listening according to Slide 43?",
+            "opts": [
+                  "Hearing, Transcribing, Forgetting",
+                  "Paying Attention, Evaluating, Responding Thoughtfully",
+                  "Surveying, Questioning, Reciting",
+                  "Taking notes, Interrupting, Judging"
+            ],
+            "ans": 1,
+            "exp": "Slide 43 lists the three steps: 'Paying Attention', 'Evaluating', and 'Responding Thoughtfully'."
       },
       {
-        q: "What is the primary objective of Critical Viewing Strategies (Slide 47)?",
-        opts: [
-          "To watch educational videos in 4K resolution with high audio fidelity",
-          "To decode, analyze, and evaluate multimodal visuals to detect bias, identify manipulated data, and verify claims",
-          "To replace all written research papers with pictorial comic books",
-          "To create artistic oil paintings for scientific laboratories"
-        ],
-        ans: 1,
-        exp: "Slide 47 states: 'Critical viewing empowers learners to decode, analyze, and evaluate multimodal visuals (charts, diagrams, infographics, videos) to detect bias, identify manipulated data, and verify claims.'"
+            "q": "According to Slide 44, what are the precise dimensions and functions of the Cornell Note-Taking System?",
+            "opts": [
+                  "Left 50% for Notes, Right 50% for Questions, Bottom 5 inches for References",
+                  "Notes Column (Right, 70% width) for presentation notes; Cue Column (Left, 30% width) for key terms/questions; Summary Block (Bottom, 2-3 inches) for 2-4 sentence synthesis",
+                  "Top half for drawings, bottom half for stream-of-consciousness reactions",
+                  "Three equal vertical columns of 33% width each"
+            ],
+            "ans": 1,
+            "exp": "Slide 44 specifies: Notes Column (Right, 70% width), Cue Column (Left, 30% width), and Summary Block (Bottom, 2-3 inches for a 2-4 sentence summary)."
       },
       {
-        q: "What is 'Scale Integrity' in Critical Viewing (Slide 47)?",
-        opts: [
-          "Making sure weighing balances in chemistry labs are calibrated to grams",
-          "Ensuring charts and graphs maintain honest proportional axes (e.g. baseline at zero) to prevent misleading visual distortions",
-          "Scaling font sizes to maximum dimensions on presentation slides",
-          "Translating texts into foreign metric measurement systems"
-        ],
-        ans: 1,
-        exp: "Scale Integrity refers to ensuring chart axes and graphical representations maintain truthful, un-distorted numerical scales (avoiding truncated baselines that exaggerate tiny differences)."
+            "q": "What is the verbatim reflective listening sentence stem taught in Slide 46 and 48?",
+            "opts": [
+                  "\"You are completely wrong because the textbook says otherwise, correct?\"",
+                  "\"If I understand correctly, you are saying that [paraphrased main point]. Is that correct?\"",
+                  "\"I believe your argument makes no logical sense, wouldn't you agree?\"",
+                  "\"Could you repeat everything from slide 1 again?\""
+            ],
+            "ans": 1,
+            "exp": "Slide 46 and 48 provide the verbatim formula: 'If I understand correctly, you are saying that [paraphrased main point]. Is that correct?'"
       },
       {
-        q: "A student writes in their research paper: 'The AI model was tested on 500 images and demonstrated an 89.4% classification accuracy.' Which characteristics are demonstrated?",
-        opts: [
-          "Vague and Merely Descriptive",
-          "Evidence-Based, Precise, and Formal",
-          "Informal, Overgeneralized, and Unstructured",
-          "Subjective, Emotional, and Speculative"
-        ],
-        ans: 1,
-        exp: "This sentence contains verifiable empirical data (n=500), exact numerical precision (89.4%), formal uncontracted vocabulary, and zero emotional subjectivity."
+            "q": "Slide 47 outlines Critical Viewing checkpoints. What are the key areas learners must inspect?",
+            "opts": [
+                  "Visual Grammar, Scale Integrity, and Source Credibility",
+                  "File size, compression ratio, and download speed",
+                  "Camera model, lighting temperature, and filter effects",
+                  "Word count, font size, and paper margins"
+            ],
+            "ans": 0,
+            "exp": "Slide 47 explicitly identifies '1. Visual Grammar', '2. Scale Integrity', and '3. Source Credibility' as the core critical viewing checkpoints."
       }
-    ];
+];
+
 
     let userAnswers = {};
     function renderQuiz() {
       const host = document.getElementById('quizQuestionsHost');
+      if (!host) return;
       host.innerHTML = quizQuestions.map((q, idx) => `
         <div class="quiz-card" id="qCard-${idx}">
           <div class="quiz-q-meta">
@@ -3181,7 +3388,7 @@
     }
 
     function selectQuizAnswer(qIdx, oIdx) {
-      if (userAnswers[qIdx] !== undefined) return; // already answered
+      if (userAnswers[qIdx] !== undefined) return;
       userAnswers[qIdx] = oIdx;
 
       const q = quizQuestions[qIdx];
@@ -3190,7 +3397,6 @@
       const statusSpan = document.getElementById(`qStatus-${qIdx}`);
       const expBox = document.getElementById(`qExp-${qIdx}`);
 
-      // Lock options
       document.querySelectorAll(`[id^="qOpt-${qIdx}-"]`).forEach(b => b.classList.add('locked'));
 
       if (oIdx === q.ans) {
@@ -3233,13 +3439,13 @@
       val.textContent = pct + '%';
       if (pct >= 90) {
         title.textContent = '🌟 Outstanding Mastery!';
-        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. You are fully prepared to ace the First Long Quiz!`;
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. You have mastered all verbatim slide concepts for the First Long Quiz!`;
       } else if (pct >= 75) {
         title.textContent = '👍 Solid Proficiency!';
-        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Review the few missed rationales above to lock in a perfect score.`;
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Review the rationales above to lock in a 100% score.`;
       } else {
-        title.textContent = '📚 Keep Studying!';
-        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Flip through the Flashcards and review the 6 Characteristics in the Study Guide.`;
+        title.textContent = '📚 Keep Reviewing!';
+        desc.textContent = `You scored ${correct} out of ${quizQuestions.length}. Review the verbatim quotes in the Study Guide and Glossary.`;
       }
       card.style.display = 'block';
       card.scrollIntoView({ behavior: 'smooth' });
